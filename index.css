@@ -1,0 +1,29 @@
+.section {
+  width: 100%;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section2,
+.section3 {
+  margin-top: -2%;
+}
+
+.work2 {
+  display: flex;
+  justify-content: center;
+}
+
+.work2 img {
+  width: 50%;
+}
+
+.work {
+  width: 100%;
+}
+
+.work img {
+  width: 100%;
+}
