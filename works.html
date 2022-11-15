@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scroll testout</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="./main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./works.css" />
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div id="menu">
+          <img src="./img/menu2.svg" />
+        </div>
+
+        <div id="hiddenmenu">
+          <span id="close">&times;</span>
+          <div id="list">
+            <h1><a href="./about.html">ABOUT</a></h1>
+            <h1><a href="./works.html">WORKS</a></h1>
+            <h1><a href="./contact.html">CONTACT</a></h1>
+          </div>
+        </div>
+
+        <div id="logo">
+          <a href="./index.html"><img src="./img/logo_pre_s_w.svg" /></a>
+        </div>
+
+        <div class="social">
+          <span id="insta">Instagram</span><span>Vimeo</span>
+        </div>
+      </header>
+      <!-- <header class="header"><img src="./img/logoex1.png" /></header> -->
+
+      <div class="videos">
+        <img src="./img/d1.png" id="d1" class="inside" data-scroll />
+        <img src="./img/d2.png" id="d2" class="inside" data-scroll />
+        <img src="./img/d3.png" id="d3" class="inside" data-scroll />
+        <img src="./img/d4.png" id="d4" class="inside" data-scroll />
+        <img src="./img/d5.png" id="d5" class="inside special" data-scroll />
+        <img src="./img/d6.png" id="d6" class="inside" data-scroll />
+        <img src="./img/d7.png" id="d7" class="inside" data-scroll />
+        <img src="./img/d8.png" id="d8" class="inside" data-scroll />
+        <img src="./img/d9.png" id="d9" class="inside" data-scroll />
+        <img src="./img/d10.png" id="d10" class="inside" data-scroll />
+      </div>
+    </div>
+
+    <script>
+      ScrollOut({
+        scrollingElement: ".videos",
+        targets: ".inside",
+        cssProps: {
+          visibleX: true,
+        },
+      });
+    </script>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

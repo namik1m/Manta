@@ -1,0 +1,68 @@
+.videos {
+  margin: 0 auto;
+  max-width: 85%;
+  height: 100%;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: navy; */
+}
+
+.videos img {
+  /* width: 40%; */
+  margin-right: 5%;
+}
+
+#d1,
+#d6 {
+  width: 22.5%;
+}
+
+#d2,
+#d7 {
+  width: 25%;
+  margin-top: 40%;
+  margin-left: -5%;
+}
+
+#d3,
+#d8 {
+  width: 22.5%;
+  margin-top: -15%;
+  margin-left: -20%;
+}
+
+#d4,
+#d9 {
+  width: 60%;
+  margin-top: 14%;
+  margin-left: -10%;
+}
+
+#d5,
+#d10 {
+  width: 35%;
+  margin-top: -19%;
+  margin-left: -10%;
+}
+
+[data-scroll-dir-x="1"] .inside {
+  /* opacity: 0.4; */
+  opacity: calc(var(--visible-x) * var(--visible-x));
+  transform: scale(calc(0.5 + calc(var(--visible-x) * 0.5)));
+}
+/*next아이들이 순차적으로 효과*/
+
+[data-scroll-dir-x="-1"] .inside {
+  opacity: calc(var(--visible-x) * var(--visible-x));
+  transform: scale(calc(0.5 + calc(var(--visible-x) * 0.5)));
+}
+
+[data-scroll-dir-x="1"] .special {
+  /* opacity: 0.4; */
+  opacity: calc(var(--visible-x) * var(--visible-x));
+  transform: scale(calc(0.5 + calc(var(--visible-x) * 0.5))) translateY(140px);
+}

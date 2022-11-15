@@ -9,6 +9,12 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Work Sans Light";
+  src: url(./fonts/WorkSans-Light.woff2) format("woff2"),
+    url(./fonts/WorkSans-Light.woff) format("woff");
+}
+
 html,
 body {
   font-size: 16px;
@@ -20,22 +26,15 @@ body {
   padding: 0;
   margin: 0;
   -webkit-overflow-scrolling: touch;
-  background: rgb(210, 210, 210);
+  background: rgb(4, 131, 212);
   background: radial-gradient(
     circle,
-    rgba(210, 210, 210, 1) 0%,
-    rgba(86, 86, 87, 1) 49%,
-    rgba(25, 25, 25, 1) 100%
+    rgba(4, 131, 212, 1) 0%,
+    rgba(8, 8, 121, 1) 55%,
+    rgba(2, 0, 36, 1) 100%
   );
-  /* background: rgb(92, 92, 92);
-  background: linear-gradient(
-    0deg,
-    rgb(92, 92, 92) 0%,
-    rgba(67, 67, 69, 1) 30%,
-    rgb(39, 40, 40) 100%
-  ); */
-  background-size: 400% 400%;
-  font-family: "Work Sans Regular";
+  /* background-size: 400% 400%; */
+  font-family: "Work Sans Light";
 }
 
 .container {
