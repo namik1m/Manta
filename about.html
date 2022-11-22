@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Danoss</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main3.css" /> -->
     <link rel="stylesheet" type="text/css" media="screen" href="about.css" />
     <link
       rel="stylesheet"
@@ -16,31 +15,27 @@
   <body>
     <div class="container">
       <header class="header">
-        <div class="menucontainer">
-          <div id="menu">
-            <img src="./img/menu2.svg" style="display: block" />
-          </div>
-
-          <div id="logo">
-            <a href="./index3.html"><img src="./img/logo_pre_s_w.svg" /></a>
-          </div>
+        <div id="menu">
+          <img src="./img/menu2.svg" style="display: block" />
         </div>
 
-        <!-- <div id="hiddenmenu">
+        <div id="hiddenmenu">
           <div class="logosec">
             <img src="./img/logo_pre_s_w.svg" id="biglogo" />
           </div>
 
           <div id="list">
-            <h1><a href="./about.html">ABOUT</a></h1>
+            <h1><a href="./about.html#about">ABOUT</a></h1>
             <h1><a href="./works.html">MEDIA</a></h1>
-            <h1><a href="./contact.html">COllABORATE</a></h1>
+            <h1><a href="./about.html#colla">COllABORATE</a></h1>
           </div>
           <span id="close">&times;</span>
-        </div> -->
+        </div>
       </header>
 
       <section class="section section1" id="about">
+        <p id="navi">ABOUT</p>
+        <div class="slogan" id="s1"><p>CREATIVITY</p></div>
         <div class="mani">
           <p>
             DANOSS Media is a creative media agency with bright vision towards
@@ -51,7 +46,7 @@
             picture can say a thousand words therefor film is infinite, all it
             takes is the perfect shot and we have an eye for it! Our crew
             consists of creative directors, marketing strategists, camera
-            operators, editors, designers, audio specialists. Dedicated
+            operators, editors, designers, audio specialists.<br />Dedicated
             professional film crew is here to make an original content for you
             and your audience. Team work is the key, your vision is our starting
             point! By building or complimenting your identity with our visual
@@ -86,6 +81,8 @@
       </section>
 
       <section class="section section2" id="clientlist">
+        <p id="navi">CLIENTS</p>
+        <div class="slogan" id="s2"><p>TOWARDS</p></div>
         <div class="clients">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -114,6 +111,8 @@
       </section>
 
       <section class="section section3" id="colla">
+        <p id="navi">CONTACT</p>
+        <div class="slogan" id="s3"><p>YOU</p></div>
         <div class="promote">
           <p>
             Live streaming<br />
@@ -165,14 +164,24 @@
       </section>
 
       <footer class="footer">
-        <!-- <div class = "collaborate"><h1 id = "collab">HERE TO COLLABORATE</h1></div> -->
+        <div class="collaborate">
+          <h1 id="collab">
+            <a href="./about.html#colla">HERE TO COLLABORATE</a>
+          </h1>
+        </div>
+        <div id="logo">
+          <a href="./index3.html"><img src="./img/logo_pre_s_w.svg" /></a>
+        </div>
+
         <div class="social">
-          <span id="insta">Instagram</span><span>Vimeo</span>
+          <!-- <span id="insta">Instagram</span><span>Vimeo</span> -->
+          <span id="ig"><img src="./img/ig_hsmall.png" /></span>
+          <span id="vimeo"><img src="./img/vm_hsmall.png" /></span>
+          <span id="term">2022C TERMS</span>
         </div>
       </footer>
     </div>
-    <script src="https://bundle.run/css-scroll-snap-polyfill@0.1.2"></script>
-    <!-- <script src="css-scroll-snap-points-polyfill.js"></script> -->
-    <!-- <script src="./app3.js"></script> -->
+    <script src="./normalmenu.js"></script>
+    <!-- <script src="https://bundle.run/css-scroll-snap-polyfill@0.1.2"></script> -->
   </body>
 </html>
