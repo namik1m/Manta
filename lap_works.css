@@ -145,180 +145,73 @@
     width: 100%;
     margin-top: 2.5%;
   }
-  /*container*/
 
-  .container {
-    width: 100%;
+  .videos {
+    margin: 0 auto;
+    max-width: 85%;
     height: 100%;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    overflow-x: auto;
     overflow-y: hidden;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  .section {
-    position: relative;
-    width: 100vw;
-    min-width: 100vw;
-    height: 100vh;
+    overflow-x: scroll;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    scroll-snap-align: center;
-    padding: 0;
-
-    /* overflow-x: scroll; */
-  }
-
-  .mani,
-  .clients {
-    margin-top: 5%;
-  }
-
-  .mani {
-    width: 45%;
-  }
-  .clients {
-    width: 35%;
     /* background-color: navy; */
   }
 
-  .mani p,
-  .clients p,
-  .promote p {
-    font-size: 0.85rem;
-    line-height: 137%;
+  .videos img {
+    /* width: 40%; */
+    margin-right: 5%;
   }
 
-  .work {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 70%;
-    padding: 2.5% 0%;
-  }
-
-  #navi {
-    position: absolute;
-    top: 5%;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-family: "Work-Sans-Regular";
-    font-size: 0.75rem;
-    margin-left: 2.35%; /*This is needed in laptop css, unlike big css. Check the view from many viewports*/
-  }
-
-  .slogan {
-    position: absolute;
-    font-family: "TINY5x3-20";
-    font-size: 8rem;
-    color: rgb(233, 222, 66);
-    margin: 0;
-  }
-
-  #s1 {
-    top: -3%;
-    right: 2%;
-  }
-
-  #s2 {
-    top: -3%;
-    right: 2%;
-  }
-
-  #s3 {
-    top: -3%;
-    left: 2%;
-  }
-
-  .member {
-    width: 19%;
-    /* background-color: blue; */
-  }
-  .member img {
-    width: 100%;
-  } /*setting width of the imgs are important.*/
-
-  .client {
-    text-align: center;
-  }
-
-  .client img {
-    width: 82%;
-    /*changing width can transform the composition of text*/
-  }
-
-  .member h4 {
-    font-size: 1rem;
-    margin-bottom: 0.4%; /*important*/
-    line-height: 0;
-  }
-  .member p {
-    font-size: 0.75rem;
-  }
-
-  .member > h4,
-  p {
-    text-align: center;
-  }
-
-  .section3 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-  }
-
-  .promote {
-    /* background-color: pink; */
-    padding: 0% 0.75%;
-  }
-
-  .promote p {
-    text-align: left;
-  }
-
-  .form {
-    width: 25%;
-    background-color: transparent;
-    padding: 1% 0.5%;
-    border-radius: 4px;
-  }
-
-  .form h2 {
-    margin-left: 4%;
-  }
-
-  form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  input {
-    width: 85%;
-    padding: 3%;
-    margin-bottom: 2%;
-  }
-
-  #note {
-    height: 8rem;
-  }
-
-  #submitbtn {
-    background-color: #191919;
-    color: #f1f0f8;
-    font-size: 1.2rem;
-    padding: 0.5% 1%;
+  #d1,
+  #d6 {
     width: 22.5%;
-    margin: 0 auto;
-    border-radius: 4px;
+  }
+
+  #d2,
+  #d7 {
+    width: 25%;
+    margin-top: 40%;
+    margin-left: -5%;
+  }
+
+  #d3,
+  #d8 {
+    width: 22.5%;
+    margin-top: -15%;
+    margin-left: -20%;
+  }
+
+  #d4,
+  #d9 {
+    width: 60%;
+    margin-top: 14%;
+    margin-left: -10%;
+  }
+
+  #d5,
+  #d10 {
+    width: 35%;
+    margin-top: -19%;
+    margin-left: -10%;
+  }
+
+  [data-scroll-dir-x="1"] .inside {
+    /* opacity: 0.4; */
+    opacity: calc(var(--visible-x) * var(--visible-x));
+    transform: scale(calc(0.5 + calc(var(--visible-x) * 0.5)));
+  }
+  /*next아이들이 순차적으로 효과*/
+
+  [data-scroll-dir-x="-1"] .inside {
+    opacity: calc(var(--visible-x) * var(--visible-x));
+    transform: scale(calc(0.5 + calc(var(--visible-x) * 0.5)));
+  }
+
+  [data-scroll-dir-x="1"] .special {
+    /* opacity: 0.4; */
+    opacity: calc(var(--visible-x) * var(--visible-x));
+    transform: scale(calc(0.5 + calc(var(--visible-x) * 0.5))) translateY(140px);
   }
 }

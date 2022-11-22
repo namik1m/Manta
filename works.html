@@ -4,36 +4,36 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Scroll testout</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="./main.css" />
+    <title>Media</title>
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="./main3.css" /> -->
     <link rel="stylesheet" type="text/css" media="screen" href="./works.css" />
+    <link
+      rel="stylesheet"
+      media="only screen and (min-device-width : 1190px) and (max-device-width : 1440px)"
+      href="./lap_works.css"
+    />
     <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
   </head>
   <body>
     <div class="container">
       <header class="header">
         <div id="menu">
-          <img src="./img/menu2.svg" />
+          <img src="./img/menu2.svg" style="display: block" />
         </div>
 
         <div id="hiddenmenu">
-          <span id="close">&times;</span>
-          <div id="list">
-            <h1><a href="./about.html">ABOUT</a></h1>
-            <h1><a href="./works.html">WORKS</a></h1>
-            <h1><a href="./contact.html">CONTACT</a></h1>
+          <div class="logosec">
+            <img src="./img/logo_pre_s_w.svg" id="biglogo" />
           </div>
-        </div>
 
-        <div id="logo">
-          <a href="./index.html"><img src="./img/logo_pre_s_w.svg" /></a>
-        </div>
-
-        <div class="social">
-          <span id="insta">Instagram</span><span>Vimeo</span>
+          <div id="list">
+            <h1><a href="./about.html#about">ABOUT</a></h1>
+            <h1><a href="./works.html">MEDIA</a></h1>
+            <h1><a href="./about.html#colla">COllABORATE</a></h1>
+          </div>
+          <span id="close">&times;</span>
         </div>
       </header>
-      <!-- <header class="header"><img src="./img/logoex1.png" /></header> -->
 
       <div class="videos">
         <img src="./img/d1.png" id="d1" class="inside" data-scroll />
@@ -47,8 +47,29 @@
         <img src="./img/d9.png" id="d9" class="inside" data-scroll />
         <img src="./img/d10.png" id="d10" class="inside" data-scroll />
       </div>
-    </div>
 
+      <footer class="footer">
+        <div class="collaborate">
+          <h1 id="collab">
+            <a href="./about.html#colla">HERE TO COLLABORATE</a>
+          </h1>
+        </div>
+        <div id="logo">
+          <a href="./index3.html"><img src="./img/logo_pre_s_w.svg" /></a>
+        </div>
+
+        <div class="social">
+          <!-- <span id="insta">Instagram</span><span>Vimeo</span> -->
+          <span id="ig"><img src="./img/ig_hsmall.png" /></span>
+          <span id="vimeo"
+            ><a href="https://vimeo.com/danossmedia"
+              ><img src="./img/vm_hsmall.png" /></a
+          ></span>
+          <span id="term">2022C TERMS</span>
+        </div>
+      </footer>
+    </div>
+    <script src="./normalmenu.js"></script>
     <script>
       ScrollOut({
         scrollingElement: ".videos",
@@ -58,7 +79,5 @@
         },
       });
     </script>
-
-    <script src="./app.js"></script>
   </body>
 </html>

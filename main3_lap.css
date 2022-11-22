@@ -62,6 +62,9 @@
     transform: translate(-50%, -50%);
     width: 95%;
     height: 80vh;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+      rgba(255, 255, 255, 0.2) -6px -2px 16px 0px;
+    /*used a generator for a glassy effect*/
     backdrop-filter: blur(13px) saturate(180%);
     -webkit-backdrop-filter: blur(13px) saturate(180%);
     background-color: rgba(25, 74, 121, 0.6); /*from Miro board*/
@@ -78,7 +81,7 @@
     width: 100%;
     display: block;
     text-align: center;
-    color: white;
+    color: #f1f0f8;
     float: center;
     font-size: 32px;
     font-weight: normal;
@@ -119,7 +122,7 @@
     font-family: "Work Sans Light";
     font-size: 2.4rem;
     line-height: 1.6;
-    color: white;
+    color: #f1f0f8;
     cursor: pointer;
     opacity: 1;
   }
@@ -133,7 +136,7 @@
 
   #hiddenmenu h1 a {
     text-decoration: none;
-    color: white;
+    color: #f1f0f8;
   }
 
   #hiddenmenu h3 {
