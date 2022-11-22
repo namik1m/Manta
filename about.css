@@ -273,12 +273,8 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 80%;
   padding: 7.5% 0;
-}
-
-.work1 {
-  width: 75%;
+  width: 70%;
 }
 
 #navi {
@@ -312,21 +308,28 @@ body {
 }
 
 .work2 {
-  justify-content: center;
+  justify-content: space-around;
 }
+
+.member {
+  width: 19%;
+  /* background-color: blue; */
+}
+.member img {
+  width: 100%;
+} /*setting width of the imgs are important.*/
 
 .client {
   text-align: center;
 }
 
-.member,
-.client {
-  width: 20%;
-  /* background-color: antiquewhite; */
+.member img {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+    rgba(0, 0, 0, 0.05) 0px 5px 10px;
 }
 
-img > .member,
-.client {
+.member img,
+.client img {
   width: 100%;
 }
 .member h4 {

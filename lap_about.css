@@ -255,9 +255,10 @@
     text-align: center;
   }
 
-  /* .client img {
-    
-  } */
+  .client img {
+    width: 82%;
+    /*changing width can transform the composition of text*/
+  }
 
   .member h4 {
     font-size: 1rem;
