@@ -399,6 +399,9 @@
         </ul>
       </div>
     </footer>
+    
+    <script src="./js/scrolling.js"></script>
+    <script src="./js/mobiledisable.js"></script>
     <script>
       const buttonRight = document.getElementById('rarrow');
       const buttonLeft = document.getElementById('larrow');
@@ -410,8 +413,10 @@
       console.log(parent1);
       console.log(newLocal1);
 
-      buttonRight.addEventListener('click', function () {
-        parent1.scrollLeft += newLocal1;
+      buttonRight.addEventListener("click", function () {
+        console.log("moved rightside"); 
+        parent2.scrollIntoView(true);
+        //parent1.scrollTo(1440,0);
       });
 
       buttonLeft.addEventListener('click', function () {
@@ -421,7 +426,5 @@
       //https://stackoverflow.com/questions/64502303/javascript-element-scrollleft-cant-handle-decimals
       //https://stackoverflow.com/questions/56392199/make-a-button-to-scroll-horizontally-in-div
     </script>
-    <script src="./js/scrolling.js"></script>
-    <script src="./js/mobiledisable.js"></script>
   </body>
 </html>
