@@ -1,0 +1,24 @@
+.section {
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 0;
+  display: block;
+  padding: 0;
+  margin: 0;
+  overflow: scroll;
+}
+
+.work {
+  width: 100%;
+  height: 100%;
+}
+
+.work img {
+  width: 100%;
+  height: 100%;
+}
+
+/* [data-scroll-dir-x="1"] .section {
+  visibility: visible;
+  opacity: 0.6;
+} */

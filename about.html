@@ -3,188 +3,425 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Danoss</title>
+    <title>About Manta</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" media="screen" href="about.css" />
     <link
       rel="stylesheet"
-      media="only screen and (min-device-width : 1190px) and (max-device-width : 1440px)"
-      href="./lap_about.css"
+      type="text/css"
+      media="screen"
+      href="./css/about.css"
+    />
+    <link
+      rel="stylesheet"
+      media="only screen and (min-width : 1200px) and (max-width : 1440px)"
+      href="./css/about_lap.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./css/fontsheet.css"
+    />
+
+    <link
+      rel="stylesheet"
+      media="only screen and (min-width: 320px) and (max-width: 900px) and (orientation: portrait)"
+      href="./css/mob_port.css"
+    />
+    <link
+      rel="stylesheet"
+      media="only screen and (min-width: 320px) and (max-width: 900px) and (orientation: landscape)"
+      href="./css/mob_land.css"
     />
   </head>
   <body>
-    <div class="container">
-      <header class="header">
-        <div id="menu">
-          <img src="./img/menu2.svg" style="display: block" />
+    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu" />
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+      <div class="spinner diagonal part-1"></div>
+      <div class="spinner horizontal"></div>
+      <div class="spinner diagonal part-2"></div>
+    </label>
+
+    <div id="sidebarMenu">
+      <div class="sidebarMenuInner">
+        <div class="logosec">
+          <a href="./index.html"
+            ><img src="./img/Manta Logo 1/Mantalogo.png" id="biglogo"
+          /></a>
         </div>
 
-        <div id="hiddenmenu">
-          <div class="logosec">
-            <img src="./img/logo_pre_s_w.svg" id="biglogo" />
-          </div>
+        <ul id="list">
+          <li id="about_typo"><a href="./about.html#about">about</a></li>
+          <li><a href="./media_theater.html">media</a></li>
+          <li id="contact_typo"><a href="./about.html#colla">contact</a></li>
+        </ul>
+      </div>
+    </div>
 
-          <div id="list">
-            <h1><a href="./about.html#about">ABOUT</a></h1>
-            <h1><a href="./works.html">MEDIA</a></h1>
-            <h1><a href="./about.html#colla">COllABORATE</a></h1>
-          </div>
-          <span id="close">&times;</span>
+    <main class="container">
+      <header class="header">
+        <div id="mainlogo">
+          <a href="./index.html"><img src="./img/yellow manta-06.png" /></a>
         </div>
       </header>
 
+      <div class="pagebtn">
+        <div id="larrow">
+          <img src="./img/arrow-left-svgrepo-com.svg" />
+        </div>
+
+        <div id="rarrow">
+          <img src="./img/arrow-right-svgrepo-com.svg" />
+        </div>
+      </div>
+
       <section class="section section1" id="about">
-        <p id="navi">ABOUT</p>
-        <div class="slogan" id="s1"><p>CREATIVITY</p></div>
-        <div class="mani">
-          <p>
-            DANOSS Media is a creative media agency with bright vision towards
-            future! Founded in 2016, Netherlands, by team whose paths and
-            passions has always been visual productions in elements of Theater
-            shows, Festivals and visual Arts. Film invites you to a different
-            reality, it invites you to new roams of endless possibilities,
-            picture can say a thousand words therefor film is infinite, all it
-            takes is the perfect shot and we have an eye for it! Our crew
-            consists of creative directors, marketing strategists, camera
-            operators, editors, designers, audio specialists.<br />Dedicated
-            professional film crew is here to make an original content for you
-            and your audience. Team work is the key, your vision is our starting
-            point! By building or complimenting your identity with our visual
-            experience the outcome will be fitting for your creative doings.
-          </p>
-        </div>
-        <div class="work work1">
-          <div class="member">
-            <img src="./img/danoss_s.jpg" class="inside" />
-            <h4>David Danoss</h4>
-            <p>Creative directors</p>
+        <article class="sec-one-wrapper">
+          <div class="mani">
+            <h1>CREATIVITY TOWARDS YOU</h1>
+            <p>
+              This is MANTA media - an expanding network of offbeat creative
+              professionals. Through combining our skills and love for image and
+              sound we create visuals, audios and concepts that go beyond
+              limits. Founded in 2017 by Davids Danoss, MANTA started off by
+              working with other creatives - artists, performers, musicians,
+              etc. But as the time goes, MANTA is growing over entrepreneurship
+              and commerce offering creative solutions to anyone that comes its
+              way.. We are excited, driven and ready for action!
+            </p>
+
+            <div class="btns">
+              <button><a href="./media_theater.html">MEDIA</a></button>
+              <button><a href="./about.html#colla">CONTACT</a></button>
+            </div>
           </div>
 
-          <div class="member">
-            <img src="./img/danoss_s.jpg" class="inside" />
-            <h4>David Danoss</h4>
-            <p>Creative directors</p>
+          <div class="animation">
+            <video autoplay="autoplay" loop muted playsinline>
+              <source src="./img/alphaplease.webm" type="video/webm" />
+            </video>
           </div>
 
-          <div class="member">
-            <img src="./img/danoss_s.jpg" class="inside" />
-            <h4>David Danoss</h4>
-            <p>Creative directors</p>
-          </div>
+          <!-- <div class="arrow-btn">
+            <a href="./about.html#about"
+              ><img src="./img/arrow-left-svgrepo-com.svg" id="left-arrow"
+            /></a>
 
-          <div class="member">
-            <img src="./img/danoss_s.jpg" class="inside" />
-            <h4>David Danoss</h4>
-            <p>Creative directors</p>
-          </div>
-        </div>
+            <a href="./about.html#clientlist"
+              ><img src="./img/arrow-right-svgrepo-com.svg" id="right-arrow"
+            /></a>
+          </div> -->
+        </article>
+        <!--webm works okay on firefox and Chrome. Important to add loop and muted attributes in video tag-->
+        <!--It doesn't work at all on Safari.-->
+
+        <!-- <div id="r-arrow">
+          <a href="./about.html#clientlist"
+            ><img src="./img/arrow-right-svgrepo-com.svg"
+          /></a>
+        </div> -->
       </section>
 
       <section class="section section2" id="clientlist">
-        <p id="navi">CLIENTS</p>
-        <div class="slogan" id="s2"><p>TOWARDS</p></div>
-        <div class="clients">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
+        <article class="sec-two-wrapper">
+          <div class="mani2">
+            <h1>WHAT WE DO</h1>
+            <p>
+              Our professional team is ready to bring your idea to the next
+              level. Equipped with high-end gears and skills, we give exposure
+              to your creation and deliver the product with a fast-paced
+              workflow. Our clients range from theaters, art organizations,
+              festivals to individual entrepreneurs and corporations. Either
+              simple, small scale projects or big-budget productions, we can
+              provide a suitable visual solution for you with cost-efficient
+              creation.
+            </p>
+            <div class="btns" id="m2btn">
+              <button><a href="./media_theater.html">MEDIA</a></button>
+            </div>
+          </div>
+
+          <div class="promote">
+            <div class="category video">
+              <p id="video">video</p>
+              <p id="photo">photo</p>
+              <p id="drone">drone</p>
+              <p id="ani">animation</p>
+              <p id="sound">sound</p>
+            </div>
+
+            <div class="category workfor">
+              <p id="theater">theater</p>
+              <p id="events">events</p>
+              <p id="pro">promo</p>
+            </div>
+          </div>
+        </article>
+
+        <div class="slideshow">
+          <iframe
+            src="https://player.vimeo.com/video/800821036?h=baf0524f9a&amp;muted=1&amp;autoplay=1&amp;loop=1&amp;transparent=0&amp;background=1&amp;app_id=122963"
+            width="426"
+            height="240"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen=""
+            title="Overview of Manta projects"
+            data-ready="true"
+            class="moving"
+            style="width: 130%; height: 100%; margin: 0; padding: 0"
+          ></iframe>
         </div>
 
-        <div class="work work2">
-          <div class="client">
-            <img src="./img/roodkapje-white.png" />
-          </div>
-
-          <div class="client">
-            <img src="./img/theatrerotterdam-logo.png" />
-          </div>
-
-          <div class="client">
-            <img src="./img/willemdekooning-logo.png" />
-          </div>
+        <!-- <div id="l-arrow">
+          <a href="./about.html#about"
+            ><img src="./img/arrow-left-svgrepo-com.svg"
+          /></a>
         </div>
+
+        <div id="r-arrow">
+          <a href="./about.html#colla"
+            ><img src="./img/arrow-right-svgrepo-com.svg"
+          /></a>
+        </div> -->
       </section>
 
       <section class="section section3" id="colla">
-        <p id="navi">COLLABORATION</p>
-        <div class="slogan" id="s3"><p>YOU</p></div>
-        <div class="promote">
-          <p>
-            Live streaming<br />
-            Video editing<br />
-            Aerial footages<br />
-            Theatre registration<br />
-            Branding<br />
-            Photography<br />
-            Motion Graphic<br />
-            SEE OUR WORK
-          </p>
-          <p>
-            +31 0619726384<br />
-            <a href="mailto:info@danoss.com">info@danoss.com</a>
-          </p>
-        </div>
+        <article class="sec-three-wrapper">
+          <h1 id="collaborate">LET'S COLLABORATE</h1>
 
-        <div class="form">
-          <h2>Let's collaborate</h2>
-          <form action="/action_page.php">
-            <input
-              type="text"
-              id="name"
-              name="clientname"
-              placeholder="Your name"
-            />
-            <input
-              type="text"
-              id="email"
-              name="email"
-              placeholder="Your email"
-            />
-            <input
-              type="text"
-              id="phone"
-              name="num"
-              placeholder="Phone number"
-            />
-            <input
-              type="text"
-              id="note"
-              name="note"
-              placeholder="Any notes..."
-            />
+          <div class="contact">
+            <form action="/action_page.php">
+              <div class="detail">
+                <input
+                  type="text"
+                  id="name"
+                  name="clientname"
+                  placeholder="Name"
+                />
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  placeholder="E-mail"
+                />
+                <input
+                  type="text"
+                  id="phone"
+                  name="num"
+                  placeholder="Phone number"
+                />
+              </div>
 
-            <input type="submit" value="Submit" id="submitbtn" />
-          </form>
-        </div>
+              <input
+                type="text"
+                id="note"
+                name="note"
+                placeholder="Type your message..."
+              />
+              <input type="submit" value="SEND" id="submitbtn" />
+              <div class="formbtm">
+                <p>* Mandatory fields</p>
+                <p id="termmessage">
+                  ** Sending us messages means you agree with our
+                  <span id="tandc">terms and conditions</span>.
+                </p>
+              </div>
+            </form>
+          </div>
+
+          <div class="info">
+            <p id="num">+31 6 13657676</p>
+            <p id="email">
+              <a href="mailto:info@mantamedia.io">info@mantamedia.io</a>
+            </p>
+            <p>KvK 67946291</p>
+          </div>
+
+          <div class="clients">
+            <div class="logo-con">
+              <img src="./img/TR logo Wit RGB.png" id="tr" />
+            </div>
+
+            <div class="logo-con2">
+              <img src="./img/Grande_Loge.png" id="grande" />
+            </div>
+
+            <div class="logo-con">
+              <img src="./img/White WDKA-05.png" id="wdka" />
+            </div>
+
+            <div class="logo-con">
+              <img src="./img/white worm-04.png" id="worm" />
+            </div>
+
+            <div class="logo-con">
+              <img src="./img/White Brutus-04.png" id="wb" />
+            </div>
+
+            <div class="logo-con">
+              <img src="./img/white tec art-03.png" id="tecart" />
+            </div>
+
+            <div class="logo-con">
+              <img src="./img/White V22-03.png" id="v2" />
+            </div>
+
+            <div class="logo-con">
+              <img src="./img/roodkapje-white.png" id="rood" />
+            </div>
+          </div>
+        </article>
+
+        <!-- <div id="l-arrow">
+          <a href="./about.html#clientlist"
+            ><img src="./img/arrow-left-svgrepo-com.svg"
+          /></a>
+        </div> -->
       </section>
+    </main>
 
-      <footer class="footer">
-        <div class="collaborate">
-          <h1 id="collab">
-            <a href="./about.html#colla">HERE TO COLLABORATE</a>
-          </h1>
-        </div>
-        <div id="logo">
-          <a href="./index3.html"><img src="./img/logo_pre_s_w.svg" /></a>
-        </div>
+    <footer class="footer">
+      <div class="foo-content">
+        <ul class="list-inline">
+          <!--First block-->
+          <span id="statement">CREATIVITY TOWARDS YOU</span>
+          <div class="spansection">
+            <span>media</span>
+            <span>about</span>
+            <span>contacts</span>
+            <span>term 2023</span>
+          </div>
+          <div class="logosection">
+            <span id="ig"><img src="./img/ig_hsmall_black.png" /></span>
+            <span id="vimeo"
+              ><a href="https://vimeo.com/danossmedia"
+                ><img src="./img/vm_black.png" /></a
+            ></span>
+            <!-- <span id="fb"><img src="./img/fb_black.png" /></span> -->
+          </div>
+        </ul>
 
-        <div class="social">
-          <!-- <span id="insta">Instagram</span><span>Vimeo</span> -->
-          <span id="ig"><img src="./img/ig_hsmall.png" /></span>
-          <span id="vimeo"
-            ><a href="https://vimeo.com/danossmedia"
-              ><img src="./img/vm_hsmall.png" /></a
-          ></span>
-          <span id="term">2022C TERMS</span>
-        </div>
-      </footer>
-    </div>
-    <script src="./normalmenu.js"></script>
-    <!-- <script src="https://bundle.run/css-scroll-snap-polyfill@0.1.2"></script> -->
+        <ul class="list-inline">
+          <!--Second block-->
+          <span id="statement">CREATIVITY TOWARDS YOU</span>
+          <div class="spansection">
+            <span>media</span>
+            <span>about</span>
+            <span>contacts</span>
+            <span>term 2023</span>
+          </div>
+          <div class="logosection">
+            <span id="ig"><img src="./img/ig_hsmall_black.png" /></span>
+            <span id="vimeo"
+              ><a href="https://vimeo.com/danossmedia"
+                ><img src="./img/vm_black.png" /></a
+            ></span>
+            <!-- <span id="fb"><img src="./img/fb_black.png" /></span> -->
+          </div>
+        </ul>
+
+        <ul class="list-inline">
+          <!--Third block-->
+          <span id="statement">CREATIVITY TOWARDS YOU</span>
+          <div class="spansection">
+            <span>media</span>
+            <span>about</span>
+            <span>contacts</span>
+            <span>term 2023</span>
+          </div>
+          <div class="logosection">
+            <span id="ig"><img src="./img/ig_hsmall_black.png" /></span>
+            <span id="vimeo"
+              ><a href="https://vimeo.com/danossmedia"
+                ><img src="./img/vm_black.png" /></a
+            ></span>
+            <!-- <span id="fb"><img src="./img/fb_black.png" /></span> -->
+          </div>
+        </ul>
+
+        <ul class="list-inline">
+          <!--Third block-->
+          <span id="statement">CREATIVITY TOWARDS YOU</span>
+          <div class="spansection">
+            <span>media</span>
+            <span>about</span>
+            <span>contacts</span>
+            <span>term 2023</span>
+          </div>
+          <div class="logosection">
+            <span id="ig"><img src="./img/ig_hsmall_black.png" /></span>
+            <span id="vimeo"
+              ><a href="https://vimeo.com/danossmedia"
+                ><img src="./img/vm_black.png" /></a
+            ></span>
+            <!-- <span id="fb"><img src="./img/fb_black.png" /></span> -->
+          </div>
+        </ul>
+
+        <ul class="list-inline">
+          <!--Fourth block-->
+          <span id="statement">CREATIVITY TOWARDS YOU</span>
+          <div class="spansection">
+            <span>media</span>
+            <span>about</span>
+            <span>contacts</span>
+            <span>term 2023</span>
+          </div>
+          <div class="logosection">
+            <span id="ig"><img src="./img/ig_hsmall_black.png" /></span>
+            <span id="vimeo"
+              ><a href="https://vimeo.com/danossmedia"
+                ><img src="./img/vm_black.png" /></a
+            ></span>
+            <!-- <span id="fb"><img src="./img/fb_black.png" /></span> -->
+          </div>
+        </ul>
+
+        <ul class="list-inline">
+          <!--Third block-->
+          <span id="statement">CREATIVITY TOWARDS YOU</span>
+          <div class="spansection">
+            <span>media</span>
+            <span>about</span>
+            <span>contacts</span>
+            <span>term 2023</span>
+          </div>
+          <div class="logosection">
+            <span id="ig"><img src="./img/ig_hsmall_black.png" /></span>
+            <span id="vimeo"
+              ><a href="https://vimeo.com/danossmedia"
+                ><img src="./img/vm_black.png" /></a
+            ></span>
+            <!-- <span id="fb"><img src="./img/fb_black.png" /></span> -->
+          </div>
+        </ul>
+      </div>
+    </footer>
+    <script>
+      const buttonRight = document.getElementById('rarrow');
+      const buttonLeft = document.getElementById('larrow');
+      //const parent = document.querySelectorAll('.section'); //이게 문제인듯. 세개 다 지정하니까
+      const parent1 = document.querySelector('.section1');
+      const parent2 = document.querySelector('.section2');
+
+      const newLocal1 = parent1.offsetWidth;
+      console.log(parent1);
+      console.log(newLocal1);
+
+      buttonRight.addEventListener('click', function () {
+        parent1.scrollLeft += newLocal1;
+      });
+
+      buttonLeft.addEventListener('click', function () {
+        parent2.scrollLeft -= newLocal1;
+      });
+
+      //https://stackoverflow.com/questions/64502303/javascript-element-scrollleft-cant-handle-decimals
+      //https://stackoverflow.com/questions/56392199/make-a-button-to-scroll-horizontally-in-div
+    </script>
+    <script src="./js/scrolling.js"></script>
+    <script src="./js/mobiledisable.js"></script>
   </body>
 </html>

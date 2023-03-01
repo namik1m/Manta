@@ -1,0 +1,146 @@
+@font-face {
+  font-family: "Open Sauce One Bold";
+  src: url(../fonts/OpenSauceOne-Bold.woff2) format("woff2"),
+    url(../fonts/OpenSauceOne-Bold.woff) format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sauce One Black";
+  src: url(../fonts/OpenSauceOne-Black.woff2) format("woff2"),
+    url(../fonts/OpenSauceOne-Black.woff) format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sauce One Light";
+  src: url(../fonts/OpenSauceOne-Light.woff2) format("woff2"),
+    url(../fonts/OpenSauceOne-Light.woff) format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sauce One LightItalic";
+  src: url(../fonts/OpenSauceOne-LightItalic.woff2) format("woff2"),
+    url(../fonts/OpenSauceOne-LightItalic.woff) format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sauce One Italic";
+  src: url(../fonts/OpenSauceOne-Italic.woff2) format("woff2"),
+    url(../fonts/OpenSauceOne-Italic.woff) format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sauce One MediumItalic";
+  src: url(../fonts/OpenSauceOne-MediumItalic.woff2) format("woff2"),
+    url(../fonts/OpenSauceOne-MediumItalic.woff) format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sauce One SemiBoldItalic";
+  src: url(../fonts/OpenSauceOne-SemiBoldItalic.woff2) format("woff2"),
+    url(../fonts/OpenSauceOne-SemiBoldItalic.woff) format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sauce One Medium";
+  src: url(../fonts/OpenSauceOne-Medium.woff2) format("woff2"),
+    url(../fonts/OpenSauceOne-Medium.woff) format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sauce One BoldItalic";
+  src: url(../fonts/OpenSauceOne-BoldItalic.woff2) format("woff2"),
+    url(../fonts/OpenSauceOne-BoldItalic.woff) format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sauce One ExtraBold";
+  src: url(../fonts/OpenSauceOne-ExtraBold.woff2) format("woff2"),
+    url(../fonts/OpenSauceOne-ExtraBold.woff) format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sauce One Regular";
+  src: url(../fonts/OpenSauceOne-Regular.woff2) format("woff2"),
+    url(../fonts/OpenSauceOne-Regular.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sauce One ExtraBoldItalic";
+  src: url(../fonts/OpenSauceOne-ExtraBoldItalic.woff2) format("woff2"),
+    url(../fonts/OpenSauceOne-ExtraBoldItalic.woff) format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sauce One BlackItalic";
+  src: url(../fonts/OpenSauceOne-BlackItalic.woff2) format("woff2"),
+    url(../fonts/OpenSauceOne-BlackItalic.woff) format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sauce One SemiBold";
+  src: url(../fonts/OpenSauceOne-SemiBold.woff2) format("woff2"),
+    url(../fonts/OpenSauceOne-SemiBold.woff) format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Work Sans Regular";
+  src: url(../fonts/WorkSans-Regular.woff2) format("woff2"),
+    url(../fonts/WorkSans-Regular.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Work Sans Light";
+  src: url(../fonts/WorkSans-Light.woff2) format("woff2"),
+    url(../fonts/WorkSans-Light.woff) format("woff");
+}
+
+@font-face {
+  font-family: "TINY5x3-20";
+  src: url(../fonts/TINY5x3-20.woff2) format("woff2"),
+    url(../fonts/TINY5x3-20.woff) format("woff");
+}

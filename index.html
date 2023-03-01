@@ -5,61 +5,210 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Danoss</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
-    <!-- <script src='main.js'></script> -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./css/main3.css"
+    />
+    <!-- <link
+      rel="stylesheet"
+      media="only screen and (min-device-width : 1190px) and (max-device-width : 1440px)"
+      href="./css/main3_lap.css"
+    /> -->
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./css/fontsheet.css"
+    />
+
+    <link
+      rel="stylesheet"
+      media="only screen and (min-width: 320px) and (max-width: 900px) and (orientation: portrait)"
+      href="./css/in_mob_port.css"
+    />
+    <link
+      rel="stylesheet"
+      media="only screen and (min-width: 320px) and (max-width: 900px) and (orientation: landscape)"
+      href="./css/in_mob_land.css"
+    />
   </head>
+
   <body>
-    <div class="container">
+    <main class="container">
       <header class="header">
-        <div id="menu">
-          <img src="./img/menu2.svg" />
+        <div id="mainlogo">
+          <a href="./index.html"><img src="./img/yellow manta-06.png" /></a>
         </div>
-
-        <div id="hiddenmenu">
-          <span id="close">&times;</span>
-          <div id="list">
-            <h1><a href="./about.html">About</a></h1>
-            <h1><a href="./test.html">Portfolio</a></h1>
-            <h1><a href="./contact.html">Contact</a></h1>
-          </div>
-        </div>
-
-        <div id="logo">
-          <a href="./index.html"><img src="./img/logo_pre_s_w.svg" /></a>
-        </div>
-
-        <div class="social">
-          <span id="insta">Instagram</span><span>Facebook</span>
-        </div>
-
-        <!--<div class="menulines">
-            <div class="line line1"></div>
-          <div class="line line2"></div>
-          <div class="line line3"></div> 
-        </div>-->
       </header>
 
-      <section class="section section1">
-        <div class="work work1">
-          <img src="./img/d2.png" class="inside" />
-        </div>
-      </section>
+      <!--Full sized menu-->
+      <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu" />
+      <label for="openSidebarMenu" class="sidebarIconToggle">
+        <div class="spinner diagonal part-1"></div>
+        <div class="spinner horizontal"></div>
+        <div class="spinner diagonal part-2"></div>
+      </label>
 
-      <section class="section section2">
-        <div class="work work2">
-          <img src="./img/d1.png" class="inside" />
-          <img src="./img/d3.png" class="inside" />
-        </div>
-      </section>
+      <div id="sidebarMenu">
+        <div class="sidebarMenuInner">
+          <div class="logosec">
+            <a href="./index.html"
+              ><img src="./img/Manta Logo 1/Mantalogo.png" id="biglogo"
+            /></a>
+          </div>
 
-      <section class="section section3">
-        <div class="work work3">
-          <img src="./img/d4.png" class="inside" />
+          <ul id="list">
+            <li id="about_typo"><a href="./about.html#about">about</a></li>
+            <li><a href="./media_theater.html">media</a></li>
+            <li id="contact_typo"><a href="./about.html#colla">contact</a></li>
+          </ul>
         </div>
-      </section>
-    </div>
+      </div>
+      <!--Full sized menu End-->
 
-    <script src="./app.js"></script>
+      <section class="section">
+        <iframe
+          src="https://player.vimeo.com/video/803100653?h=baf0524f9a&amp;muted=1&amp;autoplay=1&amp;loop=1&amp;transparent=0&amp;background=1&amp;app_id=122963"
+          width="426"
+          height="240"
+          frameborder="0"
+          allow="autoplay; fullscreen; picture-in-picture"
+          allowfullscreen
+          webkitallowfullscreen
+          mozallowfullscreen
+          title="Teaser of RIDCC TokyoFree at Lat"
+          data-ready="true"
+          class="mainvideo"
+          style="
+            width: 115vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            top: 0;
+            left: 0;
+          "
+        ></iframe>
+      </section>
+    </main>
+    <!--original video:800097283 width 426 height 240/ style width:100% height:100%-->
+
+    <!--Footer-->
+    <footer class="footer">
+      <div class="foo-content">
+        <ul class="list-inline">
+          <!--First block-->
+          <span id="statement">CREATIVITY TOWARDS YOU</span>
+          <div class="spansection">
+            <span>media</span>
+            <span>about</span>
+            <span>contacts</span>
+            <span>term 2023</span>
+          </div>
+          <div class="logosection">
+            <span id="ig"><img src="./img/ig_hsmall_black.png" /></span>
+            <span id="vimeo"
+              ><a href="https://vimeo.com/danossmedia"
+                ><img src="./img/vm_black.png" /></a
+            ></span>
+          </div>
+        </ul>
+
+        <ul class="list-inline">
+          <!--Second block-->
+          <span id="statement">CREATIVITY TOWARDS YOU</span>
+          <div class="spansection">
+            <span>media</span>
+            <span>about</span>
+            <span>contacts</span>
+            <span>term 2023</span>
+          </div>
+          <div class="logosection">
+            <span id="ig"><img src="./img/ig_hsmall_black.png" /></span>
+            <span id="vimeo"
+              ><a href="https://vimeo.com/danossmedia"
+                ><img src="./img/vm_black.png" /></a
+            ></span>
+          </div>
+        </ul>
+
+        <ul class="list-inline">
+          <!--Third block-->
+          <span id="statement">CREATIVITY TOWARDS YOU</span>
+          <div class="spansection">
+            <span>media</span>
+            <span>about</span>
+            <span>contacts</span>
+            <span>term 2023</span>
+          </div>
+          <div class="logosection">
+            <span id="ig"><img src="./img/ig_hsmall_black.png" /></span>
+            <span id="vimeo"
+              ><a href="https://vimeo.com/danossmedia"
+                ><img src="./img/vm_black.png" /></a
+            ></span>
+          </div>
+        </ul>
+
+        <ul class="list-inline">
+          <!--Third block-->
+          <span id="statement">CREATIVITY TOWARDS YOU</span>
+          <div class="spansection">
+            <span>media</span>
+            <span>about</span>
+            <span>contacts</span>
+            <span>term 2023</span>
+          </div>
+          <div class="logosection">
+            <span id="ig"><img src="./img/ig_hsmall_black.png" /></span>
+            <span id="vimeo"
+              ><a href="https://vimeo.com/danossmedia"
+                ><img src="./img/vm_black.png" /></a
+            ></span>
+          </div>
+        </ul>
+
+        <ul class="list-inline">
+          <!--Fourth block-->
+          <span id="statement">CREATIVITY TOWARDS YOU</span>
+          <div class="spansection">
+            <span>media</span>
+            <span>about</span>
+            <span>contacts</span>
+            <span>term 2023</span>
+          </div>
+          <div class="logosection">
+            <span id="ig"><img src="./img/ig_hsmall_black.png" /></span>
+            <span id="vimeo"
+              ><a href="https://vimeo.com/danossmedia"
+                ><img src="./img/vm_black.png" /></a
+            ></span>
+          </div>
+        </ul>
+
+        <ul class="list-inline">
+          <!--Third block-->
+          <span id="statement">CREATIVITY TOWARDS YOU</span>
+          <div class="spansection">
+            <span>media</span>
+            <span>about</span>
+            <span>contacts</span>
+            <span>term 2023</span>
+          </div>
+          <div class="logosection">
+            <span id="ig"><img src="./img/ig_hsmall_black.png" /></span>
+            <span id="vimeo"
+              ><a href="https://vimeo.com/danossmedia"
+                ><img src="./img/vm_black.png" /></a
+            ></span>
+          </div>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="./js/app3.js"></script>
   </body>
 </html>

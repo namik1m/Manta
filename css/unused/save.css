@@ -1,0 +1,853 @@
+/*Body, Header, Footer*/
+
+html,
+body {
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sauce One Light';
+  color: #f1f0f8;
+  overflow-y: hidden;
+  background: linear-gradient(88deg, #194a79, #090d15, #f1f0f8);
+  background-size: 600% 600%;
+  scroll-snap-type: y mandatory;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  overflow-y: hidden;
+}
+
+#mainlogo {
+  position: fixed;
+  top: 0.75rem;
+  left: 50%;
+  width: 5.5%;
+  z-index: 999;
+}
+
+#mainlogo img {
+  width: 100%;
+}
+
+.section {
+  position: relative;
+  width: 100vw;
+  min-width: 100vw;
+  height: 100vh;
+  padding: 0;
+
+  scroll-snap-align: center;
+}
+
+#r-arrow,
+#l-arrow {
+  display: inline-block;
+  position: absolute;
+  bottom: 3rem;
+  width: 1.25%;
+  border: 3px #fff000 solid;
+  border-radius: 50%;
+  padding-left: 0.12%;
+  padding-right: 0.12%;
+  padding-top: 0.15%;
+}
+
+#r-arrow {
+  right: 2.5%;
+}
+
+#l-arrow {
+  left: 2.5%;
+}
+
+#r-arrow img,
+#l-arrow img {
+  width: 100%;
+}
+
+.section1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec-one-wrapper,
+.sec-two-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.sec-one-wrapper {
+  width: 87.5%;
+}
+
+.mani {
+  position: relative;
+  display: inline-block;
+  top: 8rem;
+  margin-left: 3%;
+}
+
+.mani h1,
+#collaborate {
+  line-height: 1;
+  font-family: 'Open Sauce One Bold';
+  font-size: 3.331rem;
+  color: #fff000;
+}
+
+.mani p {
+  font-size: 1rem;
+  line-height: 1.5;
+  width: 59.5%;
+  /* letter-spacing: 0.05rem; */
+}
+
+.btns {
+  position: relative;
+  display: inline-block;
+  top: 1.7rem;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  width: 15%;
+}
+
+.btns button {
+  cursor: pointer;
+  color: white;
+  border: #ffffff solid 1px;
+  background-color: transparent;
+  border-radius: 32px;
+  text-align: center;
+  padding: 2.75% 6%;
+  font-size: 1rem;
+}
+
+.btns button a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#mbtn {
+  margin-bottom: 1rem;
+}
+
+.ppl {
+  position: relative;
+  left: -50%;
+  top: 0;
+  /* background-color: blue; */
+  /* background-image: url('./img/about page Canva graphic.png');
+  background-size: cover; */
+  width: 50%;
+  height: 100%;
+}
+#bcki {
+  position: absolute;
+  z-index: 10;
+  height: 80vh;
+  top: 5rem;
+  left: 10%;
+}
+
+#davids,
+#hyun,
+#eli,
+#nils {
+  position: absolute;
+  z-index: 995;
+  width: 55%;
+}
+
+#davids {
+  top: 8rem;
+  left: 192%;
+}
+.names {
+  position: absolute;
+  z-index: 997;
+  color: white;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.names .big {
+  font-size: 1rem;
+  font-family: 'Open Sauce One SemiBold';
+  line-height: 1;
+  margin-bottom: -4%;
+}
+
+.names .small {
+  font-size: 0.5831rem;
+  font-family: 'Open Sauce One Light';
+  text-align: center;
+}
+
+#danoss {
+  top: 9.2rem;
+  left: 195%;
+  width: 66%;
+  /* background-color: blue; */
+}
+
+#jung {
+  top: 14rem;
+  left: 300%;
+  width: 66%;
+  /* background-color: blue; */
+}
+#gunars {
+  top: 31rem;
+  left: 395%;
+  width: 66%;
+  /* background-color: blue; */
+}
+#sada {
+  top: 37rem;
+  left: 175%;
+  width: 120%;
+  /* background-color: blue; */
+}
+#elilabel {
+  text-align: left;
+  padding-left: 7%;
+}
+#davidslabel {
+  margin-left: -20%;
+}
+#nilsur {
+  padding-left: 10%;
+}
+
+#hyun {
+  top: 13rem;
+  left: 300%;
+}
+
+#eli {
+  top: 36rem;
+  left: 195%;
+}
+
+#nils {
+  top: 30rem;
+  left: 400%;
+}
+
+.sec-two-wrapper {
+  position: absolute;
+  left: 0%;
+  top: 0;
+  width: 85%;
+  height: 100%;
+}
+
+.sec-two-wrapper:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  /* display: inline-block; */
+  left: 52.5%;
+  top: 0;
+  /* width: 97.5%; */
+  width: 108%;
+  height: 100%;
+  opacity: 0.6;
+  background-image: url('../img/3-min.png');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+
+#m2btn {
+  position: relative;
+  left: 0%;
+  top: 45%;
+  cursor: pointer;
+  color: white;
+  border: #ffffff solid 1px;
+  background-color: transparent;
+  border-radius: 32px;
+  text-align: center;
+  padding: 2.75% 6%;
+  font-size: 1rem;
+}
+
+#m2btn a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.promote {
+  position: relative;
+  left: 12%;
+  top: -2.8rem;
+  width: 40%;
+  display: block;
+  margin-top: 0;
+}
+
+#video,
+#photo,
+#ani,
+#sound {
+  top: 10.5rem;
+  left: 2%;
+  text-align: left;
+  width: 58%;
+  color: #fff000;
+  /* background-color: orange; */
+}
+
+#theater,
+#event,
+#comm {
+  left: 19%;
+  top: -6.15rem;
+  text-align: right;
+  /* background-color: orange; */
+}
+
+.promote p {
+  font-family: 'Open Sauce One Bold';
+  font-size: 3.331rem;
+  color: #ffffff;
+  line-height: 2.21rem;
+  cursor: pointer;
+  position: relative;
+  /* display: inline-block; */
+  /* left: -20%; */
+  top: 0rem;
+}
+
+.promote p a {
+  color: #f1f0f8;
+  text-decoration: none;
+}
+
+#video:hover:after {
+  content: 'filming/ editing/ live-streaming/ drone';
+  position: relative;
+  margin-bottom: 0;
+  top: 1.55rem;
+  left: 1%;
+  color: white;
+  font-size: 1.3331rem;
+  font-family: 'Open Sauce One Regular';
+  line-height: 0;
+  /* line-height: 150%; */
+
+  width: 200%;
+  display: block;
+}
+
+#event:hover:after {
+  content: 'teaser/ trailer/ mood/ interview';
+  position: relative;
+  left: 3%;
+  color: white;
+  font-size: 0.85rem;
+  /* line-height: 150%; */
+  letter-spacing: 0.05rem;
+  width: 200%;
+}
+
+p a {
+  color: #fff000;
+  text-decoration: none;
+}
+
+.section3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: 100%;
+}
+
+.sec-three-wrapper {
+  width: 85%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  text-align: center;
+}
+
+#collaborate {
+  position: relative;
+  top: 4rem;
+}
+
+.contact {
+  position: relative;
+  top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+form {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 55%;
+  background-color: transparent;
+  padding: 1% 0.5%;
+  border-radius: 16px;
+}
+
+.detail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+}
+
+#name,
+#phone,
+#email {
+  width: 30%;
+
+  margin-bottom: 1.4rem;
+  /* background-color: #203c99; */
+}
+input {
+  width: 85%;
+  /* padding: 3%; */
+  padding: 2.75% 0;
+  margin-bottom: 2%;
+  border: #fff000 2px solid;
+  border-radius: 48px;
+  background-color: transparent;
+}
+
+#note {
+  width: 100%;
+  height: 9.4rem;
+  border-width: 8px;
+  border-radius: 96px;
+  margin-bottom: 1.6rem;
+}
+
+input::placeholder {
+  color: white;
+  font-size: 0.925rem;
+  text-align: center;
+}
+
+.formbtm {
+  position: relative;
+  left: 19%;
+  display: block;
+}
+
+.formbtm p {
+  font-size: 0.5831rem;
+  line-height: 0.5;
+
+  width: 100%;
+  text-align: right;
+}
+
+#submitbtn {
+  background-color: transparent;
+  border-radius: 48px;
+  border: #fff000 2px solid;
+  padding: 1.75% 4%;
+  width: 25%;
+
+  color: #fff000;
+  font-family: 'Open Sauce One Light';
+  font-size: 1rem;
+}
+
+.info {
+  position: absolute;
+  top: 15.5rem;
+  right: 3%;
+  width: 15%;
+  font-size: 1rem;
+  line-height: 3rem;
+  color: white;
+  text-align: left;
+  font-family: 'Open Sauce One Light';
+}
+
+.cont-logo {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#soc1,
+#soc2,
+#soc3 {
+  margin-right: 14%;
+}
+
+.cont-logo img {
+  width: 10%;
+}
+
+#email {
+  color: white;
+}
+#email a {
+  color: white;
+}
+
+.clients {
+  position: absolute;
+  bottom: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.moreclients {
+  position: absolute;
+  width: 100%;
+  height: 1rem;
+  bottom: 7rem;
+  left: 0;
+  /* background-color: blue; */
+  display: flex;
+  justify-content: space-between;
+}
+#with,
+#andmore {
+  font-size: 1rem;
+  font-family: 'Open Sauce One Light';
+  color: white;
+}
+
+#andmore {
+  margin-top: 4rem;
+  /* margin-left: 2%; */
+}
+
+#with a,
+#andmore a {
+  color: white;
+  text-decoration: none;
+}
+
+.logo-con2 img {
+  position: relative;
+  width: 5%;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.logo-con img {
+  position: relative;
+  width: 25%;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+#tr {
+}
+
+#grande {
+  width: 45%;
+  top: -50%;
+}
+
+#wdka {
+  width: 48%;
+}
+
+#worm {
+  width: 50%;
+  top: -10%;
+}
+
+#wb {
+  width: 50%;
+}
+
+#tecart {
+  top: 0%;
+}
+
+#v2 {
+  width: 50%;
+}
+
+#rood {
+  width: 50%;
+  top: -10%;
+}
+
+/*Header*/
+.header {
+  position: absolute;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#menu {
+  position: absolute;
+  /* display: block; */
+  visibility: visible;
+  left: 1.5%;
+  top: 49%;
+  z-index: 999;
+  width: 1.5%;
+}
+
+/* #menu img:hover {
+  
+} */
+
+#hiddenmenu {
+  position: relative;
+  top: 0;
+  left: 0;
+  /* display: none; */
+  visibility: hidden;
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+
+  transition: width 0.5s ease-in-out;
+  -webkit-transition: width 0.5s ease-in-out;
+  -moz-transition: width 0.5s ease-in-out;
+  -o-transition: width 0.5s ease-in-out;
+  /* transition: all 0.5s ease-in; */
+}
+
+#close {
+  position: absolute;
+  left: 1.45%;
+  top: 47.5%;
+  /* display: block; */
+  visibility: hidden;
+  text-align: center;
+  color: #f1f0f8;
+  font-size: 54px;
+  font-weight: normal;
+}
+
+#close:hover,
+#close:focus,
+#menu img:hover,
+#menu img:focus {
+  color: #ffff00;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.logosec {
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  height: auto;
+  text-align: center;
+  top: 27.5%;
+}
+
+#biglogo {
+  width: 100%;
+}
+
+#list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 13%;
+  width: 70%;
+  margin: 0 auto;
+  /*margin-top can also work, but what would be the differences?*/
+}
+
+#hiddenmenu h1 {
+  font-family: 'Open Sauce One Light';
+  font-size: 3.2rem;
+  line-height: 0;
+  color: white;
+  cursor: pointer;
+  opacity: 1;
+}
+
+#hiddenmenu h1 a:hover,
+#hiddenmenu h1 a:focus {
+  cursor: pointer;
+  /* color: rgb(146, 145, 145); */
+  color: #ffff00;
+}
+
+#hiddenmenu h1 a {
+  text-decoration: none;
+  color: #f1f0f8;
+}
+
+#about_typo {
+  position: relative;
+  margin-left: 9%;
+}
+
+/*Footer*/
+.footer {
+  position: absolute;
+  /* bottom: -4%; */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2.5rem;
+  z-index: 998;
+  color: black;
+  background-color: #ffff00;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.foo-content {
+  width: 300%;
+  height: 2.5rem;
+  display: flex;
+  line-height: 30px;
+  animation: marquee 13s linear infinite forwards;
+}
+
+.foo-content:hover {
+  animation-play-state: paused;
+}
+
+.footer::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+  top: 0rem;
+  width: 100%;
+  height: 2.5rem;
+  background-image: url('../img/Manta Logo 1/Mantalogo_footer.png');
+  background-size: 10%;
+  background-repeat: repeat-x;
+}
+
+#logo,
+.social {
+  cursor: pointer;
+}
+
+#logo {
+  /* display: flex;
+  align-items: center; */
+  width: 4%;
+}
+
+#logo img {
+  width: 100%;
+  /* background-color: saddlebrown; */
+}
+
+#logo a,
+.collaborate a,
+.social a {
+  color: black;
+  text-decoration: none;
+}
+
+.social {
+  width: 8%;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 0.35%;
+  /* background-color: skyblue; */
+}
+.logosection {
+  /* background-color: blue; */
+  width: 9%;
+  display: flex;
+  justify-content: space-between;
+}
+#ig img {
+  width: 70%;
+  margin-top: 3px;
+}
+
+#vimeo img {
+  width: 70%;
+  margin-top: 3px;
+}
+
+#term {
+  font-size: 0.6rem;
+  margin-top: 2.5%;
+  width: 100%;
+}
+
+.list-inline {
+  display: flex;
+  justify-content: space-around;
+  width: 20%;
+  /* reset list */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#statement {
+  font-family: 'Open Sauce One SemiBold';
+  font-size: 14.6px;
+  line-height: 1;
+  margin-top: 12px;
+}
+.spansection {
+  width: 30%;
+  /* background-color: blue; */
+  display: flex;
+  justify-content: space-between;
+}
+.list-inline span {
+  font-family: 'Open Sauce One Light';
+  font-size: 12px;
+  margin-top: 6px;
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-66.6%);
+  }
+}

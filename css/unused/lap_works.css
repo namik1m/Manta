@@ -1,0 +1,455 @@
+@media only screen and (min-device-width: 1190px) and (max-device-width: 1440px) {
+  /*Header*/
+  #menu {
+    left: 1.5%;
+    top: 49%;
+    width: 1.5%;
+  }
+
+  #close {
+    position: absolute;
+    left: 1.5%;
+    top: 48%;
+    display: block;
+    font-size: 32px;
+  }
+
+  #close:hover,
+  #close:focus,
+  #menu img:hover,
+  #menu img:focus {
+    color: rgb(233, 222, 66);
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .logosec {
+    width: 70%;
+    top: 25.5%;
+  }
+
+  #biglogo {
+    width: 100%;
+  }
+
+  #list {
+    padding-top: 15.5%;
+    width: 69.5%;
+  }
+
+  #hiddenmenu h1 {
+    font-size: 2.4rem;
+    color: #f1f0f8;
+    cursor: pointer;
+    opacity: 1;
+    margin-top: -0.4rem;
+  }
+
+  #hiddenmenu h1 a:hover,
+  #hiddenmenu h1 a:focus {
+    cursor: pointer;
+    /* color: rgb(146, 145, 145); */
+    color: rgb(233, 222, 66);
+  }
+
+  #hiddenmenu h1 a {
+    text-decoration: none;
+    color: #f1f0f8;
+  }
+
+  #about_typo {
+    left: 56px;
+  }
+
+  .footer {
+    bottom: 0;
+    height: 2rem;
+    /* background-color: navy; */
+  }
+
+  #logo {
+    display: flex;
+    align-items: center;
+    width: 4.5%;
+    margin-left: 1%;
+  }
+
+  #logo img {
+    width: 100%;
+    /* background-color: saddlebrown; */
+  }
+
+  .social {
+    width: 10%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 0.35%;
+    /* background-color: skyblue; */
+  }
+
+  #ig img {
+    width: 48%;
+  }
+
+  #vimeo img {
+    width: 48%;
+  }
+
+  #term {
+    font-size: 0.5rem;
+    margin-top: 2.5%;
+    width: 100%;
+  }
+
+  /*old footer*/
+  /*
+.footer {
+  height: 3rem;
+}
+
+#logo {
+  display: block;
+  margin-top: -2.35%;
+  margin-left: 1.5%;
+  width: 2.8%;
+}
+
+#logo img {
+  width: 100%;
+}
+
+#logo a,
+.collaborate a,
+.social a {
+  text-decoration: none;
+}
+
+.social {
+  padding-left: 87.5%;
+  width: 15%; 
+  margin-top: -1.75%;
+}
+
+#ig img {
+  width: 50%;
+  margin-left: 15%;
+}
+
+#vimeo img {
+  width: 50%;
+}
+
+#term {
+  font-size: 0.6rem;
+  width: 100%;
+  margin-top: 2.5%;
+}
+*/
+
+  .videos {
+    margin: 0 auto;
+    /* max-width: 85%; */
+    width: 85%;
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: navy; */
+  }
+  /* Hide scrollbar for Chrome, Safari and Opera, but still be able to keep scrolling */
+  .videos::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox, but still be able to keep scrolling */
+  .videos {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .inside {
+    /* margin-right: 5%; */
+    cursor: pointer;
+  }
+  .inside img {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+  }
+
+  .inside:hover,
+  .inside:focus {
+    opacity: 0.2;
+    filter: brightness(60%);
+    /*A value under 100% darkens the image, while a value over 100% brightens it.*/
+  }
+
+  .inside:hover::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: 'Video title (2022)';
+    /* width: 100%;
+  height: 100%; */
+    font-family: 'Open Sauce One Light';
+    font-size: 2rem;
+    line-height: 1.2;
+    color: #ffff00;
+  }
+
+  #d1 {
+    margin-left: -15%;
+    margin-top: -4%;
+  }
+
+  #d1 img {
+    transform: scale(0.45);
+  }
+
+  #d2 {
+    margin-top: 28%;
+    margin-left: -24%;
+  }
+  #d2 img {
+    transform: scale(0.6);
+  }
+  #d3 img {
+    transform: scale(0.45);
+  }
+  #d4 img {
+    transform: scale(0.7);
+  }
+  #d5 img {
+    transform: scale(0.7);
+  }
+  #d6 img {
+    transform: scale(0.5);
+  }
+  #d7 img {
+    transform: scale(0.75);
+  }
+  #d8 img {
+    transform: scale(1.1);
+  }
+  #d9 img {
+    transform: scale(0.6);
+  }
+  #d10 img {
+    transform: scale(0.8);
+  }
+
+  #d3 {
+    margin-top: -15%;
+    margin-left: -47.5%;
+  }
+
+  #d4 {
+    margin-top: 14%;
+    margin-left: -22%;
+  }
+
+  #d5 {
+    margin-top: -16%;
+    margin-left: -12%;
+  }
+
+  #d6 {
+    margin-top: 30%;
+    margin-left: -42.5%;
+  }
+
+  #d7 {
+    margin-top: -5%;
+    margin-left: -18%;
+  }
+
+  #d8 {
+    margin-top: 15%;
+    margin-left: 2.5%;
+  }
+
+  #d9 {
+    margin-top: -20%;
+    margin-left: -11.5%;
+  }
+
+  #d1 {
+    margin-top: 5%;
+    margin-left: -10.5%;
+  }
+
+  #d1,
+  #d6 {
+    /* width: 41.5%; */
+    /*So weird, i don't know why the width here is not applied. I had to use scale trick but i will study this week*/
+  }
+
+  #d2,
+  #d7 {
+    /* width: 50%; */
+  }
+
+  #d3,
+  #d8 {
+    /* width: 45%; */
+  }
+
+  #d4,
+  #d9 {
+    /* width: 60%; */
+  }
+
+  #d5,
+  #d10 {
+    /* width: 35%; */
+  }
+
+  [data-scroll-dir-x='1'] .inside {
+    /* opacity: 0.4; */
+    opacity: calc(var(--visible-x) * var(--visible-x));
+    transform: scale(calc(0.5 + calc(var(--visible-x) * 0.5)));
+  }
+  /*next아이들이 순차적으로 효과*/
+
+  [data-scroll-dir-x='-1'] .inside {
+    opacity: calc(var(--visible-x) * var(--visible-x));
+    transform: scale(calc(0.5 + calc(var(--visible-x) * 0.5)));
+  }
+
+  [data-scroll-dir-x='1'] .special {
+    /* opacity: 0.4; */
+    opacity: calc(var(--visible-x) * var(--visible-x));
+    transform: scale(calc(0.5 + calc(var(--visible-x) * 0.5))) translateY(140px);
+  }
+
+  #d1,
+  #d4,
+  #d7 {
+    animation: floaty1 5.75s infinite;
+    -webkit-animation: floaty1 5.75s infinite;
+  }
+
+  #d2,
+  #d6 {
+    animation: floaty2 6.75s infinite;
+    -webkit-animation: floaty2 6.75s infinite;
+  }
+
+  #d3,
+  #d5,
+  #d9 {
+    animation: floaty3 6s infinite;
+    -webkit-animation: floaty3 6s infinite;
+  }
+
+  #d8 {
+    animation: floaty4 6.5s infinite;
+    -webkit-animation: floaty4 6.5s infinite;
+  }
+
+  @keyframes floaty1 {
+    0% {
+      transform: translateY(15px);
+    }
+    20% {
+      transform: translateX(10px);
+    }
+    40% {
+      transform: translateY(10px);
+    }
+    60% {
+      transform: translateX(5px);
+    }
+    80% {
+      transform: translateY(5px);
+    }
+    100% {
+      transform: translateX(15px);
+    }
+  }
+
+  @keyframes floaty2 {
+    0% {
+      transform: translateX(10px);
+    }
+    20% {
+      transform: translateY(5px);
+    }
+    40% {
+      transform: translateX(5px);
+    }
+    60% {
+      transform: translateY(10px);
+    }
+    80% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateY(5px);
+    }
+  }
+
+  @keyframes floaty3 {
+    0% {
+      transform: translateX(5px);
+    }
+    20% {
+      transform: translateY(5px);
+    }
+    40% {
+      transform: translateX(2px);
+    }
+    60% {
+      transform: translateY(7px);
+    }
+    80% {
+      transform: translateX(4px);
+    }
+    100% {
+      transform: translateY(2px);
+    }
+  }
+
+  @keyframes floaty4 {
+    0% {
+      transform: translateY(3px);
+    }
+    20% {
+      transform: translateX(5px);
+    }
+    40% {
+      transform: translateY(2px);
+    }
+    60% {
+      transform: translateX(4px);
+    }
+    80% {
+      transform: translateY(7px);
+    }
+    100% {
+      transform: translateX(2px);
+    }
+  }
+
+  /* .modal {
+  position: absolute;
+  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 999;
+}
+
+.filmpop {
+  width: 90%;
+  height: 100%;
+} */
+}
