@@ -33,11 +33,11 @@ I wrote some inefficient script codes inside of the HTML.
 -> 혹은 preventDefault(); / passive:false 의 사용같은것과 연관이 되는것인지..
 
 2. about.html 페이지에 position:fixed인 연두색 화살표 아이템들이 있습니다. 이 about.html는 전체 컨테이너 가로사이즈가 굉장히 긴 horizontally-scrolling page입니다.
-  <main class="container">
-     <section class="section section1">
-     <section class="section section2">
-     <section class="section section3">       
-  </main>
+<main class="container">
+   <section class="section section1">
+   <section class="section section2">
+   <section class="section section3">       
+</main>
 이런식의구조이고 container의 width는 100%이고, section의 width는 100vw입니다. 이것은 옳은것같아요.
 제가 구현하고싶은 기능은: 이 연두색 오른쪽 화살표를 누를때마다 section1 -> section2, section2 -> section3 
 마찬가지로 왼쪽 화살표 클릭시 section3 -> section2, section2 -> section1
