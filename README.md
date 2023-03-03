@@ -13,10 +13,10 @@ Missions that I want to resolve:
 2. There are two arrow buttons (position:fixed) in about.html. The page is wide, horizontally scrollable. 
 HTML structure:\
   main class="container"\
-     section class="section section1"\
-     section class="section section2"\
-     section class="section section3" \     
-  /main\  
+     >>section class="section section1"\
+     >>section class="section section2"\
+     >>section class="section section3"\     
+  /main  
 container has width 100% and section has 100vw of width.  
 The idea is that clicking right arrow, you move from sec1->sec2, sec2->sec3. Clicking a left arrow, move from sec3->sec2, sec2->sec1.
 I'd like to learn how to make an efficient logic in JS. Calculating 1++ / 1-- ....
