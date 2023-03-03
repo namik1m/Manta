@@ -11,12 +11,12 @@ Missions that I want to resolve:
 // A few assumptions/ideas: I think mixing scroll and wheel is not a good idea. At the moment, I've used a CSS trick to set margin-bottom:2px on the height of container(<main>) to make it scrollable in JS, but it should be possible to succeed the scrolling/wheeling without making this extra space in the bottom. Maybe setting full 100vh or 100% on the container, and using solely 'wheel' could work? Wanna research.
     
 2. There are two arrow buttons (position:fixed) in about.html. The page is wide, horizontally scrollable. 
-HTML structure:
-  main class="container"
-     section class="section section1"
-     section class="section section2"
-     section class="section section3"      
-  /main  
+HTML structure:\
+  main class="container"\
+     section class="section section1"\
+     section class="section section2"\
+     section class="section section3" \     
+  /main\  
 container has width 100% and section has 100vw of width.  
 The idea is that clicking right arrow, you move from sec1->sec2, sec2->sec3. Clicking a left arrow, move from sec3->sec2, sec2->sec1.
 I'd like to learn how to make an efficient logic in JS. Calculating 1++ / 1-- ....
