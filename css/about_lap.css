@@ -168,8 +168,6 @@ justify-content: space-between;
 
   .btns button {
     cursor: pointer;
-    color: #ffff00;
-    border: #ffff00 solid 1px;
     background-color: transparent;
     border-radius: 32px;
     text-align: center;
@@ -180,7 +178,6 @@ justify-content: space-between;
 
   .btns button a {
     text-decoration: none;
-    color: #ffff00;
   }
 
   /* #mbtn {
@@ -250,8 +247,6 @@ height: 100%;
     left: 0%;
     top: 45%;
     cursor: pointer;
-    color: #ffff00;
-    border: #ffff00 solid 1px;
     background-color: transparent;
     border-radius: 32px;
     text-align: center;
@@ -261,7 +256,6 @@ height: 100%;
 
   #m2btn a {
     text-decoration: none;
-    color: #ffff00;
   }
 
   .promote {
@@ -350,7 +344,6 @@ height: 100%;
     margin-bottom: 0;
     top: 1.9rem; /*percentage doesn't work*/
     left: 1%;
-    color: #ffff00;
     font-size: 1.2rem;
     font-family: 'Platform-Light';
     line-height: 0;
@@ -360,7 +353,6 @@ height: 100%;
   }
 
   p a {
-    color: #ffff00;
     text-decoration: none;
   }
 
@@ -442,7 +434,6 @@ height: 100%;
     width: 85%;
     padding: 2% 0;
     margin-bottom: 1rem;
-    border: #ffff00 1px solid;
     border-radius: 48px;
     background-color: transparent;
   }
@@ -500,15 +491,10 @@ height: 100%;
     font-size: 0.9rem;
     width: 15%;
     line-height: 0.5;
-    color: #ffff00;
     text-align: left;
     font-family: 'Platform-Light';
     /* font-family: 'Open Sauce One Light'; */
     letter-spacing: 0.117rem;
-  }
-
-  .info a {
-    color: #ffff00;
   }
 
   .clients {
@@ -643,12 +629,6 @@ height: 100%;
     opacity: 1;
   }
 
-  #list li a:hover,
-  #list li a:focus {
-    cursor: pointer;
-    color: #ffff00;
-  }
-
   #list li a {
     text-decoration: none;
     color: #f1f0f8;
@@ -691,12 +671,6 @@ height: 100%;
     background-color: #fff;
   }
 
-  .spinner:hover,
-  .spiner:focus {
-    cursor: pointer;
-    color: #ffff00;
-  }
-
   .horizontal {
     transition: all 0.3s;
     box-sizing: border-box;
@@ -704,6 +678,7 @@ height: 100%;
     float: left;
     margin-top: 3px;
   }
+
   .diagonal.part-1 {
     position: relative;
     transition: all 0.3s;
@@ -732,7 +707,8 @@ height: 100%;
     transition: all 0.3s;
     box-sizing: border-box;
     transform: rotate(-135deg);
-    margin-top: -9px;
+    margin-top:-14px;
+    /* margin-top: -9px; */
   }
 
   /*Footer*/
@@ -742,10 +718,9 @@ height: 100%;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 2.5rem;
+    height: 2rem;
     z-index: 998;
     color: black;
-    background-color: #ffff00;
     white-space: nowrap;
     overflow: hidden;
     box-sizing: border-box;
@@ -753,7 +728,7 @@ height: 100%;
 
   .foo-content {
     width: 300%;
-    height: 2.5rem;
+    height: 2rem;
     display: flex;
     line-height: 30px;
     animation: marquee 13s linear infinite forwards;
@@ -771,8 +746,8 @@ height: 100%;
     left: 0;
     top: 0rem;
     width: 100%;
-    height: 2.5rem;
-    background-image: url('../img/Manta Logo 1/Mantalogo_footer_yellow.png');
+    height:100%;
+    /* height: 2.5rem; */
     background-size: 10%;
     background-repeat: repeat-x;
   }
@@ -786,12 +761,12 @@ height: 100%;
 
   #ig img {
     width: 70%;
-    margin-top: 3px;
+    margin-top: -2px;
   }
 
   #vimeo img {
     width: 70%;
-    margin-top: 3px;
+    margin-top: -2px;
   }
 
   #fb img {
@@ -818,14 +793,15 @@ height: 100%;
     font-family: 'Platform-Medium';
     font-size: 1.25rem;
     line-height: 1;
-    margin-top: 12px;
+    margin-top: 6px;
   }
-  .spansection {
+
+  /* .spansection {
     width: 30%;
-    /* background-color: blue; */
     display: flex;
     justify-content: space-between;
-  }
+  } */
+
   .list-inline span {
     font-family: 'Platform-Light';
     font-size: 1rem;

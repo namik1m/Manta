@@ -193,8 +193,8 @@ body {
 
 .btns button {
   cursor: pointer;
-  color: #ffff00;
-  border: #ffff00 solid 1px;
+  color: #32ff32;
+  border: #32ff32 solid 1px;
   background-color: transparent;
   border-radius: 32px;
   text-align: center;
@@ -205,7 +205,7 @@ body {
 
 .btns button a {
   text-decoration: none;
-  color: #ffff00;
+  color: #32ff32;
 }
 
 /* #mbtn {
@@ -274,8 +274,8 @@ height: 100%;
   left: 0%;
   top: 45%;
   cursor: pointer;
-  color: #ffff00;
-  border: #ffff00 solid 1px;
+  color: #32ff32;
+  border: #32ff32 solid 1px;
   background-color: transparent;
   border-radius: 32px;
   text-align: center;
@@ -285,7 +285,7 @@ height: 100%;
 
 #m2btn a {
   text-decoration: none;
-  color: #ffff00;
+  color: #32ff32;
 }
 
 .mani2 p {
@@ -378,7 +378,7 @@ height: 100%;
   margin-bottom: 0;
   top: 2.5rem; /*percentage doesn't work*/
   left: 1%;
-  color: #ffff00;
+  color: #32ff32;
   font-size: 1.4rem;
   font-family: 'Platform-Light';
   line-height: 0;
@@ -388,7 +388,7 @@ height: 100%;
 }
 
 p a {
-  color: #ffff00;
+  color: #32ff32;
   text-decoration: none;
 }
 
@@ -470,7 +470,7 @@ input {
   width: 85%;
   padding: 2% 0;
   margin-bottom: 1rem;
-  border: #ffff00 1px solid;
+  border: #32ff32 1px solid;
   border-radius: 48px;
   background-color: transparent;
 }
@@ -514,7 +514,7 @@ input::placeholder {
   padding: 2% 0;
   width: 30%;
   margin: 0 auto;
-  color: #ffff00;
+  color:#32ff32;
   font-family: 'Platform-Light';
   font-size: 1.1rem;
   line-height: 1;
@@ -534,14 +534,14 @@ input::placeholder {
   font-size: 1.1em;
   width: 15%;
   line-height: 0.5;
-  color: #ffff00;
+  color: #32ff32;
   text-align: left;
   font-family: 'Platform-Light';
   letter-spacing: 0.117rem;
 }
 
 .info a {
-  color: #ffff00;
+  color:#32ff32;
 }
 
 .clients {
@@ -679,7 +679,7 @@ input::placeholder {
 #list li a:hover,
 #list li a:focus {
   cursor: pointer;
-  color: #ffff00;
+  color: #32ff32;
 }
 
 #list li a {
@@ -724,11 +724,12 @@ input[type='checkbox'] {
   background-color: #fff;
 }
 
-.spinner:hover,
+/* .spinner:hover,
 .spiner:focus {
   cursor: pointer;
-  color: #ffff00;
-}
+  color: #32ff32;
+}  */
+/*this doesn't work*/
 
 .horizontal {
   transition: all 0.3s;
@@ -737,6 +738,17 @@ input[type='checkbox'] {
   float: left;
   margin-top: 3px;
 }
+
+label:hover, label:focus{
+  color: #32ff32;
+}
+
+input[type='checkbox']+ label:hover,
+input[type='checkbox']+ label:focus  {
+  cursor: pointer;
+  color: #32ff32;
+}
+
 .diagonal.part-1 {
   position: relative;
   transition: all 0.3s;
@@ -765,7 +777,8 @@ input[type='checkbox']:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   transition: all 0.3s;
   box-sizing: border-box;
   transform: rotate(-135deg);
-  margin-top: -9px;
+  margin-top:-14px;
+  /* margin-top: -9px; */
 }
 
 /*Footer*/
@@ -778,7 +791,7 @@ input[type='checkbox']:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   height: 2.5rem;
   z-index: 998;
   color: black;
-  background-color: #ffff00;
+  background-color: #32ff32;
   white-space: nowrap;
   overflow: hidden;
   box-sizing: border-box;
@@ -804,8 +817,9 @@ input[type='checkbox']:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   left: 0;
   top: 0rem;
   width: 100%;
-  height: 2.5rem;
-  background-image: url('../img/Manta Logo 1/Mantalogo_footer_yellow.png');
+  height:100%;
+  /* height: 2.5rem; */
+  background-image: url('../img/Manta Logo 1/02_footerinside_00cc00.png');
   background-size: 10%;
   background-repeat: repeat-x;
 }
@@ -853,12 +867,13 @@ input[type='checkbox']:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   line-height: 1;
   margin-top: 12px;
 }
-.spansection {
+
+/* .spansection {
   width: 30%;
-  /* background-color: blue; */
   display: flex;
   justify-content: space-between;
-}
+} */
+
 .list-inline span {
   font-family: 'Platform-Light';
   font-size: 1rem;

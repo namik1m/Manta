@@ -42,16 +42,32 @@ body {
 
 .cate {
   position: absolute;
-  top: 3.25rem;
+  top: 1.5%;
   left: 0;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   background-color: transparent;
+  /* background-color: blue; */
 }
 
-.cate li {
+.catepart{
+display: flex;
+justify-content: space-around;
+width:40%;
+/* background-color: yellow; */
+}
+
+.catepart1{
+ margin-left:-6%;  
+}
+
+.catepart2{
+  margin-left:12%;  
+ }
+
+.catepart li {
   list-style: none;
   color: #f1f0f8;
   font-size: 1rem;
@@ -59,12 +75,12 @@ body {
 }
 
 #theater{
-  color:#b3ff00;
+  color:#32ff32;
   /* color:#ffff00; */
 }
 
 #theater a{
-  color:#b3ff00;
+  color: #32ff32;
     /* color:#ffff00; */
     text-decoration: none;
   }
@@ -169,7 +185,7 @@ top: 2%;
 }
 
 .closebtn:hover{
-  color: #ffff00;
+  color: #32ff32;
   text-decoration: none;
   cursor: pointer;
 }
@@ -302,7 +318,7 @@ top: 2%;
   font-family: 'Open Sauce One Light';
   font-size: 1.65rem;
   line-height: 1.4;
-  color: #ffff00;
+  color: #32ff32;
   white-space: pre; /* or pre-wrap. This enables line-break of the text content along with \A */
   text-align: center;
 }
@@ -703,7 +719,7 @@ top: 20%;
 
 #mainlogo {
   position: fixed;
-  top: 0.75rem;
+  top: 2.5%;
   width: 5.5%;
   z-index: 997;
   margin: 0 auto;
@@ -780,7 +796,7 @@ top: 20%;
 #list li a:hover,
 #list li a:focus {
   cursor: pointer;
-  color: #ffff00;
+  color: #32ff32;
 }
 
 #list li a {
@@ -819,16 +835,17 @@ input[type='checkbox'] {
   transition: all 0.3s;
   box-sizing: border-box;
   position: absolute;
-  height: 3px;
-  width: 100%;
+  height: 2px;
+  width: 130%;
+  margin-bottom: 4px;
   background-color: #fff;
 }
 
-.spinner:hover,
+/* .spinner:hover,
 .spiner:focus {
   cursor: pointer;
-  color: #ffff00;
-}
+  color: #32ff32;
+} */
 
 .horizontal {
   transition: all 0.3s;
@@ -866,7 +883,7 @@ input[type='checkbox']:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   transition: all 0.3s;
   box-sizing: border-box;
   transform: rotate(-135deg);
-  margin-top: -9px;
+  margin-top: -14px;
 }
 
 /*Footer*/
@@ -879,8 +896,7 @@ input[type='checkbox']:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   height: 2.5rem;
   z-index: 998;
   color: black;
-  /* background-color: #ffff00; */
-  background-color: #aaff00;
+  background-color: #32ff32;;
   white-space: nowrap;
   overflow: hidden;
   box-sizing: border-box;
@@ -906,8 +922,8 @@ input[type='checkbox']:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   left: 0;
   top: 0rem;
   width: 100%;
-  height: 2.5rem;
-  background-image: url('../img/Manta Logo 1/Mantalogo_footer_green_5ff08c.png');
+  height: 100%;
+  background-image: url('../img/Manta Logo 1/02_footerinside_00cc00.png');
   background-size: 10%;
   background-repeat: repeat-x;
 }
@@ -950,12 +966,13 @@ input[type='checkbox']:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   line-height: 1;
   margin-top: 12px;
 }
-.spansection {
+
+/* .spansection {
   width: 30%;
-  /* background-color: blue; */
   display: flex;
   justify-content: space-between;
-}
+} */
+
 .list-inline span {
   font-family: 'Platform-Light';
   font-size: 1rem;
@@ -968,4 +985,72 @@ input[type='checkbox']:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   100% {
     transform: translateX(-66.6%);
   }
+}
+
+
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
+
+  #mainlogo {
+    top: 3%;
+    width: 5.5%;
+  }
+
+  .cate {
+    top: 1.5%;
+    width: 100%;
+  }
+  
+  .catepart{
+  width:40%;
+  /* background-color: yellow; */
+  }
+  
+  .catepart1{
+   margin-left:-6%;  
+  }
+  
+  .catepart2{
+    margin-left:12%;  
+   }
+
+  /*Footer*/
+  .footer {
+    height: 2rem;
+  }
+
+  .foo-content{
+    height:2rem;
+  }
+
+  #ig img {
+    width: 70%;
+    margin-top: -2px;
+  }
+
+  #vimeo img {
+    width: 70%;
+    margin-top: -2px;
+  }
+
+  #fb img {
+    width: 70%;
+    margin-top: 3px;
+  }
+
+  #term {
+    font-size: 0.6rem;
+    margin-top: 2.5%;
+    width: 100%;
+  }
+
+  .list-inline {
+    width: 20%;
+  }
+
+  #statement {
+    font-size: 1.25rem;
+    line-height: 1;
+    margin-top: 6px;
+  }
+
 }
