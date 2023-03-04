@@ -123,7 +123,7 @@
         </div> -->
       </section>
 
-      <section class="section section2" id="clientlist">
+      <section class="section section2" id="whatwedo">
         <article class="sec-two-wrapper">
           <div class="mani2">
             <h1>WHAT WE DO</h1>
@@ -405,23 +405,55 @@
     <script>
       const buttonRight = document.getElementById('rarrow');
       const buttonLeft = document.getElementById('larrow');
-      //const parent = document.querySelectorAll('.section'); //이게 문제인듯. 세개 다 지정하니까
-      const parent1 = document.querySelector('.section1');
-      const parent2 = document.querySelector('.section2');
+      const sections = document.querySelectorAll('.section'); 
+      const section = document.querySelector('.section');
+      const sectionArray = Array.from(sections);
+      let current = 0;
+      const urlParams = new URLSearchParams(window.location.search);
+      const clientId = urlParams.get('clientId');
 
-      const newLocal1 = parent1.offsetWidth;
-      console.log(parent1);
-      console.log(newLocal1);
-
+    //   buttonRight.addEventListener("click", function () {
+    //     if (clientId === 'about') {
+    //     window.location.href = './about.html/' + document.location.search; 
+    //     sections[1].scrollIntoView(true);
+    //   } else if (clientId === 'whatwedo'){
+    //     window.location.href = './about.html/' + document.location.search; 
+    //     sections[2].scrollIntoView(true);
+    //   }
+    // });
       buttonRight.addEventListener("click", function () {
+        if (window.location.href = './about.html#about') {
         console.log("moved rightside"); 
-        parent2.scrollIntoView(true);
-        //parent1.scrollTo(1440,0);
-      });
+        sections[1].scrollIntoView(true);
+      } else if (window.location.href = '#whatwedo') {
+        sections[2].scrollIntoView(true);
+      }
+    });
+ //You should be aware, if the user has scroll the page the browser may not retain their current scroll position.
+ // Most modern browsers seem to handle this well, but this is not always the case
 
-      buttonLeft.addEventListener('click', function () {
-        parent2.scrollLeft -= newLocal1;
-      });
+
+
+
+      // const goNext = () => {
+      //   if (current < sections.length - 1) {
+      //     current++
+      //   }
+      //   console.log("moved rightside"); 
+      //   sectionArray[current].scrollIntoView(true);
+      // }  
+
+      const section1 = document.querySelector('.section1');
+      const section2 = document.querySelector('.section2');
+      const section3 = document.querySelector('.section3');
+      // const newLocal1 = section1.offsetWidth;
+      // console.log(newLocal1);
+
+    
+
+//  buttonLeft.addEventListener('click', function () {
+//         section[current].scrollIntoView(true);
+//       });
 
       //https://stackoverflow.com/questions/64502303/javascript-element-scrollleft-cant-handle-decimals
       //https://stackoverflow.com/questions/56392199/make-a-button-to-scroll-horizontally-in-div

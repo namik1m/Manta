@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Test1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./css/main.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./css/fontsheet.css"
+    />
+
+    <link
+      rel="stylesheet"
+      media="only screen and (min-width: 320px) and (max-width: 900px) and (orientation: portrait)"
+      href="./css/in_mob_port.css"
+    />
+    <link
+      rel="stylesheet"
+      media="only screen and (min-width: 320px) and (max-width: 900px) and (orientation: landscape)"
+      href="./css/in_mob_land.css"
+    />
+
+    <style>
+        *{
+            outline:1px solid red;
+            outline-offset: -1px;
+        }
+
+        main.container{
+            background-color: blue;
+            /* height: calc(100% + 40px); */
+        }
+
+        #sidebarMenu{
+            background-color: green;
+        }
+
+    </style>
+  </head>
+
+  <body>
+    <main class="container">
+      <header class="header">
+        <div id="mainlogo">
+          <a href="./index.html"><img src="./img/Manta Logo 1/Mantalogo01_32ff32.png" /></a>
+        </div>
+      </header>
+
+      <!--Full sized menu-->
+      <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu" />
+      <label for="openSidebarMenu" class="sidebarIconToggle">
+        <div class="spinner diagonal part-1"></div>
+        <div class="spinner horizontal"></div>
+        <div class="spinner diagonal part-2"></div>
+      </label>
+
+      <div id="sidebarMenu">
+        <div class="sidebarMenuInner">
+          <div class="logosec">
+            <a href="./index.html"
+              ><img src="./img/Manta Logo 1/Mantalogo.png" id="biglogo"
+            /></a>
+          </div>
+
+          <ul id="list">
+            <li id="about_typo"><a href="./about.html#about">about</a></li>
+            <li><a href="./media_theater.html">media</a></li>
+            <li id="contact_typo"><a href="./about.html#colla">contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <!--Full sized menu End-->
+
+      
+    </main>
+    <!--original video:800097283 width 426 height 240/ style width:100% height:100%-->
+
+    <!--Footer-->
+
+    <script>
+        const container = document.querySelector('.container');
+        const body = document.querySelector('body');
+        const section = document.querySelector('.section');
+        const menuList = document.getElementById('openSidebarMenu');
+        // const menuFrame = document.getElementById('sidebarMenu');
+
+
+        function check() {
+        menuList.checked = true;
+        }
+
+        function uncheck() {
+        menuList.checked = false;
+        container.scrollTop = 0; //scrollTop을 원위치로 해야 다시 스크롤 이벤트 발생함
+        //menuFrame.style.transform = 'translateX(-100%)';
+        }
+
+        container.addEventListener(
+            "wheel", 
+            (e) => {
+                console.log("container", e);
+                if (e.deltaY > 2) {
+                    check();
+                } else if (e.deltaY < -2) {
+                    uncheck();
+                }
+            }
+        );
+    </script>
+  </body>
+</html>
