@@ -421,14 +421,46 @@
     //     sections[2].scrollIntoView(true);
     //   }
     // });
-      buttonRight.addEventListener("click", function () {
-        if (window.location.href = './about.html#about') {
-        console.log("moved rightside"); 
-        sections[1].scrollIntoView(true);
-      } else if (window.location.href = '#whatwedo') {
-        sections[2].scrollIntoView(true);
+
+    const sectionList = ["about", "whatwedo", "colla"];
+    var curSectionIndex = 0;
+    console.log(sectionList[curSectionIndex]);
+
+    function scrollIntoViewIndex(idx) {
+      let sec = document.getElementById(sectionList[idx]);
+      sec.scrollIntoView({ block: 'start',  behavior: 'smooth' });
+      if(idx == 0) {
+        buttonLeft.style.opacity = "0"; 
       }
+      else if (idx == (sectionList.length - 1)){
+        buttonRight.style.opacity = "0"; 
+      } else{
+        buttonLeft.style.opacity = "1";
+        buttonRight.style.opacity = "1";  
+      }
+    } 
+    scrollIntoViewIndex(0);
+
+    buttonLeft.addEventListener("click", function () {
+      if (curSectionIndex > 0 )
+      curSectionIndex--;
+      scrollIntoViewIndex(curSectionIndex);
+    });  
+
+    buttonRight.addEventListener("click", function () {
+      if (curSectionIndex < (sectionList.length -1))
+      curSectionIndex++;
+      scrollIntoViewIndex(curSectionIndex);
     });
+
+    //   buttonRight.addEventListener("click", function () {
+    //     if (window.location.href = './about.html#about') {
+    //     console.log("moved rightside"); 
+    //     sections[1].scrollIntoView(true);
+    //   } else if (window.location.href = '#whatwedo') {
+    //     sections[2].scrollIntoView(true);
+    //   }
+    // });
  //You should be aware, if the user has scroll the page the browser may not retain their current scroll position.
  // Most modern browsers seem to handle this well, but this is not always the case
 
