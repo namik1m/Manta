@@ -1,5 +1,4 @@
 /*Body, Header, Footer*/
-/* @import url("https://fonts.googleapis.com/css2?family=Anton:wght@400"); */
 html,
 body {
   font-size: 16px;
@@ -12,7 +11,7 @@ body {
   height: 100vh;
   padding: 0;
   margin: 0;
-  font-family: 'Platform-Light';
+  font-family: 'Titillium Web Regular';
   overflow-y: hidden;
   background: linear-gradient(88deg, #090d15, #00396f, #04223e, #f1f0f8);
   background-size: 400% 400%;
@@ -45,7 +44,7 @@ body {
 #mainlogo img {
   width: 100%;
 }
-
+/*Arrow CSS animation: https://codepen.io/vlt_dev/pen/NWMNzpE*/
 .pagebtn {
   position: fixed;
   width: 100vw;
@@ -54,7 +53,9 @@ body {
   justify-content: space-between;
   align-items: center;
   z-index:997;
+  cursor:pointer;
 }
+
 #larrow,
 #rarrow {
   background-color: transparent;
@@ -64,46 +65,54 @@ body {
   width: 8%;
 }
 
+#larrow {
+  transform: rotate(90deg);
+  margin-top: 19%;
+}
 
-#larrow img,
+#rarrow {
+  transform: rotate(270deg);
+}
+
+#leftside:nth-child(2), #rightside:nth-child(2) {
+  animation-delay: -0.2s;
+}
+
+#leftside, #rightside{
+display: block;
+width: 1.5vw;
+height: 1.5vw;
+border-bottom: 5px solid #aaff00;
+border-right: 5px solid #aaff00;
+margin: -10px;
+  animation: animate 2s infinite;
+}
+
+#leftside{
+transform: rotate(45deg);
+}
+
+#rightside{
+ transform: rotate(45deg);
+}
+
+@keyframes animate {
+0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+}
+50% {
+    opacity: 1;
+}
+100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
+}
+}
+
+/* #larrow img,
 #rarrow img {
   width: 50%;
-}
-
-/* 
-.arrow-btn{
-  position:fixed;
-  bottom:20%;
-  width:90%;
-  display:flex;
-  justify-content: space-between;
-  margin-left: -1.5%;
-}
-
-#r-arrow,
-#l-arrow {
-  display: inline-block;
-  position: fixed;
-  bottom: 3rem;
-  width: 1.25%;
-  border: 3px #ffff00 solid;
-  border-radius: 50%;
-  padding-left: 0.12%;
-  padding-right: 0.12%;
-  padding-top: 0.15%;
-}
-
-#r-arrow {
-  right: 2.5%;
-}
-
-#l-arrow {
-  left: 2.5%;
-}
-
-#r-arrow img,
-#l-arrow img {
-  width: 100%;
 } */
 
 /* SECTION */
@@ -156,10 +165,7 @@ body {
 .mani2 h1,
 #collaborate {
   line-height: 1;
-  /* font-family: 'Open Sauce One SemiBold'; */
-  /* font-family: 'Public Sans Regular'; */
-  /* font-family: 'Barlow Condensed SemiBold'; */
-  font-family: 'Platform-Regular';
+  font-family: 'Titillium Web SemiBold';
   font-size: 4.25rem;
   letter-spacing: 0.03rem;
   color: white;
@@ -177,7 +183,7 @@ body {
   line-height: 1.45;
   margin-top: 2%;
   /* letter-spacing: 0.02rem; */
-  font-family: 'Platform-Light';
+  font-family: 'Titillium Web Light';
   letter-spacing: 0.05rem;
   color: white;
 }
@@ -193,8 +199,8 @@ body {
 
 .btns button {
   cursor: pointer;
-  color: #32ff32;
-  border: #32ff32 solid 1px;
+  color: #aaff00;
+  border: #aaff00 solid 1px;
   background-color: transparent;
   border-radius: 32px;
   text-align: center;
@@ -205,12 +211,9 @@ body {
 
 .btns button a {
   text-decoration: none;
-  color: #32ff32;
+  color: #aaff00;
 }
 
-/* #mbtn {
-  margin-bottom: 1rem;
-} */
 
 .animation {
   position: absolute;
@@ -243,23 +246,7 @@ video {
   padding: 0;
   z-index: -1;
 }
-/* .slideshow iframe{
-  width: 105%;
-height: 100%;
-} */
-/* .sec-two-wrapper:before {
-  content: ' ';
-  display: block;
-  position: absolute;
-  left: 45%;
-  top: 0;
-  width: 160%;
-  height: 100%;
-  opacity: 0.6;
-  background-image: url('../img/slide2.gif');
-  background-repeat: no-repeat;
-  background-size: 50% 100%;
-} */
+
 #m2btn {
   position: relative;
   display: inline-block;
@@ -274,8 +261,8 @@ height: 100%;
   left: 0%;
   top: 45%;
   cursor: pointer;
-  color: #32ff32;
-  border: #32ff32 solid 1px;
+  color: #aaff00;
+  border: #aaff00 solid 1px;
   background-color: transparent;
   border-radius: 32px;
   text-align: center;
@@ -285,7 +272,7 @@ height: 100%;
 
 #m2btn a {
   text-decoration: none;
-  color: #32ff32;
+  color: #aaff00;
 }
 
 .mani2 p {
@@ -316,8 +303,7 @@ height: 100%;
 }
 
 .promote p {
-  /* font-family: 'Open Sauce One SemiBold'; */
-  font-family: 'Platform-Regular';
+  font-family: 'Titillium Web Regular';
   letter-spacing: 0.15rem;
   font-size: 5rem;
   color: #ffffff;
@@ -347,7 +333,7 @@ height: 100%;
 }
 
 #ani:hover:after {
-  content: '2D / 3D / MOTION GRAPHICS / VISUAL WORKS';
+  content: '2D / 3D / MOTION GRAPHICS / CONCEPT WORKS';
 }
 
 #sound:hover:after {
@@ -378,7 +364,7 @@ height: 100%;
   margin-bottom: 0;
   top: 2.5rem; /*percentage doesn't work*/
   left: 1%;
-  color: #32ff32;
+  color: #aaff00;
   font-size: 1.4rem;
   font-family: 'Platform-Light';
   line-height: 0;
@@ -466,19 +452,21 @@ form {
   width: 30%;
   /* background-color: #203c99; */
 }
-input {
+
+.contact input {
   width: 85%;
   padding: 2% 0;
   margin-bottom: 1rem;
-  border: #32ff32 1px solid;
+  border: #aaff00 1px solid;
   border-radius: 48px;
   background-color: transparent;
+  color:white;
 }
 
-input::placeholder {
+.contact input::placeholder {
   text-align: center;
   color: rgb(205, 204, 204);
-  font-family: 'Platform-Light';
+  font-family: 'Titillium Web Regular';
   font-size: 1.1rem;
 }
 
@@ -496,7 +484,7 @@ input::placeholder {
 }
 
 .formbtm p {
-  font-family: 'Platform-Light';
+  font-family: 'Titillium Web Light';
   font-size: 0.9rem;
   text-align: left;
   line-height: 0.4;
@@ -514,9 +502,9 @@ input::placeholder {
   padding: 2% 0;
   width: 30%;
   margin: 0 auto;
-  color:#32ff32;
-  font-family: 'Platform-Light';
-  font-size: 1.1rem;
+  color:#aaff00; 
+  font-family: 'Titillium Web Regular';
+  font-size: 1.2rem;
   line-height: 1;
 }
 
@@ -536,7 +524,7 @@ input::placeholder {
   line-height: 0.5;
   color: #32ff32;
   text-align: left;
-  font-family: 'Platform-Light';
+  font-family: 'Titillium Web Regular';
   letter-spacing: 0.117rem;
 }
 
@@ -826,24 +814,18 @@ input[type='checkbox']:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 
 .logosection {
   /* background-color: blue; */
-  width: 9%;
+  width: 28%;
   display: flex;
   justify-content: space-between;
 }
 
-#ig img {
-  width: 65%;
-  margin-top: -2px;
+#fb img{
+  margin-left:4px;
 }
 
-#vimeo img {
-  width: 65%;
-  margin-top: -2px;
-}
-
-#fb img {
-  width: 65%;
-  margin-top: -2px;
+#ig img, #vimeo img, #fb img, #linkedin img {
+  width: 100%;
+  margin-top: -3px;
 }
 
 #term {
@@ -855,7 +837,7 @@ input[type='checkbox']:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 .list-inline {
   display: flex;
   justify-content: space-around;
-  width: 20%;
+  width: 10%;
   /* reset list */
   list-style: none;
   padding: 0;
@@ -866,13 +848,8 @@ input[type='checkbox']:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   font-size: 1.25rem;
   line-height: 1;
   margin-top: 12px;
+  color:#360c79;
 }
-
-/* .spansection {
-  width: 30%;
-  display: flex;
-  justify-content: space-between;
-} */
 
 .list-inline span {
   font-family: 'Platform-Light';

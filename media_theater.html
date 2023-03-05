@@ -10,7 +10,7 @@
     <!-- <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script> -->
     <!--<link rel="stylesheet" href="https://cdn.plyr.io/3.7.3/plyr.css" /> -->
     <title>Theater - Manta</title>
-    
+
     <link
       rel="stylesheet"
       type="text/css"
@@ -34,358 +34,336 @@
       media="screen"
       href="./css/fontsheet.css"
     />
-    
   </head>
   <body>
-
     <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu" />
-      <label for="openSidebarMenu" class="sidebarIconToggle">
-        <div class="spinner diagonal part-1"></div>
-        <div class="spinner horizontal"></div>
-        <div class="spinner diagonal part-2"></div>
-      </label>
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+      <div class="spinner diagonal part-1"></div>
+      <div class="spinner horizontal"></div>
+      <div class="spinner diagonal part-2"></div>
+    </label>
 
-      <div id="sidebarMenu">
-        <div class="sidebarMenuInner">
-          <div class="logosec">
-            <a href="./index.html"
-              ><img src="./img/Manta Logo 1/Mantalogo.png" id="biglogo"
-            /></a>
-          </div>
-
-          <ul id="list">
-            <li id="about_typo"><a href="./about.html#about">about</a></li>
-            <li><a href="./media_theater.html">media</a></li>
-            <li id="contact_typo"><a href="./about.html#colla">contact</a></li>
-          </ul>
+    <div id="sidebarMenu">
+      <div class="sidebarMenuInner">
+        <div class="logosec">
+          <a href="./index.html"
+            ><img src="./img/Manta Logo 1/Mantalogo.png" id="biglogo"
+          /></a>
         </div>
+
+        <ul id="list">
+          <li id="about_typo"><a href="./about.html#about">about</a></li>
+          <li><a href="./media_video.html">media</a></li>
+          <li id="contact_typo"><a href="./about.html#colla">contact</a></li>
+        </ul>
       </div>
+    </div>
 
     <div class="container">
       <header class="header">
         <div id="mainlogo">
-          <a href="./index.html"><img src="./img/Manta Logo 1/Mantalogo01_32ff32.png" /></a>
+          <a href="./index.html"
+            ><img src="./img/Manta Logo 1/Mantalogo01_32ff32.png"
+          /></a>
         </div>
       </header>
 
       <ul class="cate">
         <div class="catepart catepart1">
-          <li id="video" style="color: #f1f0f8;"><a href="./media_video.html" style="color: #f1f0f8; text-decoration:none;">VIDEO</a></li>
-          <li id="drone" style="color: #f1f0f8;"><a href="./media_drone.html" style="color: #f1f0f8; text-decoration:none;">DRONE</a></li>
-          <li id="animation" style="color: #f1f0f8;"><a href="./media_animation.html" style="color: #f1f0f8; text-decoration:none;">ANIMATION</a></li>
+          <li id="video" style="color: #f1f0f8">
+            <a
+              href="./media_video.html"
+              style="color: #f1f0f8; text-decoration: none"
+              >video</a
+            >
+          </li>
+          <li id="drone" style="color: #f1f0f8">
+            <a
+              href="./media_drone.html"
+              style="color: #f1f0f8; text-decoration: none"
+              >drone</a
+            >
+          </li>
+          <li id="animation" style="color: #f1f0f8">
+            <a
+              href="./media_animation.html"
+              style="color: #f1f0f8; text-decoration: none"
+              >animation</a
+            >
+          </li>
         </div>
         <div class="catepart catepart2">
-          <li id="theater"><a href="./media_theater.html">THEATER</a></li>
-          <li id="event" style="color: #f1f0f8;"><a href="./media_event.html" style="color: #f1f0f8; text-decoration:none;">EVENT</a></li>
-          <li id="promo" style="color: #f1f0f8;"><a href="./media_promo.html" style="color: #f1f0f8; text-decoration:none;">PROMO</a></li>
+          <li id="theater" style="color: #aaff00; "><a href="./media_theater.html" style="color: #aaff00; text-decoration: none">theater</a></li>
+          <li id="event" style="color: #f1f0f8">
+            <a
+              href="./media_event.html"
+              style="color: white;  text-decoration: none"
+              >event</a
+            >
+          </li>
+          <li id="promo" style="color: #f1f0f8">
+            <a
+              href="./media_promo.html"
+              style="color: #f1f0f8; text-decoration: none"
+              >promo</a
+            >
+          </li>
         </div>
       </ul>
 
       <div class="videos">
-        
-        <!--Theater genre videos-->
-        <div id="a1" class="inside open-video" data-scroll ><img src="./img/media/01-01.jpg" /></div>
+        <!--Theater videos : ID name starts with alphabet d-->
+        <div id="d1" class="inside open-video" data-scroll>
+          <img src="./img/media/04-01.jpg" />
+        </div>
         <div class="plyr__video-embed" id="player">
-          <!-- <span class="closebtn">&times;</span> -->
-          <iframe
-            src="https://player.vimeo.com/video/800097283?loop=false&amp;byline=false&amp;portrait=false&amp;title=false&amp;speed=true&amp;transparent=0&amp;gesture=media"
-            allowfullscreen
-            webkitAllowFullScreen mozallowfullscreen
-            allowtransparency
-            allow="autoplay"
-            frameborder="0" 
-          ></iframe>
-        </div>
-
-        <div id="a2" class="inside open-video" data-scroll ><img src="./img/media/01-02.jpg" /></div>
-        <div class="plyr__video-embed" id="player2">
-            <!-- <span class="closebtn">&times;</span> -->
-          <iframe
-            src="https://player.vimeo.com/video/770797440?loop=false&amp;byline=false&amp;portrait=false&amp;title=false&amp;speed=true&amp;transparent=0&amp;gesture=media"
-            allowfullscreen
-            webkitAllowFullScreen mozallowfullscreen
-            allowtransparency
-            allow="autoplay"
-            frameborder="0" 
-          ></iframe>
-        </div>
-
-        <div id="a3" class="inside open-video"  data-scroll ><img src="./img/media/01-03.jpg" /></div>
-        <div class="plyr__video-embed" id="player3">
-            <!-- <span class="closebtn">&times;</span> -->
-          <iframe
-            src="https://player.vimeo.com/video/770796577?loop=false&amp;byline=false&amp;portrait=false&amp;title=false&amp;speed=true&amp;transparent=0&amp;gesture=media"
-            allowfullscreen
-            webkitAllowFullScreen mozallowfullscreen
-            allowtransparency
-            allow="autoplay"
-            frameborder="0" 
-          ></iframe>
-        </div>
-
-        <div id="a4" class="inside open-video"  data-scroll><img src="./img/media/01-04.jpg" /></div>
-        <div class="plyr__video-embed" id="player4">
-            <!-- <span class="closebtn">&times;</span> -->
-          <iframe
-            src="https://player.vimeo.com/video/800093740?loop=false&amp;byline=false&amp;portrait=false&amp;title=false&amp;speed=true&amp;transparent=0&amp;gesture=media"
-            allowfullscreen
-            webkitAllowFullScreen mozallowfullscreen
-            allowtransparency
-            allow="autoplay"
-            frameborder="0" 
-          ></iframe>
-        </div>
-
-        <div id="a5" class="inside open-video" data-scroll>
-          <img src="./img/media/01-05.jpg" />
-        </div>
-        <div class="plyr__video-embed" id="player5">
-            <!--<span class="closebtn">&times;</span> -->
-          <iframe
-            src="https://player.vimeo.com/video/770793329?loop=false&amp;byline=false&amp;portrait=false&amp;title=false&amp;speed=true&amp;transparent=0&amp;gesture=media"
-            allowfullscreen
-            webkitAllowFullScreen mozallowfullscreen
-            allowtransparency
-            allow="autoplay"
-            frameborder="0" 
-          ></iframe>
-        </div>
-        
-        <div id="a6" class="inside open-video" data-scroll ><img src="./img/media/01-06.jpg" /></div>
-        <div class="plyr__video-embed" id="player6">
-          
-          <iframe
-            src="https://player.vimeo.com/video/771097938?loop=false&amp;byline=false&amp;portrait=false&amp;title=false&amp;speed=true&amp;transparent=0&amp;gesture=media"
-            allowfullscreen
-            webkitAllowFullScreen mozallowfullscreen
-            allowtransparency
-            allow="autoplay"
-            frameborder="0" 
-          ></iframe>
-        </div>
-
-
-        <div id="a7" class="inside open-video" data-scroll><img src="./img/media/01-07.jpg" /></div>
-        <div class="plyr__video-embed" id="player7">
-            <!-- <span class="closebtn">&times;</span> -->
-          <iframe
-            src="https://player.vimeo.com/video/771104707?loop=false&amp;byline=false&amp;portrait=false&amp;title=false&amp;speed=true&amp;transparent=0&amp;gesture=media"
-            allowfullscreen
-            webkitAllowFullScreen mozallowfullscreen
-            allowtransparency
-            allow="autoplay"
-            frameborder="0" 
-          ></iframe>
-        </div>
-
-
-        <div id="a8" class="inside open-video" data-scroll><img src="./img/media/01-08.jpg" /></div>
-        <div class="plyr__video-embed" id="player8">
-            <!-- <span class="closebtn">&times;</span> -->
-          <iframe
-            src="https://player.vimeo.com/video/770798614?loop=false&amp;byline=false&amp;portrait=false&amp;title=false&amp;speed=true&amp;transparent=0&amp;gesture=media"
-            allowfullscreen
-            webkitAllowFullScreen mozallowfullscreen
-            allowtransparency
-            allow="autoplay"
-            frameborder="0" 
-          ></iframe>
-        </div>
-
-        <div id="a9" class="inside open-video" data-scroll ><img src="./img/media/01-09.jpg" /></div>
-        <div class="plyr__video-embed" id="player9">
-            <!-- <span class="closebtn">&times;</span> -->
-          <iframe
-            src="https://player.vimeo.com/video/770798153?loop=false&amp;byline=false&amp;portrait=false&amp;title=false&amp;speed=true&amp;transparent=0&amp;gesture=media"
-            allowfullscreen
-            webkitAllowFullScreen mozallowfullscreen
-            allowtransparency
-            allow="autoplay"
-            frameborder="0" 
-          ></iframe>
-        </div>
-
-        <div id="a10" class="inside open-video" data-scroll ><img src="./img/media/01-10.jpg" /></div>
-        <div class="plyr__video-embed" id="player10">
-            <!-- <span class="closebtn">&times;</span> -->
-          <iframe
-            src="https://player.vimeo.com/video/770792708?loop=false&amp;byline=false&amp;portrait=false&amp;title=false&amp;speed=true&amp;transparent=0&amp;gesture=media"
-            allowfullscreen
-            webkitAllowFullScreen mozallowfullscreen
-            allowtransparency
-            allow="autoplay"
-            frameborder="0" 
-          ></iframe>
-        </div>
-
-        <div id="a11" class="inside open-video" data-scroll><img src="./img/media/01-11.jpg" /></div>
-        <div class="plyr__video-embed" id="player11">
-            <!-- <span class="closebtn">&times;</span> -->
-          <iframe
-            src="https://player.vimeo.com/video/801526541?loop=false&amp;byline=false&amp;portrait=false&amp;title=false&amp;speed=true&amp;transparent=0&amp;gesture=media"
-            allowfullscreen
-            webkitAllowFullScreen mozallowfullscreen
-            allowtransparency
-            allow="autoplay"
-            frameborder="0" 
-          ></iframe>
-        </div>
-
-        <div id="a12" class="inside open-video" data-scroll><img src="./img/media/01-12.jpg" /></div>
-        <div class="plyr__video-embed" id="player12">
-            <!-- <span class="closebtn">&times;</span> -->
-          <iframe
-            src="https://player.vimeo.com/video/770787901?loop=false&amp;byline=false&amp;portrait=false&amp;title=false&amp;speed=true&amp;transparent=0&amp;gesture=media"
-            allowfullscreen
-            webkitAllowFullScreen mozallowfullscreen
-            allowtransparency
-            allow="autoplay"
-            frameborder="0" 
-          ></iframe>
-        </div>
-
-        <div id="a13" class="inside open-video" data-scroll ><img src="./img/media/01-13.jpg" /></div>
-        <div class="plyr__video-embed" id="player13">
-            <!-- <span class="closebtn">&times;</span> -->
-          <iframe
-            src="https://player.vimeo.com/video/771128723?loop=false&amp;byline=false&amp;portrait=false&amp;title=false&amp;speed=true&amp;transparent=0&amp;gesture=media"
-            allowfullscreen
-            webkitAllowFullScreen mozallowfullscreen
-            allowtransparency
-            allow="autoplay"
-            frameborder="0" 
-          ></iframe>
-        </div>
-
-        <div id="a14" class="inside open-video" data-scroll ><img src="./img/media/01-14.jpg" /></div>
-        <div class="plyr__video-embed" id="player14">
-            <!-- <span class="closebtn">&times;</span> -->
           <iframe
             src="https://player.vimeo.com/video/770798316?loop=false&amp;byline=false&amp;portrait=false&amp;title=false&amp;speed=true&amp;transparent=0&amp;gesture=media"
             allowfullscreen
-            webkitAllowFullScreen mozallowfullscreen
+            webkitAllowFullScreen
+            mozallowfullscreen
             allowtransparency
             allow="autoplay"
-            frameborder="0" 
+            frameborder="0"
           ></iframe>
         </div>
 
-      </div><!--video div end-->
-    </div><!--container end-->
+        <div id="d2" class="inside open-video" data-scroll>
+          <img src="./img/media/04-02.jpg" />
+        </div>
+        <div class="plyr__video-embed" id="player2">
+          <!-- <span class="closebtn">&times;</span> -->
+          <iframe
+            src="https://player.vimeo.com/video/801526541?loop=false&amp;byline=false&amp;portrait=false&amp;title=false&amp;speed=true&amp;transparent=0&amp;gesture=media"
+            allowfullscreen
+            webkitAllowFullScreen
+            mozallowfullscreen
+            allowtransparency
+            allow="autoplay"
+            frameborder="0"
+          ></iframe>
+        </div>
 
+        <div id="d3" class="inside open-video" data-scroll>
+          <img src="./img/media/04-03.jpg" />
+        </div>
+        <div class="plyr__video-embed" id="player3">
+          <!-- <span class="closebtn">&times;</span> -->
+          <iframe
+            src="https://player.vimeo.com/video/771097938?loop=false&amp;byline=false&amp;portrait=false&amp;title=false&amp;speed=true&amp;transparent=0&amp;gesture=media"
+            allowfullscreen
+            webkitAllowFullScreen
+            mozallowfullscreen
+            allowtransparency
+            allow="autoplay"
+            frameborder="0"
+          ></iframe>
+        </div>
 
+        <div id="d4" class="inside open-video" data-scroll>
+          <img src="./img/media/04-04.jpg" />
+        </div>
+        <div class="plyr__video-embed" id="player4">
+          <!-- <span class="closebtn">&times;</span> -->
+          <iframe
+            src="https://player.vimeo.com/video/770793061?loop=false&amp;byline=false&amp;portrait=false&amp;title=false&amp;speed=true&amp;transparent=0&amp;gesture=media"
+            allowfullscreen
+            webkitAllowFullScreen
+            mozallowfullscreen
+            allowtransparency
+            allow="autoplay"
+            frameborder="0"
+          ></iframe>
+        </div>
+
+        <div id="d5" class="inside open-video" data-scroll>
+          <img src="./img/media/04-05.jpg" />
+        </div>
+        <div class="plyr__video-embed" id="player5">
+          <!--<span class="closebtn">&times;</span> -->
+          <iframe
+            src="https://player.vimeo.com/video/800097283?loop=false&amp;byline=false&amp;portrait=false&amp;title=false&amp;speed=true&amp;transparent=0&amp;gesture=media"
+            allowfullscreen
+            webkitAllowFullScreen
+            mozallowfullscreen
+            allowtransparency
+            allow="autoplay"
+            frameborder="0"
+          ></iframe>
+        </div>
+
+        <div id="d6" class="inside open-video" data-scroll>
+          <img src="./img/media/04-06.jpg" />
+        </div>
+        <div class="plyr__video-embed" id="player6">
+          <iframe
+            src="https://player.vimeo.com/video/770787901?loop=false&amp;byline=false&amp;portrait=false&amp;title=false&amp;speed=true&amp;transparent=0&amp;gesture=media"
+            allowfullscreen
+            webkitAllowFullScreen
+            mozallowfullscreen
+            allowtransparency
+            allow="autoplay"
+            frameborder="0"
+          ></iframe>
+        </div>
+
+        <div id="d7" class="inside open-video" data-scroll>
+          <img src="./img/media/04-07.jpg" />
+        </div>
+        <div class="plyr__video-embed" id="player7">
+          <!-- <span class="closebtn">&times;</span> -->
+          <iframe
+            src="https://player.vimeo.com/video/801527118?loop=false&amp;byline=false&amp;portrait=false&amp;title=false&amp;speed=true&amp;transparent=0&amp;gesture=media"
+            allowfullscreen
+            webkitAllowFullScreen
+            mozallowfullscreen
+            allowtransparency
+            allow="autoplay"
+            frameborder="0"
+          ></iframe>
+        </div>
+
+        <div id="d8" class="inside open-video" data-scroll>
+          <img src="./img/media/04-08.jpg" />
+        </div>
+        <div class="plyr__video-embed" id="player8">
+          <!-- <span class="closebtn">&times;</span> -->
+          <iframe
+            src="https://player.vimeo.com/video/770798614?loop=false&amp;byline=false&amp;portrait=false&amp;title=false&amp;speed=true&amp;transparent=0&amp;gesture=media"
+            allowfullscreen
+            webkitAllowFullScreen
+            mozallowfullscreen
+            allowtransparency
+            allow="autoplay"
+            frameborder="0"
+          ></iframe>
+        </div>
+
+        <div id="d9" class="inside open-video" data-scroll>
+          <img src="./img/media/04-09.jpg" />
+        </div>
+        <div class="plyr__video-embed" id="player9">
+          <!-- <span class="closebtn">&times;</span> -->
+          <iframe
+            src="https://player.vimeo.com/video/770790869?loop=false&amp;byline=false&amp;portrait=false&amp;title=false&amp;speed=true&amp;transparent=0&amp;gesture=media"
+            allowfullscreen
+            webkitAllowFullScreen
+            mozallowfullscreen
+            allowtransparency
+            allow="autoplay"
+            frameborder="0"
+          ></iframe>
+        </div>
+
+        <div id="d10" class="inside open-video" data-scroll>
+          <img src="./img/media/04-10.jpg" />
+        </div>
+        <div class="plyr__video-embed" id="player10">
+          <!-- <span class="closebtn">&times;</span> -->
+          <iframe
+            src="https://player.vimeo.com/video/770798153?loop=false&amp;byline=false&amp;portrait=false&amp;title=false&amp;speed=true&amp;transparent=0&amp;gesture=media"
+            allowfullscreen
+            webkitAllowFullScreen
+            mozallowfullscreen
+            allowtransparency
+            allow="autoplay"
+            frameborder="0"
+          ></iframe>
+        </div>
+      </div>
+      <!--video div end-->
+    </div>
+    <!--container end-->
+
+    <!--Footer-->
     <footer class="footer">
       <div class="foo-content">
         <ul class="list-inline">
           <!--First block-->
           <span id="statement">CREATIVITY TOWARDS YOU</span>
-          <!-- <div class="spansection">
-            <span>media</span>
-            <span>about</span>
-            <span>contacts</span>
-            <span>term 2023</span>
-          </div> -->
           <div class="logosection">
-            <span id="ig"><img src="./img/ig_hsmall_black.png" /></span>
+            <span id="fb"><img src="./img/facebook.png" alt = "Facebook"/></span>
+            <span id="ig"><img src="./img/insta.png" alt = "Instagram"/></span>
             <span id="vimeo"
               ><a href="https://vimeo.com/danossmedia"
-                ><img src="./img/vm_black.png" /></a
+                ><img src="./img/vimeo.png" alt = "vimeo"/></a
             ></span>
+            <span id="linkedin"><img src="./img/linkedin.png" alt = "LinkedIn"/></span>
           </div>
         </ul>
 
         <ul class="list-inline">
           <!--Second block-->
           <span id="statement">CREATIVITY TOWARDS YOU</span>
-          <!-- <div class="spansection">
-            <span>media</span>
-            <span>about</span>
-            <span>contacts</span>
-            <span>term 2023</span>
-          </div> -->
           <div class="logosection">
-            <span id="ig"><img src="./img/ig_hsmall_black.png" /></span>
+            <span id="fb"><img src="./img/facebook.png" alt = "Facebook"/></span>
+            <span id="ig"><img src="./img/insta.png" alt = "Instagram"/></span>
             <span id="vimeo"
               ><a href="https://vimeo.com/danossmedia"
-                ><img src="./img/vm_black.png" /></a
+                ><img src="./img/vimeo.png" alt = "vimeo"/></a
             ></span>
+            <span id="linkedin"><img src="./img/linkedin.png" alt = "LinkedIn"/></span>
           </div>
         </ul>
 
         <ul class="list-inline">
           <!--Third block-->
           <span id="statement">CREATIVITY TOWARDS YOU</span>
-          <!-- <div class="spansection">
-            <span>media</span>
-            <span>about</span>
-            <span>contacts</span>
-            <span>term 2023</span>
-          </div> -->
           <div class="logosection">
-            <span id="ig"><img src="./img/ig_hsmall_black.png" /></span>
+            <span id="fb"><img src="./img/facebook.png" alt = "Facebook"/></span>
+            <span id="ig"><img src="./img/insta.png" alt = "Instagram"/></span>
             <span id="vimeo"
               ><a href="https://vimeo.com/danossmedia"
-                ><img src="./img/vm_black.png" /></a
+                ><img src="./img/vimeo.png" alt = "vimeo"/></a
             ></span>
-          </div>
+            <span id="linkedin"><img src="./img/linkedin.png" alt = "LinkedIn"/></span>
+            </div>  
         </ul>
 
         <ul class="list-inline">
           <!--Third block-->
           <span id="statement">CREATIVITY TOWARDS YOU</span>
-          <!-- <div class="spansection">
-            <span>media</span>
-            <span>about</span>
-            <span>contacts</span>
-            <span>term 2023</span>
-          </div> -->
           <div class="logosection">
-            <span id="ig"><img src="./img/ig_hsmall_black.png" /></span>
+            <span id="fb"><img src="./img/facebook.png" alt = "Facebook"/></span>
+            <span id="ig"><img src="./img/insta.png" alt = "Instagram"/></span>
             <span id="vimeo"
               ><a href="https://vimeo.com/danossmedia"
-                ><img src="./img/vm_black.png" /></a
+                ><img src="./img/vimeo.png" alt = "vimeo"/></a
             ></span>
+            <span id="linkedin"><img src="./img/linkedin.png" alt = "LinkedIn"/></span>
           </div>
         </ul>
 
         <ul class="list-inline">
           <!--Fourth block-->
           <span id="statement">CREATIVITY TOWARDS YOU</span>
-          <!-- <div class="spansection">
-            <span>media</span>
-            <span>about</span>
-            <span>contacts</span>
-            <span>term 2023</span>
-          </div> -->
           <div class="logosection">
-            <span id="ig"><img src="./img/ig_hsmall_black.png" /></span>
+            <span id="fb"><img src="./img/facebook.png" alt = "Facebook"/></span>
+            <span id="ig"><img src="./img/insta.png" alt = "Instagram"/></span>
             <span id="vimeo"
               ><a href="https://vimeo.com/danossmedia"
-                ><img src="./img/vm_black.png" /></a
+                ><img src="./img/vimeo.png" alt = "vimeo"/></a
             ></span>
+            <span id="linkedin"><img src="./img/linkedin.png" alt = "LinkedIn"/></span>
           </div>
         </ul>
 
         <ul class="list-inline">
           <!--Third block-->
           <span id="statement">CREATIVITY TOWARDS YOU</span>
-          <!-- <div class="spansection">
-            <span>media</span>
-            <span>about</span>
-            <span>contacts</span>
-            <span>term 2023</span>
-          </div> -->
           <div class="logosection">
-            <span id="ig"><img src="./img/ig_hsmall_black.png" /></span>
+            <span id="fb"><img src="./img/facebook.png" alt = "Facebook"/></span>
+            <span id="ig"><img src="./img/insta.png" alt = "Instagram"/></span>
             <span id="vimeo"
               ><a href="https://vimeo.com/danossmedia"
-                ><img src="./img/vm_black.png" /></a
+                ><img src="./img/vimeo.png" alt = "vimeo"/></a
             ></span>
+            <span id="linkedin"><img src="./img/linkedin.png" alt = "LinkedIn"/></span>
           </div>
         </ul>
       </div>
     </footer>
-  
+
 
     <script>
       ScrollOut({
@@ -398,11 +376,7 @@
     </script>
     <script src="./js/scrolling2.js"></script>
     <script src="./js/mobiledisable2.js"></script>
-    <script src="./js/videomodal.js"></script>
-    <!-- <script src="path/to/plyr.js"></script>
-<script>
-  const player = new Plyr('#player');
-</script> -->
-    
+    <script src="./js/videomodal_theater.js"></script>
+    <script src="./js/close_menu_click.js"></script>
   </body>
 </html>

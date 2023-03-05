@@ -53,7 +53,7 @@
 
         <ul id="list">
           <li id="about_typo"><a href="./about.html#about">about</a></li>
-          <li><a href="./media_theater.html">media</a></li>
+          <li><a href="./media_video.html">media</a></li>
           <li id="contact_typo"><a href="./about.html#colla">contact</a></li>
         </ul>
       </div>
@@ -62,24 +62,30 @@
     <main class="container">
       <header class="header">
         <div id="mainlogo">
-          <a href="./index.html"><img src="./img/Manta Logo 1/Mantalogo01_32ff32.png" /></a>
+          <a href="./index.html"
+            ><img src="./img/Manta Logo 1/Mantalogo01_32ff32.png"
+          /></a>
         </div>
       </header>
 
       <div class="pagebtn">
         <div id="larrow">
-          <img src="./img/arrow-left-svgrepo-com.svg" />
+          <span id="leftside"></span>
+          <span id="leftside"></span>
+          <!-- <img src="./img/arrow-left-svgrepo-com.svg" /> -->
         </div>
 
         <div id="rarrow">
-          <img src="./img/arrow-right-svgrepo-com.svg" />
+          <span id="rightside"></span>
+          <span id="rightside"></span>
+          <!-- <img src="./img/arrow-right-svgrepo-com.svg" /> -->
         </div>
       </div>
 
       <section class="section section1" id="about">
         <article class="sec-one-wrapper">
           <div class="mani">
-            <h1>CREATIVITY TOWARDS YOU</h1>
+            <h1>Creativity Towards You</h1>
             <p>
               This is MANTA media - an expanding network of offbeat creative
               professionals. Through combining our skills and love for image and
@@ -92,7 +98,7 @@
             </p>
 
             <div class="btns">
-              <button><a href="./media_theater.html">MEDIA</a></button>
+              <button><a href="./media_video.html">MEDIA</a></button>
               <button><a href="./about.html#colla">CONTACT</a></button>
             </div>
           </div>
@@ -103,42 +109,19 @@
             </video>
           </div>
 
-          <!-- <div class="arrow-btn">
-            <a href="./about.html#about"
-              ><img src="./img/arrow-left-svgrepo-com.svg" id="left-arrow"
-            /></a>
-
-            <a href="./about.html#clientlist"
-              ><img src="./img/arrow-right-svgrepo-com.svg" id="right-arrow"
-            /></a>
-          </div> -->
         </article>
-        <!--webm works okay on firefox and Chrome. Important to add loop and muted attributes in video tag-->
-        <!--It doesn't work at all on Safari.-->
-
-        <!-- <div id="r-arrow">
-          <a href="./about.html#clientlist"
-            ><img src="./img/arrow-right-svgrepo-com.svg"
-          /></a>
-        </div> -->
       </section>
 
       <section class="section section2" id="whatwedo">
         <article class="sec-two-wrapper">
           <div class="mani2">
-            <h1>WHAT WE DO</h1>
+            <h1>What We Do</h1>
             <p>
-              Our professional team is ready to bring your idea to the next
-              level. Equipped with high-end gears and skills, we give exposure
-              to your creation and deliver the product with a fast-paced
-              workflow. Our clients range from theaters, art organizations,
-              festivals to individual entrepreneurs and corporations. Either
-              simple, small scale projects or big-budget productions, we can
-              provide a suitable visual solution for you with cost-efficient
-              creation.
+              Fast paced workflow, cost-efficient creations and all-around service is MANTA way of working. We combine high-end gear with pro-level skills to do the audio-visuals for you - from simple, small scale to big-budget productions. We are here to make it happen! Tell us your idea and we will provide the best solution done by the amazing creatives from our network. See our work and get inspired by MANTA collaborations with theaters, art organizations, festivals, individual entrepreneurs and corporations.
+
             </p>
             <div class="btns" id="m2btn">
-              <button><a href="./media_theater.html">MEDIA</a></button>
+              <button><a href="./media_video.html">MEDIA</a></button>
             </div>
           </div>
 
@@ -153,7 +136,7 @@
 
             <div class="category workfor">
               <p id="theater">theater</p>
-              <p id="events">events</p>
+              <p id="events">event</p>
               <p id="pro">promo</p>
             </div>
           </div>
@@ -173,23 +156,11 @@
             style="width: 130%; height: 100%; margin: 0; padding: 0"
           ></iframe>
         </div>
-
-        <!-- <div id="l-arrow">
-          <a href="./about.html#about"
-            ><img src="./img/arrow-left-svgrepo-com.svg"
-          /></a>
-        </div>
-
-        <div id="r-arrow">
-          <a href="./about.html#colla"
-            ><img src="./img/arrow-right-svgrepo-com.svg"
-          /></a>
-        </div> -->
       </section>
 
       <section class="section section3" id="colla">
         <article class="sec-three-wrapper">
-          <h1 id="collaborate">LET'S COLLABORATE</h1>
+          <h1 id="collaborate">Let's Collaborate</h1>
 
           <div class="contact">
             <form action="/action_page.php">
@@ -198,13 +169,13 @@
                   type="text"
                   id="name"
                   name="clientname"
-                  placeholder="Name"
+                  placeholder="*Name"
                 />
                 <input
                   type="text"
                   id="email"
                   name="email"
-                  placeholder="E-mail"
+                  placeholder="*E-mail"
                 />
                 <input
                   type="text"
@@ -218,7 +189,7 @@
                 type="text"
                 id="note"
                 name="note"
-                placeholder="Type your message..."
+                placeholder="*Type your message..."
               />
               <input type="submit" value="SEND" id="submitbtn" />
               <div class="formbtm">
@@ -274,221 +245,142 @@
           </div>
         </article>
 
-        <!-- <div id="l-arrow">
-          <a href="./about.html#clientlist"
-            ><img src="./img/arrow-left-svgrepo-com.svg"
-          /></a>
-        </div> -->
       </section>
     </main>
 
+    <!--Footer-->
     <footer class="footer">
       <div class="foo-content">
         <ul class="list-inline">
           <!--First block-->
           <span id="statement">CREATIVITY TOWARDS YOU</span>
-          <!-- <div class="spansection">
-            <span>media</span>
-            <span>about</span>
-            <span>contacts</span>
-            <span>term 2023</span>
-          </div> -->
           <div class="logosection">
-            <span id="ig"><img src="./img/ig_hsmall_black.png" /></span>
+            <span id="fb"><img src="./img/facebook.png" alt = "Facebook"/></span>
+            <span id="ig"><img src="./img/insta.png" alt = "Instagram"/></span>
             <span id="vimeo"
               ><a href="https://vimeo.com/danossmedia"
-                ><img src="./img/vm_black.png" /></a
+                ><img src="./img/vimeo.png" alt = "vimeo"/></a
             ></span>
-            <!-- <span id="fb"><img src="./img/fb_black.png" /></span> -->
+            <span id="linkedin"><img src="./img/linkedin.png" alt = "LinkedIn"/></span>
           </div>
         </ul>
 
         <ul class="list-inline">
           <!--Second block-->
           <span id="statement">CREATIVITY TOWARDS YOU</span>
-          <!-- <div class="spansection">
-            <span>media</span>
-            <span>about</span>
-            <span>contacts</span>
-            <span>term 2023</span>
-          </div> -->
           <div class="logosection">
-            <span id="ig"><img src="./img/ig_hsmall_black.png" /></span>
+            <span id="fb"><img src="./img/facebook.png" alt = "Facebook"/></span>
+            <span id="ig"><img src="./img/insta.png" alt = "Instagram"/></span>
             <span id="vimeo"
               ><a href="https://vimeo.com/danossmedia"
-                ><img src="./img/vm_black.png" /></a
+                ><img src="./img/vimeo.png" alt = "vimeo"/></a
             ></span>
-            <!-- <span id="fb"><img src="./img/fb_black.png" /></span> -->
+            <span id="linkedin"><img src="./img/linkedin.png" alt = "LinkedIn"/></span>
           </div>
         </ul>
 
         <ul class="list-inline">
           <!--Third block-->
           <span id="statement">CREATIVITY TOWARDS YOU</span>
-          <!-- <div class="spansection">
-            <span>media</span>
-            <span>about</span>
-            <span>contacts</span>
-            <span>term 2023</span>
-          </div> -->
           <div class="logosection">
-            <span id="ig"><img src="./img/ig_hsmall_black.png" /></span>
+            <span id="fb"><img src="./img/facebook.png" alt = "Facebook"/></span>
+            <span id="ig"><img src="./img/insta.png" alt = "Instagram"/></span>
             <span id="vimeo"
               ><a href="https://vimeo.com/danossmedia"
-                ><img src="./img/vm_black.png" /></a
+                ><img src="./img/vimeo.png" alt = "vimeo"/></a
             ></span>
-            <!-- <span id="fb"><img src="./img/fb_black.png" /></span> -->
-          </div>
+            <span id="linkedin"><img src="./img/linkedin.png" alt = "LinkedIn"/></span>
+            </div>  
         </ul>
 
         <ul class="list-inline">
           <!--Third block-->
           <span id="statement">CREATIVITY TOWARDS YOU</span>
-          <!-- <div class="spansection">
-            <span>media</span>
-            <span>about</span>
-            <span>contacts</span>
-            <span>term 2023</span>
-          </div> -->
           <div class="logosection">
-            <span id="ig"><img src="./img/ig_hsmall_black.png" /></span>
+            <span id="fb"><img src="./img/facebook.png" alt = "Facebook"/></span>
+            <span id="ig"><img src="./img/insta.png" alt = "Instagram"/></span>
             <span id="vimeo"
               ><a href="https://vimeo.com/danossmedia"
-                ><img src="./img/vm_black.png" /></a
+                ><img src="./img/vimeo.png" alt = "vimeo"/></a
             ></span>
-            <!-- <span id="fb"><img src="./img/fb_black.png" /></span> -->
+            <span id="linkedin"><img src="./img/linkedin.png" alt = "LinkedIn"/></span>
           </div>
         </ul>
 
         <ul class="list-inline">
           <!--Fourth block-->
           <span id="statement">CREATIVITY TOWARDS YOU</span>
-          <!-- <div class="spansection">
-            <span>media</span>
-            <span>about</span>
-            <span>contacts</span>
-            <span>term 2023</span>
-          </div> -->
           <div class="logosection">
-            <span id="ig"><img src="./img/ig_hsmall_black.png" /></span>
+            <span id="fb"><img src="./img/facebook.png" alt = "Facebook"/></span>
+            <span id="ig"><img src="./img/insta.png" alt = "Instagram"/></span>
             <span id="vimeo"
               ><a href="https://vimeo.com/danossmedia"
-                ><img src="./img/vm_black.png" /></a
+                ><img src="./img/vimeo.png" alt = "vimeo"/></a
             ></span>
-            <!-- <span id="fb"><img src="./img/fb_black.png" /></span> -->
+            <span id="linkedin"><img src="./img/linkedin.png" alt = "LinkedIn"/></span>
           </div>
         </ul>
 
         <ul class="list-inline">
           <!--Third block-->
           <span id="statement">CREATIVITY TOWARDS YOU</span>
-          <!-- <div class="spansection">
-            <span>media</span>
-            <span>about</span>
-            <span>contacts</span>
-            <span>term 2023</span>
-          </div> -->
           <div class="logosection">
-            <span id="ig"><img src="./img/ig_hsmall_black.png" /></span>
+            <span id="fb"><img src="./img/facebook.png" alt = "Facebook"/></span>
+            <span id="ig"><img src="./img/insta.png" alt = "Instagram"/></span>
             <span id="vimeo"
               ><a href="https://vimeo.com/danossmedia"
-                ><img src="./img/vm_black.png" /></a
+                ><img src="./img/vimeo.png" alt = "vimeo"/></a
             ></span>
-            <!-- <span id="fb"><img src="./img/fb_black.png" /></span> -->
+            <span id="linkedin"><img src="./img/linkedin.png" alt = "LinkedIn"/></span>
           </div>
         </ul>
       </div>
     </footer>
-    
+
     <script src="./js/scrolling.js"></script>
     <script src="./js/mobiledisable.js"></script>
+    <script src="./js/close_menu_click.js"></script>
+
     <script>
       const buttonRight = document.getElementById('rarrow');
       const buttonLeft = document.getElementById('larrow');
-      const sections = document.querySelectorAll('.section'); 
-      const section = document.querySelector('.section');
-      const sectionArray = Array.from(sections);
-      let current = 0;
-      const urlParams = new URLSearchParams(window.location.search);
-      const clientId = urlParams.get('clientId');
 
-    //   buttonRight.addEventListener("click", function () {
-    //     if (clientId === 'about') {
-    //     window.location.href = './about.html/' + document.location.search; 
-    //     sections[1].scrollIntoView(true);
-    //   } else if (clientId === 'whatwedo'){
-    //     window.location.href = './about.html/' + document.location.search; 
-    //     sections[2].scrollIntoView(true);
-    //   }
-    // });
+      const sectionList = ['about', 'whatwedo', 'colla'];
+      var curSectionIndex = 0;
+      console.log(sectionList[curSectionIndex]);
 
-    const sectionList = ["about", "whatwedo", "colla"];
-    var curSectionIndex = 0;
-    console.log(sectionList[curSectionIndex]);
-
-    function scrollIntoViewIndex(idx) {
-      let sec = document.getElementById(sectionList[idx]);
-      sec.scrollIntoView({ block: 'start',  behavior: 'smooth' });
-      if(idx == 0) {
-        buttonLeft.style.opacity = "0"; 
+      function scrollIntoViewIndex(idx) {
+        let sec = document.getElementById(sectionList[idx]);
+        sec.scrollIntoView({ block: 'start', behavior: 'smooth' });
+        if (idx == 0) {
+          buttonLeft.style.opacity = '0';
+        } else if (idx == sectionList.length - 1) {
+          buttonRight.style.opacity = '0';
+        } else {
+          buttonLeft.style.opacity = '1';
+          buttonRight.style.opacity = '1';
+        }
       }
-      else if (idx == (sectionList.length - 1)){
-        buttonRight.style.opacity = "0"; 
-      } else{
-        buttonLeft.style.opacity = "1";
-        buttonRight.style.opacity = "1";  
-      }
-    } 
-    scrollIntoViewIndex(0);
+      scrollIntoViewIndex(0);
 
-    buttonLeft.addEventListener("click", function () {
-      if (curSectionIndex > 0 )
-      curSectionIndex--;
-      scrollIntoViewIndex(curSectionIndex);
-    });  
+      buttonLeft.addEventListener('click', function () {
+        if (curSectionIndex > 0) curSectionIndex--;
+        scrollIntoViewIndex(curSectionIndex);
+      });
 
-    buttonRight.addEventListener("click", function () {
-      if (curSectionIndex < (sectionList.length -1))
-      curSectionIndex++;
-      scrollIntoViewIndex(curSectionIndex);
-    });
+      buttonRight.addEventListener('click', function () {
+        if (curSectionIndex < sectionList.length - 1) curSectionIndex++;
+        scrollIntoViewIndex(curSectionIndex);
+      });
 
-    //   buttonRight.addEventListener("click", function () {
-    //     if (window.location.href = './about.html#about') {
-    //     console.log("moved rightside"); 
-    //     sections[1].scrollIntoView(true);
-    //   } else if (window.location.href = '#whatwedo') {
-    //     sections[2].scrollIntoView(true);
-    //   }
-    // });
- //You should be aware, if the user has scroll the page the browser may not retain their current scroll position.
- // Most modern browsers seem to handle this well, but this is not always the case
-
-
-
-
-      // const goNext = () => {
-      //   if (current < sections.length - 1) {
-      //     current++
+      //   buttonRight.addEventListener("click", function () {
+      //     if (window.location.href = './about.html#about') {
+      //     console.log("moved rightside");
+      //     sections[1].scrollIntoView(true);
+      //   } else if (window.location.href = '#whatwedo') {
+      //     sections[2].scrollIntoView(true);
       //   }
-      //   console.log("moved rightside"); 
-      //   sectionArray[current].scrollIntoView(true);
-      // }  
-
-      const section1 = document.querySelector('.section1');
-      const section2 = document.querySelector('.section2');
-      const section3 = document.querySelector('.section3');
-      // const newLocal1 = section1.offsetWidth;
-      // console.log(newLocal1);
-
-    
-
-//  buttonLeft.addEventListener('click', function () {
-//         section[current].scrollIntoView(true);
-//       });
-
-      //https://stackoverflow.com/questions/64502303/javascript-element-scrollleft-cant-handle-decimals
-      //https://stackoverflow.com/questions/56392199/make-a-button-to-scroll-horizontally-in-div
+      // });
     </script>
   </body>
 </html>

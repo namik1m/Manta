@@ -1,4 +1,160 @@
 @font-face {
+  font-family: 'Titillium Web ExtraLight';
+  src: url('../fonts/TitilliumWeb-ExtraLight.woff2') format('woff2'),
+      url('..//fonts/TitilliumWeb-ExtraLight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Titillium Web Bold';
+  src: url('../fonts/TitilliumWeb-Bold.woff2') format('woff2'),
+      url('../fonts/TitilliumWeb-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Titillium Web LightItalic';
+  src: url('../fonts/TitilliumWeb-LightItalic.woff2') format('woff2'),
+      url('../fonts/TitilliumWeb-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Titillium Web ExtraLightItalic';
+  src: url('../fonts/TitilliumWeb-ExtraLightItalic.woff2') format('woff2'),
+      url('../fonts/TitilliumWeb-ExtraLightItalic.woff') format('woff');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Titillium Web Italic';
+  src: url('../fonts/TitilliumWeb-SemiBoldItalic.woff2') format('woff2'),
+      url('../fonts/TitilliumWeb-SemiBoldItalic.woff') format('woff');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Titillium Web SemiBold';
+  src: url('../fonts/TitilliumWeb-SemiBold.woff2') format('woff2'),
+      url('../fonts/TitilliumWeb-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Titillium Web BoldItalic';
+  src: url('../fonts/TitilliumWeb-BoldItalic.woff2') format('woff2'),
+      url('../fonts/TitilliumWeb-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Titillium Web Regular';
+  src: url('../fonts/TitilliumWeb-Regular.woff2') format('woff2'),
+      url('../fonts/TitilliumWeb-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Titillium Web Italic';
+  src: url('../fonts/TitilliumWeb-Italic.woff2') format('woff2'),
+      url('../fonts/TitilliumWeb-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Titillium Web Light';
+  src: url('../fonts/TitilliumWeb-Light.woff2') format('woff2'),
+      url('../fonts/TitilliumWeb-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Titillium Web Black';
+  src: url('../fonts/TitilliumWeb-Black.woff2') format('woff2'),
+      url('../fonts/TitilliumWeb-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+@font-face {
+  font-family: 'NotoSansJP-Black-Alphabetic';
+  src: url('../NotoSansJP-Black-Alphabetic.woff2') format('woff2'),
+      url('../NotoSansJP-Black-Alphabetic.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NotoSansJP-Light-Alphabetic';
+  src: url('../fonts/NotoSansJP-Light-Alphabetic.woff2') format('woff2'),
+      url('../fonts/NotoSansJP-Light-Alphabetic.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NotoSansJP-Bold-Alphabetic';
+  src: url('../fonts/NotoSansJP-Bold-Alphabetic.woff2') format('woff2'),
+      url('../fonts/NotoSansJP-Bold-Alphabetic.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NotoSansJP-Medium-Alphabetic';
+  src: url('../fonts/NotoSansJP-Medium-Alphabetic.woff2') format('woff2'),
+      url('../fonts/NotoSansJP-Medium-Alphabetic.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NotoSansJP-Regular-Alphabetic';
+  src: url('../fonts/NotoSansJP-Regular-Alphabetic.woff2') format('woff2'),
+      url('../fonts/NotoSansJP-Regular-Alphabetic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NotoSansJP-Thin-Alphabetic';
+  src: url('../fonts/NotoSansJP-Thin-Alphabetic.woff2') format('woff2'),
+      url('../fonts/NotoSansJP-Thin-Alphabetic.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
   font-family: 'Platform-Regular';
   src: url('../fonts/Platform-Regular.woff2') format('woff2'),
       url('../fonts/Platform-Regular.woff') format('woff');

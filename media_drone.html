@@ -25,53 +25,89 @@
     <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
   </head>
   <body>
-
     <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu" />
-      <label for="openSidebarMenu" class="sidebarIconToggle">
-        <div class="spinner diagonal part-1"></div>
-        <div class="spinner horizontal"></div>
-        <div class="spinner diagonal part-2"></div>
-      </label>
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+      <div class="spinner diagonal part-1"></div>
+      <div class="spinner horizontal"></div>
+      <div class="spinner diagonal part-2"></div>
+    </label>
 
-      <div id="sidebarMenu">
-        <div class="sidebarMenuInner">
-          <div class="logosec">
-            <a href="./index.html"
-              ><img src="./img/Manta Logo 1/Mantalogo.png" id="biglogo"
-            /></a>
-          </div>
-
-          <ul id="list">
-            <li id="about_typo"><a href="./about.html#about">about</a></li>
-            <li><a href="./media_theater.html">media</a></li>
-            <li id="contact_typo"><a href="./about.html#colla">contact</a></li>
-          </ul>
+    <div id="sidebarMenu">
+      <div class="sidebarMenuInner">
+        <div class="logosec">
+          <a href="./index.html"
+            ><img src="./img/Manta Logo 1/Mantalogo.png" id="biglogo"
+          /></a>
         </div>
+
+        <ul id="list">
+          <li id="about_typo"><a href="./about.html#about">about</a></li>
+          <li><a href="./media_video.html">media</a></li>
+          <li id="contact_typo"><a href="./about.html#colla">contact</a></li>
+        </ul>
       </div>
+    </div>
 
     <div class="container">
       <header class="header">
         <div id="mainlogo">
-          <a href="./index.html"><img src="./img/Manta Logo 1/Mantalogo01_32ff32.png" /></a>
+          <a href="./index.html"
+            ><img src="./img/Manta Logo 1/Mantalogo01_32ff32.png"
+          /></a>
         </div>
       </header>
 
       <ul class="cate">
         <div class="catepart catepart1">
-          <li id="video" style="color: #f1f0f8;"><a href="./media_video.html" style="color: #f1f0f8; text-decoration:none;">VIDEO</a></li>
-          <li id="drone" style="color:#32ff32;"><a href="./media_drone.html" style="color:#32ff32; text-decoration:none;">DRONE</a></li>
-          <li id="animation"  style="color: #f1f0f8;"><a href="./media_animation.html" style="color: #f1f0f8; text-decoration:none;">ANIMATION</a></li>
+          <li id="video" style="color: #f1f0f8">
+            <a
+              href="./media_video.html"
+              style="color: #f1f0f8; text-decoration: none"
+              >video</a
+            >
+          </li>
+          <li id="drone" style="color: #aaff00;">
+            <a
+              href="./media_drone.html"
+              style="color: #aaff00;text-decoration: none"
+              >drone</a
+            >
+          </li>
+          <li id="animation" style="color: #f1f0f8">
+            <a
+              href="./media_animation.html"
+              style="color: #f1f0f8; text-decoration: none"
+              >animation</a
+            >
+          </li>
         </div>
         <div class="catepart catepart2">
-          <li id="theater" style="color: #f1f0f8;"><a href="./media_theater.html" style="color: #f1f0f8; text-decoration:none;">THEATER</a></li>
-          <li id="event" style="color: #f1f0f8;"><a href="./media_event.html" style="color: #f1f0f8; text-decoration:none;">EVENT</a></li>
-          <li id="promo" style="color: #f1f0f8;"><a href="./media_promo.html" style="color: #f1f0f8; text-decoration:none;">PROMO</a></li>
+          <li id="theater" style="color: #f1f0f8">
+            <a
+              href="./media_theater.html"
+              style="color: #f1f0f8; text-decoration: none"
+              >theater</a
+            >
+          </li>
+          <li id="event" style="color: #f1f0f8">
+            <a
+              href="./media_event.html"
+              style="color: #f1f0f8; text-decoration: none"
+              >event</a
+            >
+          </li>
+          <li id="promo" style="color: #f1f0f8">
+            <a
+              href="./media_promo.html"
+              style="color: #f1f0f8; text-decoration: none"
+              >promo</a
+            >
+          </li>
         </div>
       </ul>
 
       <div class="videos">
-        
-        <!--Theater genre videos-->
+        <!--Animation videos : ID name starts with alphabet c-->
         <!-- <div id="d1" class="inside open-video" data-scroll ><img src="./img/media/04-01.jpg" /></div>
         <div class="plyr__video-embed" id="player">
           <span class="closebtn">&times;</span>
@@ -138,124 +174,100 @@
             frameborder="0" 
           ></iframe>
         </div> -->
-       
+      </div>
+      <!--video div end-->
+    </div>
+    <!--container end-->
 
-      </div><!--video div end-->
-    </div><!--container end-->
-
-
+    <!--Footer-->
     <footer class="footer">
       <div class="foo-content">
         <ul class="list-inline">
           <!--First block-->
           <span id="statement">CREATIVITY TOWARDS YOU</span>
-          <div class="spansection">
-            <span>media</span>
-            <span>about</span>
-            <span>contacts</span>
-            <span>term 2023</span>
-          </div>
           <div class="logosection">
-            <span id="ig"><img src="./img/ig_hsmall_black.png" /></span>
+            <span id="fb"><img src="./img/facebook.png" alt = "Facebook"/></span>
+            <span id="ig"><img src="./img/insta.png" alt = "Instagram"/></span>
             <span id="vimeo"
               ><a href="https://vimeo.com/danossmedia"
-                ><img src="./img/vm_black.png" /></a
+                ><img src="./img/vimeo.png" alt = "vimeo"/></a
             ></span>
+            <span id="linkedin"><img src="./img/linkedin.png" alt = "LinkedIn"/></span>
           </div>
         </ul>
 
         <ul class="list-inline">
           <!--Second block-->
           <span id="statement">CREATIVITY TOWARDS YOU</span>
-          <div class="spansection">
-            <span>media</span>
-            <span>about</span>
-            <span>contacts</span>
-            <span>term 2023</span>
-          </div>
           <div class="logosection">
-            <span id="ig"><img src="./img/ig_hsmall_black.png" /></span>
+            <span id="fb"><img src="./img/facebook.png" alt = "Facebook"/></span>
+            <span id="ig"><img src="./img/insta.png" alt = "Instagram"/></span>
             <span id="vimeo"
               ><a href="https://vimeo.com/danossmedia"
-                ><img src="./img/vm_black.png" /></a
+                ><img src="./img/vimeo.png" alt = "vimeo"/></a
             ></span>
+            <span id="linkedin"><img src="./img/linkedin.png" alt = "LinkedIn"/></span>
           </div>
         </ul>
 
         <ul class="list-inline">
           <!--Third block-->
           <span id="statement">CREATIVITY TOWARDS YOU</span>
-          <div class="spansection">
-            <span>media</span>
-            <span>about</span>
-            <span>contacts</span>
-            <span>term 2023</span>
-          </div>
           <div class="logosection">
-            <span id="ig"><img src="./img/ig_hsmall_black.png" /></span>
+            <span id="fb"><img src="./img/facebook.png" alt = "Facebook"/></span>
+            <span id="ig"><img src="./img/insta.png" alt = "Instagram"/></span>
             <span id="vimeo"
               ><a href="https://vimeo.com/danossmedia"
-                ><img src="./img/vm_black.png" /></a
+                ><img src="./img/vimeo.png" alt = "vimeo"/></a
             ></span>
-          </div>
+            <span id="linkedin"><img src="./img/linkedin.png" alt = "LinkedIn"/></span>
+            </div>  
         </ul>
 
         <ul class="list-inline">
           <!--Third block-->
           <span id="statement">CREATIVITY TOWARDS YOU</span>
-          <div class="spansection">
-            <span>media</span>
-            <span>about</span>
-            <span>contacts</span>
-            <span>term 2023</span>
-          </div>
           <div class="logosection">
-            <span id="ig"><img src="./img/ig_hsmall_black.png" /></span>
+            <span id="fb"><img src="./img/facebook.png" alt = "Facebook"/></span>
+            <span id="ig"><img src="./img/insta.png" alt = "Instagram"/></span>
             <span id="vimeo"
               ><a href="https://vimeo.com/danossmedia"
-                ><img src="./img/vm_black.png" /></a
+                ><img src="./img/vimeo.png" alt = "vimeo"/></a
             ></span>
+            <span id="linkedin"><img src="./img/linkedin.png" alt = "LinkedIn"/></span>
           </div>
         </ul>
 
         <ul class="list-inline">
           <!--Fourth block-->
           <span id="statement">CREATIVITY TOWARDS YOU</span>
-          <div class="spansection">
-            <span>media</span>
-            <span>about</span>
-            <span>contacts</span>
-            <span>term 2023</span>
-          </div>
           <div class="logosection">
-            <span id="ig"><img src="./img/ig_hsmall_black.png" /></span>
+            <span id="fb"><img src="./img/facebook.png" alt = "Facebook"/></span>
+            <span id="ig"><img src="./img/insta.png" alt = "Instagram"/></span>
             <span id="vimeo"
               ><a href="https://vimeo.com/danossmedia"
-                ><img src="./img/vm_black.png" /></a
+                ><img src="./img/vimeo.png" alt = "vimeo"/></a
             ></span>
+            <span id="linkedin"><img src="./img/linkedin.png" alt = "LinkedIn"/></span>
           </div>
         </ul>
 
         <ul class="list-inline">
           <!--Third block-->
           <span id="statement">CREATIVITY TOWARDS YOU</span>
-          <div class="spansection">
-            <span>media</span>
-            <span>about</span>
-            <span>contacts</span>
-            <span>term 2023</span>
-          </div>
           <div class="logosection">
-            <span id="ig"><img src="./img/ig_hsmall_black.png" /></span>
+            <span id="fb"><img src="./img/facebook.png" alt = "Facebook"/></span>
+            <span id="ig"><img src="./img/insta.png" alt = "Instagram"/></span>
             <span id="vimeo"
               ><a href="https://vimeo.com/danossmedia"
-                ><img src="./img/vm_black.png" /></a
+                ><img src="./img/vimeo.png" alt = "vimeo"/></a
             ></span>
+            <span id="linkedin"><img src="./img/linkedin.png" alt = "LinkedIn"/></span>
           </div>
         </ul>
       </div>
     </footer>
-  
+
 
     <script>
       ScrollOut({
@@ -267,10 +279,8 @@
       });
     </script>
     <script src="./js/scrolling2.js"></script>
-    <!-- <script src="path/to/plyr.js"></script>
-<script>
-  const player = new Plyr('#player');
-</script> -->
+    <script src="./js/mobiledisable2.js"></script>
     <script src="./js/videomodal.js"></script>
+    <script src="./js/close_menu_click.js"></script>
   </body>
 </html>
