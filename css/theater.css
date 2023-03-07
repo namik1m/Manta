@@ -946,9 +946,10 @@ input[type='checkbox'] {
   transition: all 0.3s;
   box-sizing: border-box;
   position: absolute;
-  height: 3px;
-  width: 100%;
-  background-color: #fff;
+  height: 2px;
+  width: 130%;
+  margin-bottom: 4px;
+  background-color: #32ff32;
 }
 
 .spinner:hover,
@@ -1075,6 +1076,7 @@ input[type='checkbox']:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   font-size: 1.25rem;
   line-height: 1;
   margin-top: 12px;
+  color:#360c79;
 }
 
 .list-inline span {
@@ -1087,7 +1089,7 @@ input[type='checkbox']:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-66.6%);
+    transform: translateX(-40%);
   }
 }
 
@@ -1183,13 +1185,6 @@ input[type='checkbox']:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     font-size: 1rem;
     margin-top: 6px;
   }
-  @keyframes marquee {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-66.6%);
-    }
-  }
+
 }
 

@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sent Email</title>
+    <link
+    rel="stylesheet"
+    type="text/css"
+    media="screen"
+    href="./css/fontsheet.css"
+  />
+  <style>
+    /*Body, Header, Footer*/
+html,
+body {
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-family: 'Titillium Web Regular';
+  overflow:hidden;
+  background: linear-gradient(88deg, #090d15, #00396f, #04223e, #f1f0f8);
+  background-size: 400% 400%;
+}
+
+.container {
+  width: 80%;
+  height: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  overflow:hidden;
+  position: relative;
+  margin-left:auto;
+  margin-right: auto;
+  margin-top:0;
+  margin-bottom:2px;
+}
+
+.container h1{
+    color: #aaff00;
+    /* text-align: center; */
+    position: relative;
+    top:5%;
+    margin-bottom:4rem;
+}
+
+#mainlogo {
+  position: fixed;
+  top: 2.5%;
+  width: 5.5%;
+  z-index: 997;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#mainlogo img {
+  width: 100%;
+}
+
+.btns {
+  position: relative;
+  display: inline-block;
+  top: 2%;
+  display: flex;
+  flex-direction: column;
+  width: 12%;
+}
+
+.btns button {
+  cursor: pointer;
+  color: #aaff00;
+  border: #aaff00 solid 1px;
+  background-color: transparent;
+  border-radius: 32px;
+  text-align: center;
+  padding: 2.75% 6%;
+  font-size: 1.25rem;
+  margin-bottom: 10%;
+}
+
+.btns button a {
+  text-decoration: none;
+  color: #aaff00;
+}
+
+/*Footer*/
+.footer {
+  position: absolute;
+  /* bottom: -4%; */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2.5rem;
+  z-index: 998;
+  color: black;
+  background-color: #32ff32;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.foo-content {
+  width: 300%;
+  height: 2.5rem;
+  display: flex;
+  line-height: 30px;
+  animation: marquee 13s linear infinite forwards;
+}
+
+.foo-content:hover {
+  animation-play-state: paused;
+}
+
+.footer::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+  top: 0rem;
+  width: 100%;
+  height:100%;
+  /* height: 2.5rem; */
+  background-image: url('../img/Manta Logo 1/02_footerinside_00cc00.png');
+  background-size: 10%;
+  background-repeat: repeat-x;
+}
+
+.logosection {
+  /* background-color: blue; */
+  width: 28%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#fb img{
+  margin-left:4px;
+}
+
+#ig img, #vimeo img, #fb img, #linkedin img {
+  width: 100%;
+  margin-top: -3px;
+}
+
+#term {
+  font-size: 0.6rem;
+  margin-top: 2.5%;
+  width: 100%;
+}
+
+.list-inline {
+  display: flex;
+  justify-content: space-around;
+  width: 10%;
+  /* reset list */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#statement {
+  font-family: 'Platform-Medium';
+  font-size: 1.25rem;
+  line-height: 1;
+  margin-top: 12px;
+  color:#360c79;
+}
+
+.list-inline span {
+  font-family: 'Platform-Light';
+  font-size: 1rem;
+  margin-top: 6px;
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-66.6%);
+  }
+}
+
+
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
+
+  body {
+    background-image: linear-gradient(to right bottom, #0c1d3d, #0b1a40, #0d1742, #111343, #160e44, #1f093c, #240434, #27002d, #25001f, #1f0014, #150009, #000000);
+    background-size: 100% 100%;
+  }
+
+  .container h1{
+    top:5%;
+    margin-bottom:4rem;
+   }
+
+  #mainlogo {
+    top: 3%;
+    width: 5.5%;
+  }
+
+  .btns {
+    position: relative;
+    display: inline-block;
+    top: 3%;
+    display: flex;
+    flex-direction: column;
+    width: 17%;
+  }
+
+  .btns button {
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 32px;
+    text-align: center;
+    padding: 3% 13.5%;
+    font-size: 1rem;
+    margin-bottom: 10%;
+    font-family: 'Titillium Web Regular';
+  }
+
+  .btns button a {
+    text-decoration: none;
+  }
+
+  /*Header*/
+  .header {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3rem;
+  }
+
+  #sidebarMenu {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /*relate*/
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in-out;
+    background: rgb(0, 0, 0, 0.8);
+    z-index: 998;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .sidebarMenuInner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logosec {
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+    height: auto;
+    text-align: center;
+  }
+
+  #biglogo {
+    width: 100%;
+  }
+
+  /*UL*/
+  #list {
+    width: 72%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* padding-top: 13%; */
+    margin: 0.8rem auto;
+  }
+
+  #list li {
+    list-style: none;
+    /* font-family: 'Platform-Light'; */
+    font-family: 'Titillium Web Regular';
+    font-size: 3.2rem;
+    letter-spacing: 0.03rem;
+    line-height: 0;
+    color: white;
+    cursor: pointer;
+    opacity: 1;
+  }
+
+  #list li a {
+    text-decoration: none;
+    color: #f1f0f8;
+  }
+
+  #contact_typo {
+    position: relative;
+    left: -4%;
+  }
+
+  input[type='checkbox']:checked ~ #sidebarMenu {
+    transform: translateX(0);
+  }
+
+  input[type='checkbox'] {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    display: none;
+  }
+  .sidebarIconToggle {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    z-index: 999;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 1.5%;
+    height: 22px;
+    width: 22px;
+  }
+  .spinner {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: absolute;
+    height: 2px;
+    width: 130%;
+    margin-bottom: 4px;
+    background-color: #fff;
+  }
+
+  .horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+  }
+
+  .diagonal.part-1 {
+    position: relative;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    float: left;
+  }
+  .diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+  }
+  input[type='checkbox']:checked ~ .sidebarIconToggle > .horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    opacity: 0;
+  }
+  input[type='checkbox']:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(135deg);
+    margin-top: 8px;
+  }
+  input[type='checkbox']:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(-135deg);
+    margin-top:-14px;
+    /* margin-top: -9px; */
+  }
+
+  /*Footer*/
+  .footer {
+    position: absolute;
+    /* bottom: -4%; */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2rem;
+    z-index: 998;
+    color: black;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+
+  .foo-content {
+    width: 300%;
+    height: 2rem;
+    display: flex;
+    line-height: 30px;
+  }
+
+  .foo-content:hover {
+    animation-play-state: paused;
+  }
+
+  .footer::after {
+    background-size: 10%;
+    background-repeat: repeat-x;
+  }
+
+  .logosection {
+    /* background-color: blue; */
+    width: 28%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #fb img{
+    margin-left:4px;
+  }
+
+  #ig img, #vimeo img, #fb img, #linkedin img {
+    width: 100%;
+    margin-top: -4px;
+  }
+
+  #term {
+    font-size: 0.6rem;
+    margin-top: 2.5%;
+    width: 100%;
+  }
+
+  .list-inline {
+    display: flex;
+    justify-content: space-around;
+    width: 9%;
+    /* reset list */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  #statement {
+    font-family: 'Platform-Medium';
+    /* font-family: 'Titillium Web Bold'; */
+    font-size: 1.25rem;
+    line-height: 1;
+    margin-top: 6px;
+  }
+
+  .list-inline span {
+    font-family: 'Platform-Light';
+    font-size: 1rem;
+    margin-top: 6px;
+  }
+
+}
+  </style>
+</head>
+<body>
+    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu" />
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+      <div class="spinner diagonal part-1"></div>
+      <div class="spinner horizontal"></div>
+      <div class="spinner diagonal part-2"></div>
+    </label>
+
+    <div id="sidebarMenu">
+      <div class="sidebarMenuInner">
+        <div class="logosec">
+          <a href="./index.html"
+            ><img src="./img/Manta Logo 1/Mantalogo.png" id="biglogo"
+          /></a>
+        </div>
+
+        <ul id="list">
+          <li id="about_typo"><a href="./about.html#about">about</a></li>
+          <li><a href="./media_video.html">media</a></li>
+          <li id="contact_typo"><a href="./about.html#colla">contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <main class="container">
+        <header class="header">
+            <div id="mainlogo">
+              <a href="./index.html"
+                ><img src="./img/Manta Logo 1/Mantalogo01_32ff32.png"
+              /></a>
+            </div>
+          </header>
+
+        <h1>Thank you for your message!</h1>
+        <div class="btns">
+            <button><a href="./about.html">ABOUT</a></button>
+            <button><a href="./media_video.html">MEDIA</a></button>    
+        </div>
+    </main>
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="foo-content">
+          <ul class="list-inline">
+            <!--First block-->
+            <span id="statement">CREATIVITY TOWARDS YOU</span>
+            <div class="logosection">
+              <span id="fb"><img src="./img/facebook.png" alt = "Facebook"/></span>
+              <span id="ig"><img src="./img/insta.png" alt = "Instagram"/></span>
+              <span id="vimeo"
+                ><a href="https://vimeo.com/danossmedia"
+                  ><img src="./img/vimeo.png" alt = "vimeo"/></a
+              ></span>
+              <span id="linkedin"><img src="./img/linkedin.png" alt = "LinkedIn"/></span>
+            </div>
+          </ul>
+  
+          <ul class="list-inline">
+            <!--Second block-->
+            <span id="statement">CREATIVITY TOWARDS YOU</span>
+            <div class="logosection">
+              <span id="fb"><img src="./img/facebook.png" alt = "Facebook"/></span>
+              <span id="ig"><img src="./img/insta.png" alt = "Instagram"/></span>
+              <span id="vimeo"
+                ><a href="https://vimeo.com/danossmedia"
+                  ><img src="./img/vimeo.png" alt = "vimeo"/></a
+              ></span>
+              <span id="linkedin"><img src="./img/linkedin.png" alt = "LinkedIn"/></span>
+            </div>
+          </ul>
+  
+          <ul class="list-inline">
+            <!--Third block-->
+            <span id="statement">CREATIVITY TOWARDS YOU</span>
+            <div class="logosection">
+              <span id="fb"><img src="./img/facebook.png" alt = "Facebook"/></span>
+              <span id="ig"><img src="./img/insta.png" alt = "Instagram"/></span>
+              <span id="vimeo"
+                ><a href="https://vimeo.com/danossmedia"
+                  ><img src="./img/vimeo.png" alt = "vimeo"/></a
+              ></span>
+              <span id="linkedin"><img src="./img/linkedin.png" alt = "LinkedIn"/></span>
+              </div>  
+          </ul>
+  
+          <ul class="list-inline">
+            <!--Third block-->
+            <span id="statement">CREATIVITY TOWARDS YOU</span>
+            <div class="logosection">
+              <span id="fb"><img src="./img/facebook.png" alt = "Facebook"/></span>
+              <span id="ig"><img src="./img/insta.png" alt = "Instagram"/></span>
+              <span id="vimeo"
+                ><a href="https://vimeo.com/danossmedia"
+                  ><img src="./img/vimeo.png" alt = "vimeo"/></a
+              ></span>
+              <span id="linkedin"><img src="./img/linkedin.png" alt = "LinkedIn"/></span>
+            </div>
+          </ul>
+  
+          <ul class="list-inline">
+            <!--Fourth block-->
+            <span id="statement">CREATIVITY TOWARDS YOU</span>
+            <div class="logosection">
+              <span id="fb"><img src="./img/facebook.png" alt = "Facebook"/></span>
+              <span id="ig"><img src="./img/insta.png" alt = "Instagram"/></span>
+              <span id="vimeo"
+                ><a href="https://vimeo.com/danossmedia"
+                  ><img src="./img/vimeo.png" alt = "vimeo"/></a
+              ></span>
+              <span id="linkedin"><img src="./img/linkedin.png" alt = "LinkedIn"/></span>
+            </div>
+          </ul>
+  
+          <ul class="list-inline">
+            <!--Third block-->
+            <span id="statement">CREATIVITY TOWARDS YOU</span>
+            <div class="logosection">
+              <span id="fb"><img src="./img/facebook.png" alt = "Facebook"/></span>
+              <span id="ig"><img src="./img/insta.png" alt = "Instagram"/></span>
+              <span id="vimeo"
+                ><a href="https://vimeo.com/danossmedia"
+                  ><img src="./img/vimeo.png" alt = "vimeo"/></a
+              ></span>
+              <span id="linkedin"><img src="./img/linkedin.png" alt = "LinkedIn"/></span>
+            </div>
+          </ul>
+        </div>
+      </footer>
+
+      <script>
+        const container = document.querySelector('.container');
+        const body = document.querySelector('body');
+        const section = document.querySelector('.section');
+        const menuList = document.getElementById('openSidebarMenu');
+        const menuOpenedSection = document.getElementById('sidebarMenu');
+          // const menuFrame = document.getElementById('sidebarMenu');
+
+          function check() {
+          menuList.checked = true;
+          }
+    
+          function uncheck() {
+          menuList.checked = false;
+          container.scrollTop = 0; //scrollTop을 원위치로 해야 다시 스크롤 이벤트 발생함
+          //menuFrame.style.transform = 'translateX(-100%)';
+          }
+    
+          container.addEventListener(
+              "wheel", 
+              (e) => {
+                  console.log("container", e);
+                  if (e.deltaY > 2) {
+                      check();
+                  } else if (e.deltaY < -2) {
+                      uncheck();
+                  }
+              }, 
+              {passive:false}
+          );
+    
+          menuOpenedSection.addEventListener("click", (e) => {
+            //console.log("window is clicked");
+            uncheck();
+          })
+    
+      </script>  
+    <script src="./js/scrolling.js"></script>
+    <script src="./js/close_menu_click.js"></script>
+    </body>      
+</html>

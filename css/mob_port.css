@@ -678,13 +678,13 @@
     position: absolute;
     height: 3px;
     width: 100%;
-    background-color: #fff;
+    background-color: #32ff32;
   }
 
   .spinner:hover,
   .spiner:focus {
     cursor: pointer;
-    color: #ffff00;
+    color: #32ff32;
   }
 
   .horizontal {

@@ -68,19 +68,16 @@
         </div>
       </header>
 
-      <div class="pagebtn">
+
         <div id="larrow">
           <span id="leftside"></span>
           <span id="leftside"></span>
-          <!-- <img src="./img/arrow-left-svgrepo-com.svg" /> -->
         </div>
 
         <div id="rarrow">
           <span id="rightside"></span>
           <span id="rightside"></span>
-          <!-- <img src="./img/arrow-right-svgrepo-com.svg" /> -->
         </div>
-      </div>
 
       <section class="section section1" id="about">
         <article class="sec-one-wrapper">
@@ -144,7 +141,7 @@
 
         <div class="slideshow">
           <iframe
-            src="https://player.vimeo.com/video/800821036?h=baf0524f9a&amp;muted=1&amp;autoplay=1&amp;loop=1&amp;transparent=0&amp;background=1&amp;app_id=122963"
+            src="https://player.vimeo.com/video/805572384?h=baf0524f9a&amp;muted=1&amp;autoplay=1&amp;loop=1&amp;transparent=0&amp;background=1&amp;app_id=122963"
             width="426"
             height="240"
             frameborder="0"
@@ -163,7 +160,7 @@
           <h1 id="collaborate">Let's Collaborate</h1>
 
           <div class="contact">
-            <form action="/action_page.php">
+            <form action="contactform.php" method="POST">
               <div class="detail">
                 <input
                   type="text"
@@ -187,6 +184,13 @@
 
               <input
                 type="text"
+                id="subject"
+                name="subject"
+                placeholder="*Subject"
+              />
+
+              <input
+                type="text"
                 id="note"
                 name="note"
                 placeholder="*Type your message..."
@@ -205,7 +209,7 @@
           <div class="info">
             <p id="num">+31 6 13657676</p>
             <p id="email">
-              <a href="mailto:info@mantamedia.io">info@mantamedia.io</a>
+              <a href="mailto:contact@mantamedia.io">contact@mantamedia.io</a>
             </p>
             <p>KvK 67946291</p>
           </div>
@@ -255,13 +259,13 @@
           <!--First block-->
           <span id="statement">CREATIVITY TOWARDS YOU</span>
           <div class="logosection">
-            <span id="fb"><img src="./img/facebook.png" alt = "Facebook"/></span>
-            <span id="ig"><img src="./img/insta.png" alt = "Instagram"/></span>
+            <span id="fb"><img src="./img/facebook_360c79.png" alt = "Facebook"/></span>
+            <span id="ig"><img src="./img/insta_360c79.png" alt = "Instagram"/></span>
             <span id="vimeo"
               ><a href="https://vimeo.com/danossmedia"
-                ><img src="./img/vimeo.png" alt = "vimeo"/></a
+                ><img src="./img/vimeo_360c79.png" alt = "vimeo"/></a
             ></span>
-            <span id="linkedin"><img src="./img/linkedin.png" alt = "LinkedIn"/></span>
+            <span id="linkedin"><img src="./img/linkedin_360c79.png" alt = "LinkedIn"/></span>
           </div>
         </ul>
 
@@ -269,13 +273,13 @@
           <!--Second block-->
           <span id="statement">CREATIVITY TOWARDS YOU</span>
           <div class="logosection">
-            <span id="fb"><img src="./img/facebook.png" alt = "Facebook"/></span>
-            <span id="ig"><img src="./img/insta.png" alt = "Instagram"/></span>
+            <span id="fb"><img src="./img/facebook_360c79.png" alt = "Facebook"/></span>
+            <span id="ig"><img src="./img/insta_360c79.png" alt = "Instagram"/></span>
             <span id="vimeo"
               ><a href="https://vimeo.com/danossmedia"
-                ><img src="./img/vimeo.png" alt = "vimeo"/></a
+                ><img src="./img/vimeo_360c79.png" alt = "vimeo"/></a
             ></span>
-            <span id="linkedin"><img src="./img/linkedin.png" alt = "LinkedIn"/></span>
+            <span id="linkedin"><img src="./img/linkedin_360c79.png" alt = "LinkedIn"/></span>
           </div>
         </ul>
 
@@ -283,55 +287,83 @@
           <!--Third block-->
           <span id="statement">CREATIVITY TOWARDS YOU</span>
           <div class="logosection">
-            <span id="fb"><img src="./img/facebook.png" alt = "Facebook"/></span>
-            <span id="ig"><img src="./img/insta.png" alt = "Instagram"/></span>
+            <span id="fb"><img src="./img/facebook_360c79.png" alt = "Facebook"/></span>
+            <span id="ig"><img src="./img/insta_360c79.png" alt = "Instagram"/></span>
             <span id="vimeo"
               ><a href="https://vimeo.com/danossmedia"
-                ><img src="./img/vimeo.png" alt = "vimeo"/></a
+                ><img src="./img/vimeo_360c79.png" alt = "vimeo"/></a
             ></span>
-            <span id="linkedin"><img src="./img/linkedin.png" alt = "LinkedIn"/></span>
-            </div>  
-        </ul>
-
-        <ul class="list-inline">
-          <!--Third block-->
-          <span id="statement">CREATIVITY TOWARDS YOU</span>
-          <div class="logosection">
-            <span id="fb"><img src="./img/facebook.png" alt = "Facebook"/></span>
-            <span id="ig"><img src="./img/insta.png" alt = "Instagram"/></span>
-            <span id="vimeo"
-              ><a href="https://vimeo.com/danossmedia"
-                ><img src="./img/vimeo.png" alt = "vimeo"/></a
-            ></span>
-            <span id="linkedin"><img src="./img/linkedin.png" alt = "LinkedIn"/></span>
-          </div>
+            <span id="linkedin"><img src="./img/linkedin_360c79.png" alt = "LinkedIn"/></span>
+          </div> 
         </ul>
 
         <ul class="list-inline">
           <!--Fourth block-->
           <span id="statement">CREATIVITY TOWARDS YOU</span>
           <div class="logosection">
-            <span id="fb"><img src="./img/facebook.png" alt = "Facebook"/></span>
-            <span id="ig"><img src="./img/insta.png" alt = "Instagram"/></span>
+            <span id="fb"><img src="./img/facebook_360c79.png" alt = "Facebook"/></span>
+            <span id="ig"><img src="./img/insta_360c79.png" alt = "Instagram"/></span>
             <span id="vimeo"
               ><a href="https://vimeo.com/danossmedia"
-                ><img src="./img/vimeo.png" alt = "vimeo"/></a
+                ><img src="./img/vimeo_360c79.png" alt = "vimeo"/></a
             ></span>
-            <span id="linkedin"><img src="./img/linkedin.png" alt = "LinkedIn"/></span>
+            <span id="linkedin"><img src="./img/linkedin_360c79.png" alt = "LinkedIn"/></span>
           </div>
         </ul>
 
         <ul class="list-inline">
-          <!--Third block-->
+          <!--Fifth block-->
           <span id="statement">CREATIVITY TOWARDS YOU</span>
           <div class="logosection">
-            <span id="fb"><img src="./img/facebook.png" alt = "Facebook"/></span>
-            <span id="ig"><img src="./img/insta.png" alt = "Instagram"/></span>
+            <span id="fb"><img src="./img/facebook_360c79.png" alt = "Facebook"/></span>
+            <span id="ig"><img src="./img/insta_360c79.png" alt = "Instagram"/></span>
             <span id="vimeo"
               ><a href="https://vimeo.com/danossmedia"
-                ><img src="./img/vimeo.png" alt = "vimeo"/></a
+                ><img src="./img/vimeo_360c79.png" alt = "vimeo"/></a
             ></span>
-            <span id="linkedin"><img src="./img/linkedin.png" alt = "LinkedIn"/></span>
+            <span id="linkedin"><img src="./img/linkedin_360c79.png" alt = "LinkedIn"/></span>
+          </div>
+        </ul>
+
+        <ul class="list-inline">
+          <!--Sixth block-->
+          <span id="statement">CREATIVITY TOWARDS YOU</span>
+          <div class="logosection">
+            <span id="fb"><img src="./img/facebook_360c79.png" alt = "Facebook"/></span>
+            <span id="ig"><img src="./img/insta_360c79.png" alt = "Instagram"/></span>
+            <span id="vimeo"
+              ><a href="https://vimeo.com/danossmedia"
+                ><img src="./img/vimeo_360c79.png" alt = "vimeo"/></a
+            ></span>
+            <span id="linkedin"><img src="./img/linkedin_360c79.png" alt = "LinkedIn"/></span>
+          </div>
+        </ul>
+
+        <ul class="list-inline">
+          <!--Seventh block-->
+          <span id="statement">CREATIVITY TOWARDS YOU</span>
+          <div class="logosection">
+            <span id="fb"><img src="./img/facebook_360c79.png" alt = "Facebook"/></span>
+            <span id="ig"><img src="./img/insta_360c79.png" alt = "Instagram"/></span>
+            <span id="vimeo"
+              ><a href="https://vimeo.com/danossmedia"
+                ><img src="./img/vimeo_360c79.png" alt = "vimeo"/></a
+            ></span>
+            <span id="linkedin"><img src="./img/linkedin_360c79.png" alt = "LinkedIn"/></span>
+          </div>
+        </ul>
+
+        <ul class="list-inline">
+          <!--Eighth block-->
+          <span id="statement">CREATIVITY TOWARDS YOU</span>
+          <div class="logosection">
+            <span id="fb"><img src="./img/facebook_360c79.png" alt = "Facebook"/></span>
+            <span id="ig"><img src="./img/insta_360c79.png" alt = "Instagram"/></span>
+            <span id="vimeo"
+              ><a href="https://vimeo.com/danossmedia"
+                ><img src="./img/vimeo_360c79.png" alt = "vimeo"/></a
+            ></span>
+            <span id="linkedin"><img src="./img/linkedin_360c79.png" alt = "LinkedIn"/></span>
           </div>
         </ul>
       </div>

@@ -45,33 +45,37 @@ body {
   width: 100%;
 }
 /*Arrow CSS animation: https://codepen.io/vlt_dev/pen/NWMNzpE*/
-.pagebtn {
+/* .pagebtn {
   position: fixed;
   width: 100vw;
   bottom: 20%;
-  display: flex;
+  display: i
   justify-content: space-between;
   align-items: center;
   z-index:997;
   cursor:pointer;
-}
+} */
 
 #larrow,
 #rarrow {
+  position: fixed;
+  cursor:pointer;
+  z-index:997;
+  bottom:22%;
   background-color: transparent;
   border: none;
   padding: 0;
   margin:0;
-  width: 8%;
 }
 
 #larrow {
   transform: rotate(90deg);
-  margin-top: 19%;
+  left:8%;
 }
 
 #rarrow {
   transform: rotate(270deg);
+  right:8%;
 }
 
 #leftside:nth-child(2), #rightside:nth-child(2) {
@@ -80,12 +84,12 @@ body {
 
 #leftside, #rightside{
 display: block;
-width: 1.5vw;
-height: 1.5vw;
+width: 1.35vw;
+height: 1.35vw;
 border-bottom: 5px solid #aaff00;
 border-right: 5px solid #aaff00;
 margin: -10px;
-  animation: animate 2s infinite;
+animation: animate 2s infinite;
 }
 
 #leftside{
@@ -470,6 +474,11 @@ form {
   font-size: 1.1rem;
 }
 
+#subject{
+  border-radius: 16px;
+  width: 100%;
+}
+
 #note {
   height: 17rem;
   border-radius: 32px;
@@ -709,7 +718,7 @@ input[type='checkbox'] {
   height: 2px;
   width: 130%;
   margin-bottom: 4px;
-  background-color: #fff;
+  background-color: #32ff32;
 }
 
 /* .spinner:hover,
@@ -861,6 +870,7 @@ input[type='checkbox']:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-66.6%);
+    transform: translateX(-40%);
+    /* transform: translateX(-66.6%); */
   }
 }
