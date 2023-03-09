@@ -61,7 +61,7 @@ body {
   position: fixed;
   cursor:pointer;
   z-index:997;
-  bottom:22%;
+  bottom:10%;
   background-color: transparent;
   border: none;
   padding: 0;
@@ -70,12 +70,12 @@ body {
 
 #larrow {
   transform: rotate(90deg);
-  left:8%;
+  left:5%;
 }
 
 #rarrow {
   transform: rotate(270deg);
-  right:8%;
+  right:5%;
 }
 
 #leftside:nth-child(2), #rightside:nth-child(2) {
@@ -171,7 +171,7 @@ transform: rotate(45deg);
   line-height: 1;
   font-family: 'Titillium Web SemiBold';
   font-size: 4.25rem;
-  letter-spacing: 0.03rem;
+  letter-spacing: 0.05rem;
   color: white;
   text-transform: capitalize;
   margin-bottom: 0;
@@ -198,7 +198,7 @@ transform: rotate(45deg);
   top: 2%;
   display: flex;
   flex-direction: column;
-  width: 12%;
+  width: 12%; /*to be wider*/
 }
 
 .btns button {
@@ -208,9 +208,10 @@ transform: rotate(45deg);
   background-color: transparent;
   border-radius: 32px;
   text-align: center;
-  padding: 2.75% 6%;
   font-size: 1.25rem;
   margin-bottom: 10%;
+  padding: 5%;
+  letter-spacing: 0.07rem;
 }
 
 .btns button a {
@@ -257,7 +258,7 @@ video {
   top: 2%;
   display: flex;
   flex-direction: column;
-  width: 12.8%;
+  width: 13.8%;
 }
 
 #m2btn button {
@@ -297,6 +298,10 @@ video {
   text-align: left;
   width: 68%;
   flex: 1 0 auto;
+}
+
+.category a{
+  color: white;
 }
 
 .video {
@@ -447,20 +452,20 @@ form {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 90%;
+  width: 100%;
 }
 
 #name,
 #phone,
 #email {
-  width: 30%;
+  width: 32%;
   /* background-color: #203c99; */
 }
 
 .contact input {
   width: 85%;
   padding: 2% 0;
-  margin-bottom: 1rem;
+  margin-bottom: 2%;
   border: #aaff00 1px solid;
   border-radius: 48px;
   background-color: transparent;
@@ -480,7 +485,7 @@ form {
 }
 
 #note {
-  height: 17rem;
+  height: 10rem;
   border-radius: 32px;
   width: 100%;
 }
@@ -498,7 +503,7 @@ form {
   text-align: left;
   line-height: 0.4;
   color: #f1f0f8;
-  letter-spacing: 0.065rem;
+  letter-spacing: 0.02rem;
 }
 
 #tandc {
@@ -534,7 +539,7 @@ form {
   color: #32ff32;
   text-align: left;
   font-family: 'Titillium Web Regular';
-  letter-spacing: 0.117rem;
+  letter-spacing: 0.02rem;
 }
 
 .info a {
@@ -564,35 +569,32 @@ form {
   margin-bottom: 0;
 }
 #tr {
-  width: 25%;
-  top: -50%;
+  width: 18%;
+  top: -28%;
 }
 
 #grande {
   width: 23%;
-  top: -50%;
+  top: -36%;
 }
-
-#wdka {
-  width: 48%;
-  top: -20%;
-}
-
 #worm {
-  width: 50%;
+  width: 38%;
   top: -10%;
 }
 
 #wb {
-  width: 50%;
+  width: 38%;
+  top:-17%;
 }
 
 #tecart {
-  top: 0%;
+  top: -6%;
+  width:15%;
 }
 
 #v2 {
-  width: 50%;
+  width: 40%;
+  top:-7%;
 }
 
 #rood {
@@ -620,11 +622,10 @@ form {
   width: 100%; /*relate*/
   transform: translateX(-100%);
   transition: transform 0.5s ease-in-out;
-  background: rgb(0, 0, 0, 0.8);
   z-index: 998;
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .sidebarMenuInner {
   position: absolute;
@@ -658,8 +659,7 @@ form {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  /* padding-top: 13%; */
-  margin: 0.8rem auto;
+  margin: 2.2% auto;
 }
 
 #list li {
@@ -816,7 +816,7 @@ input[type='checkbox']:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   width: 100%;
   height:100%;
   /* height: 2.5rem; */
-  background-image: url('../img/Manta Logo 1/02_footerinside_00cc00.png');
+  background-image: url('../img/Manta Logo 1/MANTA Lime green A1 RGB R.png');
   background-size: 10%;
   background-repeat: repeat-x;
 }

@@ -36,7 +36,6 @@ body {
   /*Hide Scrollbar*/
   -ms-overflow-style: none; /* for Internet Explorer, Edge */
   scrollbar-width: none; /* for Firefox */
-
 }
 
 .containert::-webkit-scrollbar {
@@ -57,6 +56,7 @@ body {
   /* margin: 0; */
   /* overflow-y: auto; */
 }
+
 
 /*Header*/
 .header {
@@ -83,27 +83,6 @@ body {
   width: 100%;
 }
 
-/*Header*/
-/* .header {
-  position: absolute;
-  background-color: transparent;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 3rem;
-} */
-
-/* #mainlogo {
-  position: fixed;
-  top: 0.75rem;
-  left: 50%;
-  width: 5.5%;
-  z-index: 997;
-}
-
-#mainlogo img {
-  width: 100%;
-} */
 
 /*Menu*/
 #sidebarMenu {
@@ -114,13 +93,12 @@ body {
   width: 100%;
   transform: translateX(-100%);
   transition: transform 0.5s ease-in-out;
-  background: rgb(0, 0, 0, 0.8);
   z-index: 998;
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.2);
   overflow-y: auto;
-  margin-bottom:2px;
+  margin-bottom: 2px;
 }
 .sidebarMenuInner {
   position: absolute;
@@ -154,8 +132,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  /* padding-top: 13%; */
-  margin: 0.8rem auto;
+  margin: 2.2% auto;
 }
 
 #list li {
@@ -173,7 +150,7 @@ body {
 #list li a:hover,
 #list li a:focus {
   cursor: pointer;
-  color:#32ff32;
+  color: #32ff32;
 }
 
 #list li a {
@@ -298,9 +275,9 @@ input[type='checkbox']:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   left: 0;
   top: 0rem;
   width: 100%;
-  height:100%;
+  height: 100%;
   /* height: 2.5rem; */
-  background-image: url('../img/Manta Logo 1/02_footerinside_00cc00.png');
+  background-image: url('../img/Manta Logo 1/MANTA Lime green A1 RGB R.png');
   background-size: 10%;
   background-repeat: repeat-x;
 }
@@ -312,11 +289,14 @@ input[type='checkbox']:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   justify-content: space-between;
 }
 
-#fb img{
-  margin-left:4px;
+#fb img {
+  margin-left: 4px;
 }
 
-#ig img, #vimeo img, #fb img, #linkedin img {
+#ig img,
+#vimeo img,
+#fb img,
+#linkedin img {
   width: 100%;
   margin-top: -3px;
 }
@@ -341,7 +321,7 @@ input[type='checkbox']:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   font-size: 1.25rem;
   line-height: 1;
   margin-top: 12px;
-  color:#360c79;
+  color: #360c79;
 }
 
 .list-inline span {
@@ -359,94 +339,95 @@ input[type='checkbox']:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1440px) {
-  
-    #mainlogo{
-      top: 3%;
-      width: 5.5%;
-    }
+  #mainlogo {
+    top: 3.5%;
+    width: 7%;
+  }
 
-    /*Footer*/
-    .footer {
-      height: 2rem;
+  /*Footer*/
+  .footer {
+    height: 2rem;
+  }
+
+  .foo-content {
+    width: 300%;
+    height: 2rem;
+    display: flex;
+    line-height: 30px;
+    animation: marquee 13s linear infinite forwards;
+  }
+
+  .foo-content:hover {
+    animation-play-state: paused;
+  }
+
+  .footer::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+    top: 0rem;
+    width: 100%;
+    height: 100%;
+    /* height: 2.5rem; */
+    background-size: 10%;
+    background-repeat: repeat-x;
+  }
+
+  .logosection {
+    /* background-color: blue; */
+    width: 28%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #fb img {
+    margin-left: 4px;
+  }
+
+  #ig img,
+  #vimeo img,
+  #fb img,
+  #linkedin img {
+    width: 100%;
+    margin-top: -4px;
+  }
+
+  #term {
+    font-size: 0.6rem;
+    margin-top: 2.5%;
+    width: 100%;
+  }
+
+  .list-inline {
+    display: flex;
+    justify-content: space-around;
+    width: 9%;
+    /* reset list */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  #statement {
+    font-family: 'Platform-Medium';
+    /* font-family: 'Titillium Web Bold'; */
+    font-size: 1.25rem;
+    line-height: 1;
+    margin-top: 6px;
+  }
+
+  .list-inline span {
+    font-family: 'Platform-Light';
+    font-size: 1rem;
+    margin-top: 6px;
+  }
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
     }
-  
-    .foo-content {
-      width: 300%;
-      height: 2rem;
-      display: flex;
-      line-height: 30px;
-      animation: marquee 13s linear infinite forwards;
+    100% {
+      transform: translateX(-40%);
     }
-  
-    .foo-content:hover {
-      animation-play-state: paused;
-    }
-  
-    .footer::after {
-      content: '';
-      position: absolute;
-      z-index: -1;
-      bottom: 0;
-      left: 0;
-      top: 0rem;
-      width: 100%;
-      height:100%;
-      /* height: 2.5rem; */
-      background-size: 10%;
-      background-repeat: repeat-x;
-    }
-  
-    .logosection {
-      /* background-color: blue; */
-      width: 28%;
-      display: flex;
-      justify-content: space-between;
-    }
-  
-    #fb img{
-      margin-left:4px;
-    }
-  
-    #ig img, #vimeo img, #fb img, #linkedin img {
-      width: 100%;
-      margin-top: -4px;
-    }
-  
-    #term {
-      font-size: 0.6rem;
-      margin-top: 2.5%;
-      width: 100%;
-    }
-  
-    .list-inline {
-      display: flex;
-      justify-content: space-around;
-      width: 9%;
-      /* reset list */
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    #statement {
-      font-family: 'Platform-Medium';
-      /* font-family: 'Titillium Web Bold'; */
-      font-size: 1.25rem;
-      line-height: 1;
-      margin-top: 6px;
-    }
-  
-    .list-inline span {
-      font-family: 'Platform-Light';
-      font-size: 1rem;
-      margin-top: 6px;
-    }
-    @keyframes marquee {
-      0% {
-        transform: translateX(0);
-      }
-      100% {
-        transform: translateX(-40%);
-      }
-    }
-    
+  }
 }
