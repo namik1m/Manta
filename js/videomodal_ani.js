@@ -59,22 +59,68 @@ const singleVid2 = document.getElementById('player2');
 const singleVid3 = document.getElementById('player3');
 const singleVid4 = document.getElementById('player4');
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
-  if (event.target == singleVid1) {
-    singleVid1.style.display = 'none';
-    vimeoPause1();
+window.addEventListener("click", function(event){
+  if(event.target == singleVid1) {
+   vimeoPause1();
+   singleVid1.style.display = 'none';
   }
   if (event.target == singleVid2) {
-    singleVid2.style.display = 'none';
-    vimeoPause2();
-  }
-  if (event.target == singleVid3) {
-    singleVid3.style.display = 'none';
-    vimeoPause3();
-  }
-  if (event.target == singleVid4) {
-    singleVid4.style.display = 'none';
-    vimeoPause4();
-  }
-};
+   singleVid2.style.display = 'none';
+   vimeoPause2();
+ }
+ if (event.target == singleVid3) {
+   singleVid3.style.display = 'none';
+   vimeoPause3();
+ }
+ if (event.target == singleVid4) {
+   singleVid4.style.display = 'none';
+   vimeoPause4();
+ }
+ });
+
+const close1 = document.querySelector('.closebtn1');
+const close2 = document.querySelector('.closebtn2');
+const close3 = document.querySelector('.closebtn3');
+const close4 = document.querySelector('.closebtn4');
+
+// Only for Mobile: When the user clicks on <span> (x), close the modal
+close1.addEventListener("touchend", function() {
+  singleVid1.style.display = 'none';
+  vimeoPause1();  
+});
+
+close2.addEventListener("touchend", function() {
+  singleVid2.style.display = 'none';
+  vimeoPause2();  
+});
+
+close3.addEventListener("touchend", function() {
+  singleVid3.style.display = 'none';
+  vimeoPause3();  
+});
+
+close4.addEventListener("touchend", function() {
+  singleVid4.style.display = 'none';
+  vimeoPause4();  
+});
+
+
+//OLD
+// window.onclick = function (event) {
+//   if (event.target == singleVid1) {
+//     singleVid1.style.display = 'none';
+//     vimeoPause1();
+//   }
+//   if (event.target == singleVid2) {
+//     singleVid2.style.display = 'none';
+//     vimeoPause2();
+//   }
+//   if (event.target == singleVid3) {
+//     singleVid3.style.display = 'none';
+//     vimeoPause3();
+//   }
+//   if (event.target == singleVid4) {
+//     singleVid4.style.display = 'none';
+//     vimeoPause4();
+//   }
+// };

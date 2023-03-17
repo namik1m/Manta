@@ -53,8 +53,6 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 0;
-  /* margin: 0; */
-  /* overflow-y: auto; */
 }
 
 
@@ -338,6 +336,7 @@ input[type='checkbox']:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   }
 }
 
+/*******Laptop CSS********/
 @media only screen and (min-width: 1200px) and (max-width: 1440px) {
   #mainlogo {
     top: 3.5%;

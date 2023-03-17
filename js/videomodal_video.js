@@ -3,6 +3,7 @@
 //https://github.com/vimeo/player.js/
 var iframe = document.querySelectorAll('iframe');
 const iframeList = Array.from(iframe);
+//const videos = document.querySelector('.videos');
 console.log(iframe[0]);
 console.log(iframeList);
 var player1 = new Vimeo.Player(iframeList[0]);
@@ -70,6 +71,7 @@ function vimeoPause10() {
 
 listThumb[0].addEventListener('click', function () {
   listRealvideos[0].style.display = 'block';
+  //videos.style.overflow = "hidden";
 });
 
 listThumb[1].addEventListener('click', function () {
@@ -145,46 +147,196 @@ const singleVid8 = document.getElementById('player8');
 const singleVid9 = document.getElementById('player9');
 const singleVid10 = document.getElementById('player10');
 
+
+window.addEventListener("click", function(event){
+ if(event.target == singleVid1) {
+  vimeoPause1();
+  singleVid1.style.display = 'none';
+ }
+ if (event.target == singleVid2) {
+  singleVid2.style.display = 'none';
+  vimeoPause2();
+}
+if (event.target == singleVid3) {
+  singleVid3.style.display = 'none';
+  vimeoPause3();
+}
+if (event.target == singleVid4) {
+  singleVid4.style.display = 'none';
+  vimeoPause4();
+}
+if (event.target == singleVid5) {
+  singleVid5.style.display = 'none';
+  vimeoPause5();
+}
+if (event.target == singleVid6) {
+  singleVid6.style.display = 'none';
+  vimeoPause6();
+}
+if (event.target == singleVid7) {
+  singleVid7.style.display = 'none';
+  vimeoPause7();
+}
+if (event.target == singleVid8) {
+  singleVid8.style.display = 'none';
+  vimeoPause8();
+}
+if (event.target == singleVid9) {
+  singleVid9.style.display = 'none';
+  vimeoPause9();
+}
+if (event.target == singleVid10) {
+  singleVid10.style.display = 'none';
+  vimeoPause10();
+}
+});
+
+const close1 = document.querySelector('.closebtn1');
+const close2 = document.querySelector('.closebtn2');
+const close3 = document.querySelector('.closebtn3');
+const close4 = document.querySelector('.closebtn4');
+const close5 = document.querySelector('.closebtn5');
+const close6 = document.querySelector('.closebtn6');
+const close7 = document.querySelector('.closebtn7');
+const close8 = document.querySelector('.closebtn8');
+const close9 = document.querySelector('.closebtn9');
+const close10 = document.querySelector('.closebtn10');
+
+// Only for Mobile: When the user clicks on <span> (x), close the modal
+close1.addEventListener("touchend", function() {
+  singleVid1.style.display = 'none';
+  vimeoPause1();  
+});
+
+close2.addEventListener("touchend", function() {
+  singleVid2.style.display = 'none';
+  vimeoPause2();  
+});
+
+close3.addEventListener("touchend", function() {
+  singleVid3.style.display = 'none';
+  vimeoPause3();  
+});
+
+close4.addEventListener("touchend", function() {
+  singleVid4.style.display = 'none';
+  vimeoPause4();  
+});
+
+close5.addEventListener("touchend", function() {
+  singleVid5.style.display = 'none';
+  vimeoPause5();  
+});
+
+close6.addEventListener("touchend", function() {
+  singleVid6.style.display = 'none';
+  vimeoPause6();  
+});
+
+close7.addEventListener("touchend", function() {
+  singleVid7.style.display = 'none';
+  vimeoPause7();  
+});
+
+close8.addEventListener("touchend", function() {
+  singleVid8.style.display = 'none';
+  vimeoPause8();  
+});
+
+close9.addEventListener("touchend", function() {
+  singleVid9.style.display = 'none';
+  vimeoPause9();  
+});
+
+close10.addEventListener("touchend", function() {
+  singleVid10.style.display = 'none';
+  vimeoPause10();  
+});
+
+// window.addEventListener("touchend", function(event){
+//  if(event.target == singleVid1) {
+//   vimeoPause1();
+//   singleVid1.style.display = 'none';
+//  }
+//  if (event.target == singleVid2) {
+//   singleVid2.style.display = 'none';
+//   vimeoPause2();
+// }
+// if (event.target == singleVid3) {
+//   singleVid3.style.display = 'none';
+//   vimeoPause3();
+// }
+// if (event.target == singleVid4) {
+//   singleVid4.style.display = 'none';
+//   vimeoPause4();
+// }
+// if (event.target == singleVid5) {
+//   singleVid5.style.display = 'none';
+//   vimeoPause5();
+// }
+// if (event.target == singleVid6) {
+//   singleVid6.style.display = 'none';
+//   vimeoPause6();
+// }
+// if (event.target == singleVid7) {
+//   singleVid7.style.display = 'none';
+//   vimeoPause7();
+// }
+// if (event.target == singleVid8) {
+//   singleVid8.style.display = 'none';
+//   vimeoPause8();
+// }
+// if (event.target == singleVid9) {
+//   singleVid9.style.display = 'none';
+//   vimeoPause9();
+// }
+// if (event.target == singleVid10) {
+//   singleVid10.style.display = 'none';
+//   vimeoPause10();
+// }
+// });
+
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
-  if (event.target == singleVid1) {
-    singleVid1.style.display = 'none';
-    vimeoPause1();
-  }
-  if (event.target == singleVid2) {
-    singleVid2.style.display = 'none';
-    vimeoPause2();
-  }
-  if (event.target == singleVid3) {
-    singleVid3.style.display = 'none';
-    vimeoPause3();
-  }
-  if (event.target == singleVid4) {
-    singleVid4.style.display = 'none';
-    vimeoPause4();
-  }
-  if (event.target == singleVid5) {
-    singleVid5.style.display = 'none';
-    vimeoPause5();
-  }
-  if (event.target == singleVid6) {
-    singleVid6.style.display = 'none';
-    vimeoPause6();
-  }
-  if (event.target == singleVid7) {
-    singleVid7.style.display = 'none';
-    vimeoPause7();
-  }
-  if (event.target == singleVid8) {
-    singleVid8.style.display = 'none';
-    vimeoPause8();
-  }
-  if (event.target == singleVid9) {
-    singleVid9.style.display = 'none';
-    vimeoPause9();
-  }
-  if (event.target == singleVid10) {
-    singleVid10.style.display = 'none';
-    vimeoPause10();
-  }
-};
+// window.onclick = function (event) {
+//   if (event.target == singleVid1) {
+//     vimeoPause1();
+//     singleVid1.style.display = 'none';
+//   }
+//   if (event.target == singleVid2) {
+//     singleVid2.style.display = 'none';
+//     vimeoPause2();
+//   }
+//   if (event.target == singleVid3) {
+//     singleVid3.style.display = 'none';
+//     vimeoPause3();
+//   }
+//   if (event.target == singleVid4) {
+//     singleVid4.style.display = 'none';
+//     vimeoPause4();
+//   }
+//   if (event.target == singleVid5) {
+//     singleVid5.style.display = 'none';
+//     vimeoPause5();
+//   }
+//   if (event.target == singleVid6) {
+//     singleVid6.style.display = 'none';
+//     vimeoPause6();
+//   }
+//   if (event.target == singleVid7) {
+//     singleVid7.style.display = 'none';
+//     vimeoPause7();
+//   }
+//   if (event.target == singleVid8) {
+//     singleVid8.style.display = 'none';
+//     vimeoPause8();
+//   }
+//   if (event.target == singleVid9) {
+//     singleVid9.style.display = 'none';
+//     vimeoPause9();
+//   }
+//   if (event.target == singleVid10) {
+//     singleVid10.style.display = 'none';
+//     vimeoPause10();
+//   }
+// };
+

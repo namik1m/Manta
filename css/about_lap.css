@@ -352,8 +352,8 @@ letter-spacing: 0.05rem;
 
   #note {
     height: 10rem;
-    border-radius: 32px;
-    width: 100%;
+    /* border-radius: 32px; */
+    /* width: 100%; */
   }
 
   .formbtm {

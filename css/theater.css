@@ -150,8 +150,8 @@ body {
   transform: translate(-50%, -50%);
   z-index: 999;
   display: none;
-  background: linear-gradient(55deg, #11304e, #090d15, #f1f0f8);
-  background-size: 150% 100%;
+  background-image: linear-gradient(to right bottom, #0c1d3d, #0b1a40, #0d1742, #111343, #160e44, #1f093c, #240434, #27002d, #25001f, #1f0014, #150009, #000000);
+  background-size: 150% 150%;
   /* background-color: rgb(3, 6, 54); */
   width: 100vw;
   height: 100vh;
@@ -165,6 +165,44 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   aspect-ratio: 16/9;
+}
+
+/* The Close Button */
+.closebtn1, .closebtn2, .closebtn3, .closebtn4, .closebtn5,
+.closebtn6, .closebtn7, .closebtn8, .closebtn9, .closebtn10, .closebtn11{
+  display:none;
+  color: #32ff32;
+  position:absolute;
+  right:5%;
+  top:2%;
+  font-size: 32px;
+  font-family: 'Titillium Web ExtraLight';
+}
+
+.closebtn1:hover,
+.closebtn1:focus,
+.closebtn2:hover,
+.closebtn2:focus,
+.closebtn3:hover,
+.closebtn3:focus,
+.closebtn4:hover,
+.closebtn4:focus,
+.closebtn5:hover,
+.closebtn5:focus,
+.closebtn6:hover,
+.closebtn6:focus,
+.closebtn7:hover,
+.closebtn7:focus,
+.closebtn8:hover,
+.closebtn8:focus,
+.closebtn9:hover,
+.closebtn9:focus,
+.closebtn10:hover,
+.closebtn10:focus,
+.closebtn11:hover,
+.closebtn11:focus {
+  color: #32ff32;
+  text-decoration: none;
 }
 
 
@@ -189,7 +227,8 @@ body {
 }
 #a2,
 #a6,
-#a8 #c2,
+#a8, 
+#c2,
 #d2,
 #d6,
 #d8,
@@ -309,9 +348,9 @@ body {
 
 .inside:hover,
 .inside:focus {
-  opacity: 1;
+  /* opacity: 1;
   filter: brightness(150%);
-  -webkit-filter: brightness(150%);
+  -webkit-filter: brightness(150%); */
   /*A value under 100% darkens the image, while a value over 100% brightens it.*/
 }
 
@@ -338,53 +377,34 @@ body {
 I direcly tried to apply the hover on pseudo (to show text on mouseover) but didn't work.
 I researched and learned the pseudo to img tag is not possible.*/
 
-.bck {
-  position: absolute;
-  filter: brightness(7%) blur(1px);
-  -webkit-filter: brightness(7%) blur(2px);
-  z-index: -1;
-}
-
-#bck1 {
-  width: 20%;
-  left: 18%;
-  top: 43%;
-}
-
-#bck2 {
-  width: 17%;
-  left: 40%;
-  top: 28%;
-}
-
 #a1 {
   width: 44%;
-left: 1%;
-top: -15%;
+  top: -15%;
+  left: 1%;
 }
 
 #a2 {
   width: 30%;
-left: -38%;
-top: 23%;
+  top: 23%;
+  left: -38%;
 }
 
 #a3 {
+  width: 36%;
   top: -14%;
-width: 36%;
-left: -26%;
+  left: -26%;
 }
 
 #a4 {
   width: 35%;
-top: 19%;
-left: -69%;
+  top: 19%;
+  left: -69%;
 }
 
 #a5 {
   width: 39%;
-left: -62%;
-top: -20%;
+  top: -20%;
+  left: -62%;
 }
 
 #a6 {
@@ -395,25 +415,26 @@ top: -20%;
 
 #a7 {
   width: 32%;
-top: -12%;
+  top: -12%;
   left: -88%;
 }
 
 #a8 {
   width: 20%;
-left: -135%;
-top: 21%;
+  top: 21%;
+  left: -135%;
 }
+
 #a9 {
   width: 35%;
   top: -20%;
-left: -110%;
+  left: -110%;
 }
 
 #a10 {
   width: 30%;
+  top: 23%;
   left: -157%;
-top: 23%;
 }
 
 /*a[] for theater films*/
@@ -616,38 +637,38 @@ left: -171%;
 /* e[] for EVENT films*/
 #e1 {
   width: 30%;
-left: 1%;
-top: -15%;
+  top: -15%;
+  left: 1%;
 }
 
 #e2 {
   width: 26%;
-left: -24%;
-top: 20%;
+  top: 20%;
+  left: -24%;
 }
 
 #e3 {
+  width: 38%;
   top: -18%;
-width: 38%;
-left: -22%;
+  left: -22%;
 }
 
 #e4 {
   width: 28%;
-top: 14%;
-left: -55%;
+  top: 14%;
+  left: -55%;
 }
 
 #e5 {
   width: 24%;
-left: -42%;
-top: -18%;
+  top: -18%;
+  left: -42%;
 }
 
 #e6 {
   width: 40%;
-top: 19%;
-left: -76%;
+  top: 19%;
+  left: -76%;
 }
 
 #e7 {
@@ -658,8 +679,8 @@ left: -76%;
 
 #e8 {
   width: 28%;
+  top: 17%;
   left: -105%;
-top: 17%;
 }
 
 #e9 {
@@ -1082,6 +1103,7 @@ input[type='checkbox']:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   font-size: 1rem;
   margin-top: 6px;
 }
+
 @keyframes marquee {
   0% {
     transform: translateX(0);

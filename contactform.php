@@ -1,9 +1,13 @@
 <?php
-$name = $_POST["clientname"];
-$email = $_POST["email"];
-$num = $_POST["num"];
-$subject= $_POST["subject"];
-$note = $_POST["note"];
+// ini_set('display_errors', 1);
+// ini_set('error_reporting', E_ALL);
+// ini_set('display_startup_errors', 1);
+// error_reporting(E_ALL);
+$name = $_POST['name'];
+$email = $_POST['email'];
+$num = $_POST['num'];
+$subject= $_POST['subject'];
+$note =$_POST['note'];
 
 require "vendor/autoload.php";
 
@@ -12,30 +16,33 @@ use PHPMailer\PHPMailer\SMTP;
 
 $mail = new PHPMailer(true);
 
-//$mail->SMTPDebug = SMTP::DEBUG_SERVER;
+// $mail->SMTPDebug = SMTP::DEBUG_SERVER;
 
 $mail->isSMTP();
-$mail->SMTPAuth = true;
+$mail->SMTPAuth = TRUE;
 
-$mail->Host = "smpt.gmail.com"; //should it be smpt.gmail.com? or smtp.mantamedia.io
-$mail->SMTPSecure = 'TLS'; //PHPMailer::ENCRYPTION_STARTTLS; Enable TLS encryption, `PHPMailer::ENCRYPTION_SMTPS` also accepted
+$mail->Host = "smtp.gmail.com"; 
+$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; //Enable TLS encryption, `PHPMailer::ENCRYPTION_SMTPS` also accepted
 $mail->Port = 587;
 
 $mail->Username = "contact@mantamedia.io";
-$mail->Password = "rvkuouzoyqgpttmp";
+$mail->Password = "ljfsgjielzkqtgvn";
 
 $mail->setFrom($email, $name);
-$mail->AddReplyTo("contact@mantamedia.io","Manta"); //Is the second argument is optional?
-$mail->addAddress("contact@mantamedia.io", "Manta"); //Second argument is optional. Add a recipient
+//$mail->AddReplyTo("contact@mantamedia.io","Manta"); //Is the second argument is optional?
+$mail->addAddress("contact@mantamedia.io"); //Second argument is optional. Add a recipient
 
 $mail->Subject = $subject;
 $mail->Body = $note;
 
-$mail->send();
-
-header("Location: sent.html");
+try{
+  $mail->send();
+  include "sent.html";
+}
+catch(Exception $e)
+{
+  include "fail.html";
+}
 //echo "email sent";
 
-//Youtube tutorial: https://www.youtube.com/watch?v=fIYyemqKR58
-//Web doc tutorial: https://makitweb.com/how-to-send-email-using-smtp-with-phpmailer-in-php/?utm_content=cmp-true
-?>
+

@@ -161,12 +161,14 @@
                   id="name"
                   name="clientname"
                   placeholder="*Name"
+                  required
                 />
                 <input
                   type="text"
                   id="email"
                   name="email"
                   placeholder="*E-mail"
+                  required
                 />
                 <input
                   type="text"
@@ -181,14 +183,17 @@
                 id="subject"
                 name="subject"
                 placeholder="*Subject"
+                required
               />
 
-              <input
+              <textarea
                 type="text"
                 id="note"
                 name="note"
                 placeholder="*Type your message..."
-              />
+                cols="60" rows="10"
+                required></textarea>
+              
               <input type="submit" value="SEND" id="submitbtn" />
               <div class="formbtm">
                 <p>* Mandatory fields</p>
